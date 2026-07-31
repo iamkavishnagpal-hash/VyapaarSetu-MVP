@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" width="100%" height="100%">
+  <style>
+    .card-bg { fill: #1e293b; stroke: rgba(255,255,255,0.1); stroke-width: 1; rx: 12; }
+    .title { fill: #94a3b8; font-family: system-ui; font-size: 13px; font-weight: 600; text-transform: uppercase; }
+    .val { fill: #ffffff; font-family: system-ui; font-size: 26px; font-weight: 700; }
+    .sub { font-family: system-ui; font-size: 12px; font-weight: 600; }
+  </style>
+
+  <!-- Card 1 -->
+  <g transform="translate(10, 10)">
+    <rect width="230" height="200" class="card-bg"/>
+    <text x="20" y="40" class="title">Gross Platform GMV</text>
+    <text x="20" y="85" class="val">₹ 48.5M</text>
+    <text x="20" y="125" class="sub" fill="#10b981">▲ +34.2% YoY Growth</text>
+    <path d="M20,170 Q70,140 120,160 T210,130" fill="none" stroke="#10b981" stroke-width="3"/>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(255, 10)">
+    <rect width="230" height="200" class="card-bg"/>
+    <text x="20" y="40" class="title">Gross Margin %</text>
+    <text x="20" y="85" class="val">28.4%</text>
+    <text x="20" y="125" class="sub" fill="#6366f1">▲ Target 25.0% Exceeded</text>
+    <path d="M20,170 Q70,160 120,140 T210,135" fill="none" stroke="#6366f1" stroke-width="3"/>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(500, 10)">
+    <rect width="230" height="200" class="card-bg"/>
+    <text x="20" y="40" class="title">Vendor SLA Rate</text>
+    <text x="20" y="85" class="val">94.2%</text>
+    <text x="20" y="125" class="sub" fill="#10b981">✓ 50 Verified Suppliers</text>
+    <path d="M20,160 L210,160" stroke="rgba(255,255,255,0.1)" stroke-width="6"/>
+    <path d="M20,160 L195,160" stroke="#10b981" stroke-width="6"/>
+  </g>
+
+  <!-- Card 4 -->
+  <g transform="translate(745, 10)">
+    <rect width="230" height="200" class="card-bg"/>
+    <text x="20" y="40" class="title">Escrow Vault Liquidity</text>
+    <text x="20" y="85" class="val">₹ 14.2M</text>
+    <text x="20" y="125" class="sub" fill="#f59e0b">🔒 Zero Dispute Fraud</text>
+    <circle cx="115" cy="165" r="18" fill="rgba(245,158,11,0.2)" stroke="#f59e0b" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+graph TD
+    subgraph Client Layer
+        A[Next.js / Vanilla HTML5 Dashboard] --> B[REST / Webhook API Gateway]
+    end
+
+    subgraph Business Logic & Automation Engines
+        B --> C[Inventory Sync Engine]
+        B --> D[Vendor Matching Engine]
+        B --> E[Escrow State Machine]
+        B --> F[Demand Forecast Engine]
+        B --> G[Business Health Engine]
+    end
+
+    subgraph Data & Storage Layer
+        C & D & E & F & G --> H[(PostgreSQL 14 / Data Layer)]
+        H --> I[Analytics SQL Query Pack]
+    end
+
+    subgraph Business Intelligence Layer
+        I --> J[Power BI Enterprise Dashboard]
+    end

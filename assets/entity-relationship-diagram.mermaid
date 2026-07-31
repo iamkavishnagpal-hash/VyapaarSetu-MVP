@@ -1,0 +1,9 @@
+erDiagram
+    VENDORS ||--o{ PRODUCTS : supplies
+    STORES ||--o{ ORDERS : generates
+    CUSTOMERS ||--o{ ORDERS : places
+    PRODUCTS ||--o{ ORDERS : contains
+    PRODUCTS ||--o{ INVENTORY : stocked_in
+    ORDERS ||--o| ESCROW_TRANSACTIONS : secures
+    ORDERS ||--o| LOGISTICS : shipped_via
+    PRODUCTS ||--o{ RETURNS : results_in

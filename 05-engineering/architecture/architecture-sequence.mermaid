@@ -1,0 +1,20 @@
+sequenceDiagram
+    autonumber
+    actor Merchant as MSME Merchant
+    participant POS as Physical POS Counter
+    participant Gateway as VyapaarSetu API Gateway
+    participant Sync as Inventory Sync Engine (Redis/Go)
+    participant Bus as Kafka Event Bus
+    participant Storefront as Shopify / D2C Storefront
+    participant DB as PostgreSQL OLTP DB
+    participant Analytics as BigQuery OLAP Warehouse
+
+    Merchant->>POS: Scan & Sell Item (SKU-JKT-0001)
+    POS->>Gateway: POST /api/v1/inventory/deduct {qty: 1}
+    Gateway->>Sync: Acquire Distributed Lock (Redlock)
+    Sync->>DB: Deduct Offline Counter Stock (-1 Unit)
+    Sync->>Bus: Publish Event: INVENTORY_DEDUCTED
+    Bus-->>Storefront: Push Real-Time Stock Update (Shopify Webhook)
+    Bus-->>Analytics: Debezium CDC Stream to BigQuery
+    Sync-->>Gateway: 200 OK (Sync Time: 12ms)
+    Gateway-->>POS: Print Receipt & Confirm Stock Synced

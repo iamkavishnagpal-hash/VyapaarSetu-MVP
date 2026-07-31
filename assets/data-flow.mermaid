@@ -1,0 +1,6 @@
+flowchart LR
+    A[(Raw CSV Data Layer)] -->|Ingestion| B[PostgreSQL 14 / DuckDB]
+    B -->|Query Execution| C[analytics/sql_queries.sql]
+    B -->|CLI Run| D[automation/*.py Engines]
+    C -->|DirectQuery| E[Power BI 8-Tab Dashboard]
+    D -->|Real-Time Webhooks| F[Notification & Escrow Vault]

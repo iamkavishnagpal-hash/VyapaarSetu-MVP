@@ -1,0 +1,423 @@
+═══════════════════════════════════════════════════════════════════
+        VYAPAARSETU - STITCH PROMPTS (FOR FIGMA IMPORT)
+═══════════════════════════════════════════════════════════════════
+
+Copy-paste each prompt into Stitch to generate screens.
+Run sequentially for best results.
+
+───────────────────────────────────────────────────────────────────
+PROMPT 1: MOODBOARD
+───────────────────────────────────────────────────────────────────
+
+Create a moodboard for "VyapaarSetu" mobile app
+
+Platform: iPhone 17 Pro Max (440x956)
+Theme: Light Mode only
+Style: Futuristic SaaS, Clean, Data-first
+
+Style Direction:
+- Fintech app aesthetic (Razorpay, Cred)
+- Modern marketplace (Shopify, Flippa)
+- Clean SaaS dashboards
+
+Color Palette:
+- Primary: #0066FF (Electric Blue)
+- Secondary: #1A1A2E (Deep Navy)
+- Accent: #00D4AA (Mint Green)
+- Background: #F8F9FB (Soft Gray)
+- Success: #10B981
+- Escrow: #8B5CF6
+
+Inspiration Elements:
+- Geometric shapes
+- Data viz concepts
+- Trust/security icons
+- Flow indicators
+
+Grid: 8pt system
+Radius: 12px
+Padding: 16px
+
+───────────────────────────────────────────────────────────────────
+PROMPT 2: HOME - ENTREPRENEUR (3 VARIANTS)
+───────────────────────────────────────────────────────────────────
+
+Design Home screen for Entrepreneur role
+
+Frame: iPhone 17 Pro Max (440x956)
+Theme: Light Mode
+
+Navigation:
+- Top: "Hi, {Name}" + Role Badge + AI + Notification
+- Bottom: Home, Market, Stores, Wallet, Profile
+
+Elements:
+- Top Bar (56px): Greeting, Role badge (ENT), AI icon, Notification
+- Main CTAs (3 cards): Buy Store, Rent Store, Build from Scratch
+- Action Center: Action-driven cards
+- Recent Activity: Store cards
+
+Action Cards:
+- "3 orders need packing" → Deep link to orders
+- "1 courier pending" → Deep link to tracking
+- "2 stock alerts" → Deep link to inventory
+
+Style:
+- Card padding: 16px
+- Radius: 12px
+- Grid: 8pt
+- Shadow: 0 2px 8px rgba(0,0,0,0.06)
+
+No oversized images
+Export-ready
+
+───────────────────────────────────────────────────────────────────
+PROMPT 3: HOME - VENDOR (3 VARIANTS)
+───────────────────────────────────────────────────────────────────
+
+Design Home screen for Vendor role
+
+Frame: iPhone 17 Pro Max (440x956)
+Theme: Light Mode
+
+Elements:
+- Top Bar: Greeting, Vendor badge (VND), AI, Notification
+- Main CTAs (3): Orders Ready (12), Add Product, Sales (+23%)
+- Pipeline: PAID → ESCROW → PREP → PACK → SHIP → DELIVER
+  - Show count per stage
+  - Tap to filter
+
+Pipeline Style:
+- Horizontal dots connected by line
+- Active: #10B981 (green)
+- Inactive: #E5E7EB (gray)
+
+Action Cards:
+- "8 orders to prepare"
+- "3 seller requests"
+
+───────────────────────────────────────────────────────────────────
+PROMPT 4: HOME - STORE OWNER (3 VARIANTS)
+───────────────────────────────────────────────────────────────────
+
+Design Home screen for Store Owner role
+
+Frame: iPhone 17 Pro Max (440x956)
+Theme: Light Mode
+
+Elements:
+- Top Bar: Greeting, Owner badge (OWN), AI, Notification
+- Main CTAs (3): Sell Store, Manage Listings, Earnings (+12%)
+- Action Center cards
+- My Stores section
+
+Action Cards:
+- "₹45,000 pending escrow"
+- "5 store views today"
+
+───────────────────────────────────────────────────────────────────
+PROMPT 5: MARKETPLACE
+───────────────────────────────────────────────────────────────────
+
+Design Market (Discovery) screen
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Layout:
+- Top: Search bar + Burger menu (≡)
+- Filters: [All] [Buy] [Rent] [Price▼] [Category▼]
+- Featured Stores: Large cards (1-2)
+- More Stores: Grid (2 columns)
+
+Store Card (Featured):
+- Image: 160x90px
+- Name, Price, Rating
+- Actions: [Buy] [Rent] [♡ Save]
+
+Burger Menu (≡):
+- Saved Stores
+- Compare (side-by-side)
+- My Inquiries
+- Help & Support
+
+Search placeholder: "Search stores..."
+
+───────────────────────────────────────────────────────────────────
+PROMPT 6: STORE DETAIL
+───────────────────────────────────────────────────────────────────
+
+Design Store Detail screen
+
+Frame: iPhone 17 Pro Max (440x956)
+Theme: Light Mode
+
+Sections:
+- Header: Back arrow + "Store Detail" + Menu (⋯)
+- Hero Image: 200px height
+- Rating: ⭐ 4.8 (127 reviews)
+- Store Name + Description
+- Metrics (2x2 grid):
+  - Monthly Revenue: ₹85,000
+  - Profit Margin: 32%
+  - Products: 1,247
+  - Avg Order Value: ₹1,200
+- Pricing (side by side):
+  - BUY: ₹2,50,000
+  - RENT: ₹5,000/mo
+- Verification Badges:
+  - ✅ KYC Verified
+  - 🔗 API Connected
+  - 📊 Live Data
+  - 🛡️ Escrow Protected
+- CTA: "PROCEED WITH PURCHASE"
+
+───────────────────────────────────────────────────────────────────
+PROMPT 7: ESCROW / PAYMENT
+───────────────────────────────────────────────────────────────────
+
+Design Escrow Payment Flow screen
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Purpose: Trust-building payment experience
+
+3-Step Visualization:
+```
+Step 1: 💰 Payment
+- ✓ Buyer pays full amount
+- Money held in escrow
+- Status: COMPLETED
+
+Step 2: 📦 Transfer  
+- Store assets transferred
+- Status: IN PROGRESS
+
+Step 3: 💰 Release
+- 70% → Immediate (₹1,75,000)
+- 30% → Hold 30 days (�₹75,000)
+- Status: PENDING
+```
+
+Visual Style:
+- Connected vertical steps
+- Checkmarks for completed
+- Spinner for progress
+- Circle for pending
+
+Colors:
+- Completed: #10B981 (green)
+- In Progress: #E5E7EB (gray)
+- Escrow accent: #8B5CF6 (purple)
+
+Bottom Section:
+- Protection badges
+- CTA: "PAY ₹2,50,000 NOW"
+
+───────────────────────────────────────────────────────────────────
+PROMPT 8: WALLET
+───────────────────────────────────────────────────────────────────
+
+Design Wallet screen
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Sections:
+- Header: "My Wallet" + Notification
+- Balance Card:
+  - AVAILABLE: ₹1,25,000 (large)
+  - Actions: [Withdraw] [Send] [Top Up]
+- Escrow (Held):
+  - Balance: ₹45,000
+  - Badge: "🛡️ Protected"
+- Pending Clearance:
+  - Amount: ₹12,500
+  - "Releasing in 15 days"
+- Recent Transactions:
+  - List of +/- amounts
+  - Status (Completed/Pending)
+
+───────────────────────────────────────────────────────────────────
+PROMPT 9: VENDOR ORDERS (PIPELINE)
+───────────────────────────────────────────────────────────────────
+
+Design Vendor Orders (Pipeline) screen
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Pipeline Bar:
+PAID → ESCROW → PREP → PACK → SHIP → DELIVER
+  12      12     3     5    1      0
+
+- Horizontal connected dots
+- Numbers on each stage
+- Tap to filter by status
+
+Order Cards:
+- Order ID: #ORD-001
+- Customer: Rahul Sharma
+- Items: 3 | Total: ₹2,450
+- Status badge
+- Actions: [Prepare] [Details] [Track]
+
+───────────────────────────────────────────────────────────────────
+PROMPT 10: ORDER DETAILS (BUYER POPUP)
+───────────────────────────────────────────────────────────────────
+
+Design Buyer Popup (Order Details) screen
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Buyer Section:
+- Avatar + Name
+- Phone: +91 98765 43210
+- Rating: ⭐ 4.8 (23 orders)
+- Actions: [📞 Call] [💬 WhatsApp]
+
+Delivery Address:
+- Full address block
+
+Order Items:
+- List with prices
+- Subtotal, Shipping, Total
+
+Timeline:
+- Vertical status tracker
+- ✓ Paid ✓ Preparing ○ Packed ○ Shipped
+
+───────────────────────────────────────────────────────────────────
+PROMPT 11: BUILD FROM SCRATCH (STEP 1)
+───────────────────────────────────────────────────────────────────
+
+Design Build from Scratch - Step 1: Category
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Layout:
+- Header: "< Back" + "Build Store" + "Step 1/5"
+- Categories: 3x3 grid
+- Category items: Icon + Label
+- Continue button at bottom
+
+Categories:
+- 👕 Fashion | 💄 Beauty | 📱 Tech
+- 🏠 Home | 🍽️ Food | 🧘 Health
+- 🎮 Games | 📚 Books | 🔧 Services
+
+───────────────────────────────────────────────────────────────────
+PROMPT 12: BUILD FROM SCRATCH (STEP 5)
+───────────────────────────────────────────────────────────────────
+
+Design Build from Scratch - Step 5: Launch
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Content:
+- Header: Back + "Build Store" + "Step 5/5"
+- Step indicator (1-5 dots)
+- Summary checklist:
+  - ✓ Category selected
+  - ✓ Supplier connected
+  - ✓ Pricing set
+  - ✓ Branding done
+- Success message
+- Next steps list
+- CTA: "LAUNCH STORE"
+- Skip link
+
+───────────────────────────────────────────────────────────────────
+PROMPT 13: AI ASSISTANT (MARGDARSHAK)
+───────────────────────────────────────────────────────────────────
+
+Design AI Assistant (MargDarshak) screen
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Chat Interface:
+- Welcome message with suggestions
+- Chat bubbles (user right, AI left)
+- Input field + Send button
+
+Suggestions (tappable):
+- "Best stores under ₹1 lakh"
+- "How to increase sales?"
+- "Show escrow status"
+
+AI Accent: #00D4AA (mint green)
+
+───────────────────────────────────────────────────────────────────
+PROMPT 14: PROFILE
+───────────────────────────────────────────────────────────────────
+
+Design Profile screen
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Sections:
+- Header: Settings icon (⚙️)
+- Profile Card:
+  - Avatar (64px)
+  - Name: Kavish Shah
+  - Email: kavish@email.com
+  - Phone: +91 98765 43210
+  - Role badge with ∇
+- Menu List:
+  - Personal Info [Edit]
+  - Switch Role [>]
+  - Security [>]
+  - Notifications [>]
+  - Payment Methods [>]
+  - Documents [>]
+  - Help & Support [>]
+  - Terms & Privacy [>]
+- Log Out button
+- Version footer
+
+───────────────────────────────────────────────────────────────────
+PROMPT 15: STORES (OWNERSHIP HUB)
+───────────────────────────────────────────────────────────────────
+
+Design Stores (Ownership Hub) screen
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Security:
+- PIN to view earnings
+- Earnings blurred by default (blur effect)
+
+Sections:
+- "MY STORES" title
+- Store cards:
+  - Image thumbnail
+  - Name, Status
+  - Revenue (blurred)
+  - Actions: [Manage] [Sell] [View]
+- "+ ADD NEW STORE" button
+
+───────────────────────────────────────────────────────────────────
+PROMPT 16: PROTOTYPE CONNECTOR
+───────────────────────────────────────────────────────────────────
+
+Connect all VyapaarSetu screens into clickable prototype
+
+Frame: iPhone 17 Pro Max (440x956)
+
+Connections:
+- Home CTAs → Market (Buy/Rent/Build flows)
+- Action Cards → Deep-linked screens
+- Bottom Nav → Respective screens
+- Store cards → Store Detail
+- Buy/Rent → Escrow flow
+- Pipeline dots → Filter orders
+- Order actions → Buyer Popup
+
+Transitions:
+- Slide (left/right)
+- Modal (bottom-up)
+
+═══════════════════════════════════════════════════════════════════
+USAGE NOTES:
+1. Run prompts 1-15 sequentially for best quality
+2. Use Light Mode throughout
+3. Keep 8pt grid alignment
+4. Export as Figma file for client presentation
+═══════════════════════════════════════════════════════════

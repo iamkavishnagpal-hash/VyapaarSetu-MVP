@@ -1,0 +1,51 @@
+segment_id,segment_name,user_count,avg_monetary_value_inr,churn_risk_level
+SEG-801,New Registrant,2486,19582.44,Medium
+SEG-802,Frequent Buyer,1470,24032.43,Low
+SEG-803,Price Sensitive,4856,15117.88,High
+SEG-804,Price Sensitive,1661,21412.43,Low
+SEG-805,Price Sensitive,2966,16835.54,Critical
+SEG-806,New Registrant,1481,47691.44,Low
+SEG-807,High Value Loyal,3464,79485.51,Medium
+SEG-808,At Risk,2773,17484.26,High
+SEG-809,Price Sensitive,4032,76678.2,Medium
+SEG-810,New Registrant,3771,32094.75,Low
+SEG-811,At Risk,478,16153.86,Low
+SEG-812,Price Sensitive,353,37130.39,Medium
+SEG-813,At Risk,3077,12398.49,Low
+SEG-814,New Registrant,1748,51674.52,Medium
+SEG-815,Price Sensitive,1753,6803.89,Critical
+SEG-816,High Value Loyal,4342,36553.89,Critical
+SEG-817,Price Sensitive,4340,80472.17,High
+SEG-818,At Risk,1361,62277.1,Critical
+SEG-819,Price Sensitive,3313,34826.49,High
+SEG-820,Price Sensitive,3028,29646.83,Critical
+SEG-821,New Registrant,867,22255.61,Critical
+SEG-822,At Risk,3774,28090.72,Critical
+SEG-823,At Risk,1293,71840.92,Low
+SEG-824,Frequent Buyer,1852,29258.49,High
+SEG-825,High Value Loyal,4988,65489.12,Low
+SEG-826,High Value Loyal,3504,56104.48,High
+SEG-827,At Risk,1582,49465.11,Medium
+SEG-828,Frequent Buyer,1673,71582.7,High
+SEG-829,New Registrant,4168,8378.63,High
+SEG-830,New Registrant,2639,44528.04,Critical
+SEG-831,Frequent Buyer,369,68297.56,Medium
+SEG-832,Price Sensitive,2608,81482.13,Critical
+SEG-833,High Value Loyal,2506,38372.54,Critical
+SEG-834,Frequent Buyer,383,14548.37,High
+SEG-835,At Risk,696,52911.31,High
+SEG-836,New Registrant,4086,50245.97,High
+SEG-837,At Risk,1129,34856.18,Low
+SEG-838,Price Sensitive,1484,51532.36,Medium
+SEG-839,Price Sensitive,3926,75265.38,Medium
+SEG-840,Price Sensitive,1487,9231.07,High
+SEG-841,At Risk,3066,8897.19,High
+SEG-842,New Registrant,779,46109.32,Medium
+SEG-843,High Value Loyal,1519,48496.99,High
+SEG-844,Price Sensitive,2373,59835.5,High
+SEG-845,High Value Loyal,4527,51403.73,Medium
+SEG-846,High Value Loyal,1271,46453.66,High
+SEG-847,At Risk,3525,32225.05,Medium
+SEG-848,High Value Loyal,1934,17364.39,Medium
+SEG-849,Frequent Buyer,4726,54074.27,Low
+SEG-850,At Risk,3922,78282.49,Low

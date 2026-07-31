@@ -1,0 +1,51 @@
+channel_id,store_id,channel_name,revenue_share_pct,conversion_rate_pct,avg_order_value_inr
+SCH-701,STR-2001,VyapaarSetu Marketplace,23.8,2.32,2283.65
+SCH-702,STR-2002,B2B Wholesale Portal,54.3,5.89,3473.04
+SCH-703,STR-2003,B2B Wholesale Portal,14.4,4.55,887.43
+SCH-704,STR-2004,WhatsApp Commerce,18.7,6.16,4112.68
+SCH-705,STR-2005,WhatsApp Commerce,32.4,3.95,2012.95
+SCH-706,STR-2006,VyapaarSetu Marketplace,68.5,2.75,1474.05
+SCH-707,STR-2007,OIDC Partner Network,13.6,2.44,7305.79
+SCH-708,STR-2008,WhatsApp Commerce,35.1,5.37,2219.82
+SCH-709,STR-2009,VyapaarSetu Marketplace,46.2,5.51,5585.89
+SCH-710,STR-2010,OIDC Partner Network,64.3,4.52,4899.68
+SCH-711,STR-2011,B2B Wholesale Portal,15.2,5.83,4388.17
+SCH-712,STR-2012,B2B Wholesale Portal,45.5,5.73,2697.33
+SCH-713,STR-2013,WhatsApp Commerce,54.2,2.96,3084.73
+SCH-714,STR-2014,OIDC Partner Network,23.3,6.16,8067.33
+SCH-715,STR-2015,OIDC Partner Network,63.9,3.76,806.0
+SCH-716,STR-2016,WhatsApp Commerce,54.0,4.17,3876.87
+SCH-717,STR-2017,WhatsApp Commerce,38.8,5.55,7061.4
+SCH-718,STR-2018,WhatsApp Commerce,39.7,2.19,6512.28
+SCH-719,STR-2019,WhatsApp Commerce,67.0,2.42,2831.11
+SCH-720,STR-2020,Direct Storefront,11.0,4.94,1752.51
+SCH-721,STR-2021,WhatsApp Commerce,61.5,5.31,646.53
+SCH-722,STR-2022,WhatsApp Commerce,37.8,2.45,6110.24
+SCH-723,STR-2023,B2B Wholesale Portal,57.4,3.54,4187.58
+SCH-724,STR-2024,Direct Storefront,61.6,2.13,7642.15
+SCH-725,STR-2025,VyapaarSetu Marketplace,41.9,3.19,6510.75
+SCH-726,STR-2026,OIDC Partner Network,42.5,5.53,6790.92
+SCH-727,STR-2027,Direct Storefront,47.2,3.38,7954.56
+SCH-728,STR-2028,OIDC Partner Network,66.7,4.97,7598.22
+SCH-729,STR-2029,Direct Storefront,33.0,3.99,779.04
+SCH-730,STR-2030,VyapaarSetu Marketplace,20.5,4.43,989.4
+SCH-731,STR-2031,B2B Wholesale Portal,18.3,3.37,4794.05
+SCH-732,STR-2032,WhatsApp Commerce,54.2,5.34,7462.61
+SCH-733,STR-2033,B2B Wholesale Portal,55.2,5.38,3029.73
+SCH-734,STR-2034,VyapaarSetu Marketplace,40.2,3.79,888.4
+SCH-735,STR-2035,VyapaarSetu Marketplace,30.7,4.09,4689.79
+SCH-736,STR-2036,Direct Storefront,38.2,4.3,7094.3
+SCH-737,STR-2037,VyapaarSetu Marketplace,37.1,3.53,5870.12
+SCH-738,STR-2038,Direct Storefront,21.3,5.95,1152.84
+SCH-739,STR-2039,WhatsApp Commerce,63.9,3.16,8150.85
+SCH-740,STR-2040,Direct Storefront,19.9,2.33,1641.03
+SCH-741,STR-2041,B2B Wholesale Portal,62.5,4.25,5499.57
+SCH-742,STR-2042,VyapaarSetu Marketplace,35.0,5.01,7950.36
+SCH-743,STR-2043,WhatsApp Commerce,30.8,3.89,5639.71
+SCH-744,STR-2044,VyapaarSetu Marketplace,21.3,1.9,6906.01
+SCH-745,STR-2045,OIDC Partner Network,48.7,3.73,3209.48
+SCH-746,STR-2046,VyapaarSetu Marketplace,39.2,4.93,4717.84
+SCH-747,STR-2047,OIDC Partner Network,36.7,3.23,1512.23
+SCH-748,STR-2048,VyapaarSetu Marketplace,20.3,3.02,4348.16
+SCH-749,STR-2049,VyapaarSetu Marketplace,56.2,2.02,3292.62
+SCH-750,STR-2050,WhatsApp Commerce,67.4,4.71,1744.36

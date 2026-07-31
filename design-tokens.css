@@ -1,0 +1,231 @@
+/* ═══════════════════════════════════════════════════════════
+   VYAPAARSETU - DESIGN TOKENS
+   Export-ready for Figma, CSS, Flutter, React Native
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────
+   COLOR PALETTE
+   ───────────────────────────────────────────────────────── */
+:root {
+  /* Primary */
+  --color-primary: #0066FF;
+  --color-primary-light: #3385FF;
+  --color-primary-dark: #0052CC;
+  
+  /* Secondary */
+  --color-secondary: #1A1A2E;
+  --color-secondary-light: #2D2D44;
+  
+  /* Accent */
+  --color-accent: #00D4AA;
+  --color-accent-light: #33DDBB;
+  --color-accent-dark: #00A885;
+  
+  /* Background */
+  --color-bg-primary: #F8F9FB;
+  --color-bg-secondary: #FFFFFF;
+  --color-bg-tertiary: #F3F4F6;
+  
+  /* Text */
+  --color-text-primary: #1A1A2E;
+  --color-text-secondary: #6B7280;
+  --color-text-tertiary: #9CA3AF;
+  --color-text-inverse: #FFFFFF;
+  
+  /* Status */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+  
+  /* Special */
+  --color-escrow: #8B5CF6;
+  --color-escrow-light: #A78BFA;
+  --color-blur: #E5E7EB;
+  
+  /* Border */
+  --color-border: #E5E7EB;
+  --color-border-focus: #0066FF;
+}
+
+/* ─────────────────────────────────────────────────────────
+   TYPOGRAPHY
+   ───────────────────────────────────────────────────────── */
+:root {
+  /* Font Family */
+  --font-family-sans: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'SF Mono', 'Fira Code', monospace;
+  
+  /* Font Sizes */
+  --font-size-h1: 28px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-h4: 18px;
+  --font-size-body-lg: 16px;
+  --font-size-body: 14px;
+  --font-size-body-sm: 13px;
+  --font-size-caption: 12px;
+  --font-size-overline: 11px;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+}
+
+/* ─────────────────────────────────────────────────────────
+   SPACING (8pt Grid System)
+   ───────────────────────────────────────────────────────── */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+}
+
+/* ─────────────────────────────────────────────────────────
+   BORDERS & RADIUS
+   ───────────────────────────────────────────────────────── */
+:root {
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+  
+  --border-width: 1px;
+  --border-width-thick: 2px;
+}
+
+/* ─────────────────────────────────────────────────────────
+   SHADOWS
+   ───────────────────────────────────────────────────────── */
+:root {
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-focus: 0 0 0 3px rgba(0, 102, 255, 0.2);
+}
+
+/* ─────────────────────────────────────────────────────────
+   LAYOUT
+   ───────────────────────────────────────────────────────── */
+:root {
+  /* Device */
+  --device-width: 440px;
+  --device-height: 956px;
+  --device-safe-area: 44px;
+  
+  /* Header */
+  --header-height: 56px;
+  
+  /* Tab Bar */
+  --tabbar-height: 72px;
+  
+  /* Card */
+  --card-padding: 16px;
+  --card-radius: 12px;
+  
+  /* Button */
+  --button-height: 52px;
+  --button-radius: 12px;
+  --button-height-sm: 40px;
+  --button-height-xs: 32px;
+}
+
+/* ─────────────────────────────────────────────────────────
+   ANIMATIONS
+   ───────────────────────────────────────────────────────── */
+:root {
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+  
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* ─────────────────────────────────────────────────────────
+   Z-INDEX
+   ───────────────────────────────────────────────────────── */
+:root {
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-popover: 400;
+  --z-tooltip: 500;
+  --z-toast: 600;
+}
+
+/* ─────────────────────────────────────────────────────────
+   FLEX & GRID
+   ───────────────────────────────────────────────────────── */
+:root {
+  --grid-columns: 4;
+  --grid-gap: 16px;
+  --container-padding: 16px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FIGMA TOKENS (for export)
+   ═══════════════════════════════════════════════════════════ */
+
+/*
+   Copy-paste these values into Figma Tokens plugin:
+   
+   {
+     "color": {
+       "primary": { "value": "#0066FF" },
+       "secondary": { "value": "#1A1A2E" },
+       "accent": { "value": "#00D4AA" },
+       "background": { "value": "#F8F9FB" },
+       "surface": { "value": "#FFFFFF" },
+       "text": {
+         "primary": { "value": "#1A1A2E" },
+         "secondary": { "value": "#6B7280" }
+       },
+       "success": { "value": "#10B981" },
+       "warning": { "value": "#F59E0B" },
+       "error": { "value": "#EF4444" },
+       "escrow": { "value": "#8B5CF6" }
+     },
+     "spacing": {
+       "xs": { "value": "4" },
+       "sm": { "value": "8" },
+       "md": { "value": "16" },
+       "lg": { "value": "24" },
+       "xl": { "value": "32" }
+     },
+     "radius": {
+       "sm": { "value": "8" },
+       "md": { "value": "12" },
+       "lg": { "value": "16" },
+       "full": { "value": "9999" }
+     },
+     "typography": {
+       "h1": { "value": "28/700" },
+       "h2": { "value": "24/600" },
+       "h3": { "value": "20/600" },
+       "body": { "value": "14/400" },
+       "button": { "value": "16/600" }
+     }
+   }
+*/

@@ -1,0 +1,1001 @@
+customer_id,customer_name,city,segment,lifetime_value_inr,total_orders,registration_date
+CUST-4001,Customer_1,Pune,New Registrant,48301.57,7,2025-01-24
+CUST-4002,Customer_2,Bengaluru,At Risk,19705.03,27,2025-02-24
+CUST-4003,Customer_3,Surat,New Registrant,26500.38,8,2025-07-21
+CUST-4004,Customer_4,Ahmedabad,At Risk,103507.88,13,2026-01-02
+CUST-4005,Customer_5,Chennai,High Value Loyal,95250.79,3,2025-11-21
+CUST-4006,Customer_6,Jaipur,High Value Loyal,97087.78,29,2025-08-23
+CUST-4007,Customer_7,Jaipur,New Registrant,18992.91,32,2025-01-03
+CUST-4008,Customer_8,Pune,High Value Loyal,70270.23,28,2025-10-27
+CUST-4009,Customer_9,Kolkata,New Registrant,98182.48,12,2025-12-21
+CUST-4010,Customer_10,Jaipur,Frequent Buyer,91985.6,9,2025-02-23
+CUST-4011,Customer_11,Hyderabad,New Registrant,76754.69,21,2025-09-16
+CUST-4012,Customer_12,Hyderabad,At Risk,122488.84,45,2026-01-26
+CUST-4013,Customer_13,Ahmedabad,Price Sensitive,51239.07,22,2025-05-31
+CUST-4014,Customer_14,Kolkata,Frequent Buyer,19427.05,39,2025-12-25
+CUST-4015,Customer_15,Pune,Price Sensitive,105776.62,36,2025-06-10
+CUST-4016,Customer_16,Pune,Frequent Buyer,27108.91,40,2026-01-01
+CUST-4017,Customer_17,Surat,Price Sensitive,115345.99,9,2025-12-30
+CUST-4018,Customer_18,Bengaluru,New Registrant,68955.21,41,2025-06-15
+CUST-4019,Customer_19,Delhi,Price Sensitive,71379.33,38,2025-10-20
+CUST-4020,Customer_20,Hyderabad,New Registrant,37526.18,28,2025-01-07
+CUST-4021,Customer_21,Pune,High Value Loyal,5595.84,10,2025-01-28
+CUST-4022,Customer_22,Mumbai,Frequent Buyer,35204.84,11,2025-05-27
+CUST-4023,Customer_23,Surat,Frequent Buyer,105324.27,45,2025-06-01
+CUST-4024,Customer_24,Ahmedabad,New Registrant,6457.53,29,2025-02-22
+CUST-4025,Customer_25,Jaipur,New Registrant,108443.08,42,2025-10-15
+CUST-4026,Customer_26,Hyderabad,Frequent Buyer,65087.98,45,2025-05-28
+CUST-4027,Customer_27,Mumbai,At Risk,49975.44,44,2025-06-10
+CUST-4028,Customer_28,Pune,High Value Loyal,4088.24,17,2025-04-14
+CUST-4029,Customer_29,Jaipur,At Risk,104172.98,41,2025-12-27
+CUST-4030,Customer_30,Chennai,New Registrant,69460.35,39,2025-04-11
+CUST-4031,Customer_31,Ahmedabad,Price Sensitive,57479.83,44,2025-02-08
+CUST-4032,Customer_32,Bengaluru,Frequent Buyer,92547.24,8,2025-07-13
+CUST-4033,Customer_33,Mumbai,At Risk,36691.25,17,2025-03-08
+CUST-4034,Customer_34,Bengaluru,New Registrant,106136.74,1,2025-06-19
+CUST-4035,Customer_35,Kolkata,Frequent Buyer,7392.72,21,2025-11-02
+CUST-4036,Customer_36,Mumbai,New Registrant,105784.65,20,2025-09-09
+CUST-4037,Customer_37,Jaipur,New Registrant,46365.48,21,2025-09-27
+CUST-4038,Customer_38,Ahmedabad,Frequent Buyer,66274.27,33,2025-03-23
+CUST-4039,Customer_39,Hyderabad,New Registrant,68286.9,6,2025-06-28
+CUST-4040,Customer_40,Ahmedabad,Frequent Buyer,83758.47,22,2025-07-04
+CUST-4041,Customer_41,Surat,Frequent Buyer,118912.76,40,2025-09-29
+CUST-4042,Customer_42,Kolkata,New Registrant,103401.83,42,2025-01-05
+CUST-4043,Customer_43,Delhi,Price Sensitive,57094.24,42,2025-11-11
+CUST-4044,Customer_44,Jaipur,Frequent Buyer,119964.86,44,2025-06-14
+CUST-4045,Customer_45,Hyderabad,High Value Loyal,49769.8,35,2026-01-06
+CUST-4046,Customer_46,Surat,High Value Loyal,114138.65,24,2025-09-21
+CUST-4047,Customer_47,Pune,At Risk,62133.58,19,2025-11-30
+CUST-4048,Customer_48,Ahmedabad,Price Sensitive,65452.1,7,2025-03-27
+CUST-4049,Customer_49,Pune,New Registrant,3398.0,5,2025-04-18
+CUST-4050,Customer_50,Ahmedabad,At Risk,104868.97,14,2025-10-03
+CUST-4051,Customer_51,Hyderabad,High Value Loyal,93994.13,10,2025-01-13
+CUST-4052,Customer_52,Kolkata,Price Sensitive,7141.07,5,2025-01-28
+CUST-4053,Customer_53,Bengaluru,Price Sensitive,70865.32,37,2025-04-27
+CUST-4054,Customer_54,Surat,At Risk,50033.99,41,2025-07-27
+CUST-4055,Customer_55,Hyderabad,Price Sensitive,4569.14,44,2025-03-02
+CUST-4056,Customer_56,Pune,High Value Loyal,81074.29,40,2025-02-02
+CUST-4057,Customer_57,Jaipur,High Value Loyal,88358.05,5,2025-07-03
+CUST-4058,Customer_58,Pune,High Value Loyal,38004.98,44,2025-06-04
+CUST-4059,Customer_59,Jaipur,High Value Loyal,36985.89,29,2025-07-15
+CUST-4060,Customer_60,Hyderabad,High Value Loyal,60563.49,35,2025-04-23
+CUST-4061,Customer_61,Bengaluru,At Risk,100104.38,35,2025-06-01
+CUST-4062,Customer_62,Bengaluru,Price Sensitive,85467.91,42,2025-07-11
+CUST-4063,Customer_63,Mumbai,New Registrant,109658.95,10,2025-03-05
+CUST-4064,Customer_64,Mumbai,High Value Loyal,72658.03,26,2025-10-03
+CUST-4065,Customer_65,Pune,High Value Loyal,39824.67,23,2025-04-19
+CUST-4066,Customer_66,Hyderabad,New Registrant,19950.75,12,2025-04-24
+CUST-4067,Customer_67,Jaipur,Price Sensitive,26304.96,12,2025-12-10
+CUST-4068,Customer_68,Jaipur,High Value Loyal,106795.0,36,2025-08-25
+CUST-4069,Customer_69,Pune,High Value Loyal,38104.95,5,2025-05-09
+CUST-4070,Customer_70,Delhi,Frequent Buyer,91384.68,32,2025-06-19
+CUST-4071,Customer_71,Chennai,Frequent Buyer,84733.71,16,2025-02-21
+CUST-4072,Customer_72,Surat,New Registrant,11051.59,13,2025-06-12
+CUST-4073,Customer_73,Kolkata,At Risk,42722.39,43,2025-06-06
+CUST-4074,Customer_74,Jaipur,Frequent Buyer,71780.12,24,2025-06-11
+CUST-4075,Customer_75,Hyderabad,Frequent Buyer,3091.91,16,2025-04-24
+CUST-4076,Customer_76,Hyderabad,Price Sensitive,105413.48,9,2025-12-14
+CUST-4077,Customer_77,Chennai,At Risk,59198.93,23,2026-02-01
+CUST-4078,Customer_78,Surat,At Risk,70079.8,12,2025-11-27
+CUST-4079,Customer_79,Jaipur,High Value Loyal,105619.64,9,2025-10-03
+CUST-4080,Customer_80,Ahmedabad,Price Sensitive,92359.22,41,2025-02-09
+CUST-4081,Customer_81,Delhi,High Value Loyal,106574.44,41,2025-01-16
+CUST-4082,Customer_82,Jaipur,New Registrant,52128.97,38,2025-04-19
+CUST-4083,Customer_83,Mumbai,New Registrant,34425.5,35,2025-08-30
+CUST-4084,Customer_84,Bengaluru,Price Sensitive,50581.05,38,2026-01-11
+CUST-4085,Customer_85,Surat,Frequent Buyer,59425.89,33,2025-02-16
+CUST-4086,Customer_86,Hyderabad,Price Sensitive,64015.49,43,2025-05-03
+CUST-4087,Customer_87,Jaipur,Frequent Buyer,95257.74,9,2025-08-17
+CUST-4088,Customer_88,Bengaluru,Frequent Buyer,71878.76,37,2025-12-04
+CUST-4089,Customer_89,Bengaluru,At Risk,117548.97,3,2025-04-23
+CUST-4090,Customer_90,Kolkata,Frequent Buyer,10200.49,24,2025-04-30
+CUST-4091,Customer_91,Mumbai,Frequent Buyer,65940.94,24,2025-07-18
+CUST-4092,Customer_92,Kolkata,At Risk,110490.12,3,2025-11-29
+CUST-4093,Customer_93,Chennai,High Value Loyal,88707.69,34,2025-11-21
+CUST-4094,Customer_94,Surat,Price Sensitive,73382.35,37,2025-03-31
+CUST-4095,Customer_95,Hyderabad,At Risk,47248.86,42,2025-02-09
+CUST-4096,Customer_96,Pune,Price Sensitive,48600.28,15,2025-09-22
+CUST-4097,Customer_97,Hyderabad,Price Sensitive,102611.5,23,2025-09-07
+CUST-4098,Customer_98,Kolkata,New Registrant,3308.22,9,2025-08-14
+CUST-4099,Customer_99,Bengaluru,Frequent Buyer,11943.31,42,2025-05-24
+CUST-4100,Customer_100,Ahmedabad,Frequent Buyer,25395.95,24,2025-11-05
+CUST-4101,Customer_101,Delhi,Frequent Buyer,53290.18,22,2026-01-04
+CUST-4102,Customer_102,Delhi,At Risk,85215.6,31,2025-04-18
+CUST-4103,Customer_103,Jaipur,Frequent Buyer,81789.26,27,2025-01-12
+CUST-4104,Customer_104,Ahmedabad,High Value Loyal,18165.93,38,2025-03-24
+CUST-4105,Customer_105,Bengaluru,New Registrant,7300.88,37,2025-03-17
+CUST-4106,Customer_106,Mumbai,Frequent Buyer,34136.81,12,2025-09-22
+CUST-4107,Customer_107,Hyderabad,New Registrant,121232.35,41,2025-01-10
+CUST-4108,Customer_108,Surat,High Value Loyal,29032.69,39,2025-08-30
+CUST-4109,Customer_109,Kolkata,Frequent Buyer,29372.07,27,2025-11-04
+CUST-4110,Customer_110,Bengaluru,New Registrant,103005.51,12,2025-11-16
+CUST-4111,Customer_111,Pune,Price Sensitive,23045.91,44,2025-06-25
+CUST-4112,Customer_112,Kolkata,New Registrant,74848.01,15,2025-07-13
+CUST-4113,Customer_113,Hyderabad,Frequent Buyer,15799.84,13,2025-09-25
+CUST-4114,Customer_114,Pune,At Risk,103747.99,39,2025-02-19
+CUST-4115,Customer_115,Bengaluru,At Risk,112947.01,39,2025-01-20
+CUST-4116,Customer_116,Pune,New Registrant,94666.94,6,2025-09-04
+CUST-4117,Customer_117,Bengaluru,New Registrant,68562.53,1,2026-02-01
+CUST-4118,Customer_118,Hyderabad,New Registrant,54033.79,3,2025-12-24
+CUST-4119,Customer_119,Pune,At Risk,30612.07,31,2026-01-29
+CUST-4120,Customer_120,Hyderabad,Price Sensitive,74658.39,45,2025-10-22
+CUST-4121,Customer_121,Delhi,At Risk,18900.68,31,2026-01-28
+CUST-4122,Customer_122,Ahmedabad,High Value Loyal,37200.17,35,2025-07-29
+CUST-4123,Customer_123,Surat,Frequent Buyer,3170.01,1,2025-10-23
+CUST-4124,Customer_124,Pune,High Value Loyal,66170.83,25,2025-12-02
+CUST-4125,Customer_125,Ahmedabad,Price Sensitive,52583.52,7,2025-03-21
+CUST-4126,Customer_126,Hyderabad,New Registrant,33570.01,35,2025-08-05
+CUST-4127,Customer_127,Jaipur,Price Sensitive,77455.38,44,2025-07-23
+CUST-4128,Customer_128,Ahmedabad,At Risk,70132.86,36,2025-09-05
+CUST-4129,Customer_129,Bengaluru,Price Sensitive,70988.99,31,2025-05-10
+CUST-4130,Customer_130,Surat,New Registrant,44683.65,26,2026-01-12
+CUST-4131,Customer_131,Bengaluru,High Value Loyal,94107.24,29,2026-02-05
+CUST-4132,Customer_132,Bengaluru,High Value Loyal,28771.12,26,2025-06-23
+CUST-4133,Customer_133,Pune,New Registrant,87889.53,4,2025-03-24
+CUST-4134,Customer_134,Hyderabad,High Value Loyal,101035.25,10,2025-08-30
+CUST-4135,Customer_135,Jaipur,At Risk,13297.23,17,2025-04-24
+CUST-4136,Customer_136,Chennai,High Value Loyal,77106.04,25,2025-07-25
+CUST-4137,Customer_137,Jaipur,New Registrant,37592.48,39,2025-01-30
+CUST-4138,Customer_138,Bengaluru,At Risk,56274.08,13,2025-12-03
+CUST-4139,Customer_139,Pune,Price Sensitive,26356.45,39,2025-09-19
+CUST-4140,Customer_140,Pune,Frequent Buyer,77860.77,44,2025-01-19
+CUST-4141,Customer_141,Chennai,Frequent Buyer,82739.84,11,2025-02-14
+CUST-4142,Customer_142,Surat,At Risk,45758.14,26,2025-07-27
+CUST-4143,Customer_143,Jaipur,Frequent Buyer,65923.48,5,2025-02-16
+CUST-4144,Customer_144,Pune,Price Sensitive,91451.99,36,2025-10-26
+CUST-4145,Customer_145,Chennai,Price Sensitive,120502.74,18,2025-04-26
+CUST-4146,Customer_146,Jaipur,Frequent Buyer,58207.98,26,2025-10-22
+CUST-4147,Customer_147,Mumbai,Price Sensitive,23941.76,33,2025-02-24
+CUST-4148,Customer_148,Pune,High Value Loyal,64138.22,22,2025-03-01
+CUST-4149,Customer_149,Pune,Price Sensitive,109823.85,37,2025-05-09
+CUST-4150,Customer_150,Kolkata,At Risk,71488.15,16,2026-01-23
+CUST-4151,Customer_151,Chennai,At Risk,85995.35,38,2025-01-15
+CUST-4152,Customer_152,Kolkata,High Value Loyal,34082.92,25,2025-11-21
+CUST-4153,Customer_153,Ahmedabad,Frequent Buyer,100519.77,27,2025-06-30
+CUST-4154,Customer_154,Pune,New Registrant,3691.09,17,2025-05-08
+CUST-4155,Customer_155,Surat,High Value Loyal,51369.0,22,2025-02-08
+CUST-4156,Customer_156,Pune,Frequent Buyer,60878.04,23,2025-04-22
+CUST-4157,Customer_157,Jaipur,Price Sensitive,24891.1,44,2025-04-08
+CUST-4158,Customer_158,Kolkata,Frequent Buyer,31270.52,16,2025-05-16
+CUST-4159,Customer_159,Ahmedabad,Frequent Buyer,27338.9,16,2025-11-13
+CUST-4160,Customer_160,Chennai,Frequent Buyer,97919.96,8,2025-02-10
+CUST-4161,Customer_161,Kolkata,New Registrant,3311.4,35,2025-01-22
+CUST-4162,Customer_162,Kolkata,Price Sensitive,78531.77,32,2025-10-22
+CUST-4163,Customer_163,Surat,At Risk,24901.8,33,2025-05-24
+CUST-4164,Customer_164,Hyderabad,Frequent Buyer,94395.75,9,2025-01-28
+CUST-4165,Customer_165,Pune,At Risk,61094.21,35,2025-01-17
+CUST-4166,Customer_166,Pune,Price Sensitive,50730.32,44,2026-02-02
+CUST-4167,Customer_167,Bengaluru,At Risk,122122.13,45,2025-09-23
+CUST-4168,Customer_168,Kolkata,Price Sensitive,86928.29,1,2025-12-12
+CUST-4169,Customer_169,Ahmedabad,At Risk,73673.51,21,2025-07-05
+CUST-4170,Customer_170,Jaipur,Price Sensitive,25426.17,17,2025-05-02
+CUST-4171,Customer_171,Surat,At Risk,119919.54,22,2025-07-07
+CUST-4172,Customer_172,Bengaluru,At Risk,54433.0,27,2025-12-25
+CUST-4173,Customer_173,Chennai,Price Sensitive,107154.95,18,2025-08-19
+CUST-4174,Customer_174,Bengaluru,New Registrant,18564.55,37,2025-12-18
+CUST-4175,Customer_175,Ahmedabad,High Value Loyal,90799.89,16,2025-10-12
+CUST-4176,Customer_176,Hyderabad,At Risk,26517.74,10,2025-08-31
+CUST-4177,Customer_177,Mumbai,Frequent Buyer,54136.28,9,2025-11-19
+CUST-4178,Customer_178,Pune,New Registrant,90768.64,32,2025-06-03
+CUST-4179,Customer_179,Surat,New Registrant,107666.49,4,2025-07-23
+CUST-4180,Customer_180,Delhi,Frequent Buyer,9854.46,17,2025-09-01
+CUST-4181,Customer_181,Delhi,At Risk,93712.67,17,2025-07-04
+CUST-4182,Customer_182,Chennai,New Registrant,70792.71,17,2025-06-26
+CUST-4183,Customer_183,Mumbai,At Risk,17351.59,44,2025-11-07
+CUST-4184,Customer_184,Ahmedabad,New Registrant,73047.07,42,2025-10-03
+CUST-4185,Customer_185,Bengaluru,Price Sensitive,46000.86,44,2025-09-19
+CUST-4186,Customer_186,Kolkata,At Risk,111479.98,25,2025-11-11
+CUST-4187,Customer_187,Surat,At Risk,79884.74,10,2025-03-27
+CUST-4188,Customer_188,Chennai,At Risk,79830.99,37,2025-07-27
+CUST-4189,Customer_189,Delhi,High Value Loyal,22344.94,15,2025-06-10
+CUST-4190,Customer_190,Chennai,Price Sensitive,89528.1,39,2025-11-27
+CUST-4191,Customer_191,Hyderabad,Price Sensitive,111242.25,24,2026-01-18
+CUST-4192,Customer_192,Jaipur,New Registrant,120776.94,27,2025-03-27
+CUST-4193,Customer_193,Bengaluru,High Value Loyal,17817.39,16,2025-12-05
+CUST-4194,Customer_194,Surat,High Value Loyal,28295.01,26,2025-02-22
+CUST-4195,Customer_195,Delhi,High Value Loyal,117257.22,31,2025-10-08
+CUST-4196,Customer_196,Mumbai,High Value Loyal,96939.38,34,2026-01-27
+CUST-4197,Customer_197,Delhi,High Value Loyal,34650.4,10,2025-02-13
+CUST-4198,Customer_198,Hyderabad,Price Sensitive,30596.1,19,2025-08-15
+CUST-4199,Customer_199,Bengaluru,Frequent Buyer,67025.94,11,2025-01-15
+CUST-4200,Customer_200,Mumbai,Price Sensitive,107895.18,21,2025-09-01
+CUST-4201,Customer_201,Kolkata,New Registrant,117020.05,36,2025-08-16
+CUST-4202,Customer_202,Bengaluru,New Registrant,24186.99,39,2025-08-22
+CUST-4203,Customer_203,Jaipur,At Risk,66623.83,41,2025-10-01
+CUST-4204,Customer_204,Surat,Price Sensitive,61502.33,15,2025-02-15
+CUST-4205,Customer_205,Kolkata,Price Sensitive,47308.46,17,2025-03-21
+CUST-4206,Customer_206,Surat,High Value Loyal,2511.31,9,2025-06-26
+CUST-4207,Customer_207,Surat,At Risk,68049.61,45,2025-09-09
+CUST-4208,Customer_208,Kolkata,Price Sensitive,3618.74,28,2025-05-30
+CUST-4209,Customer_209,Jaipur,Frequent Buyer,100104.0,36,2025-07-11
+CUST-4210,Customer_210,Ahmedabad,At Risk,110564.85,28,2025-07-22
+CUST-4211,Customer_211,Ahmedabad,Frequent Buyer,90079.9,42,2025-07-19
+CUST-4212,Customer_212,Hyderabad,Frequent Buyer,34715.08,28,2025-11-17
+CUST-4213,Customer_213,Ahmedabad,New Registrant,96155.94,40,2025-12-22
+CUST-4214,Customer_214,Surat,Price Sensitive,81935.99,35,2025-05-18
+CUST-4215,Customer_215,Hyderabad,Frequent Buyer,107051.55,12,2025-03-11
+CUST-4216,Customer_216,Surat,High Value Loyal,80519.36,40,2025-08-20
+CUST-4217,Customer_217,Surat,New Registrant,62769.51,21,2025-01-10
+CUST-4218,Customer_218,Bengaluru,High Value Loyal,121290.24,2,2025-04-06
+CUST-4219,Customer_219,Delhi,Price Sensitive,35476.4,29,2026-01-08
+CUST-4220,Customer_220,Mumbai,Frequent Buyer,13549.13,1,2025-09-10
+CUST-4221,Customer_221,Ahmedabad,Price Sensitive,53979.77,32,2025-07-10
+CUST-4222,Customer_222,Kolkata,High Value Loyal,42955.46,10,2025-01-29
+CUST-4223,Customer_223,Surat,At Risk,11244.63,31,2025-04-03
+CUST-4224,Customer_224,Ahmedabad,Price Sensitive,102613.21,1,2025-03-04
+CUST-4225,Customer_225,Ahmedabad,At Risk,96975.1,29,2025-05-07
+CUST-4226,Customer_226,Mumbai,Frequent Buyer,58952.24,7,2025-09-24
+CUST-4227,Customer_227,Ahmedabad,At Risk,50167.56,20,2025-06-15
+CUST-4228,Customer_228,Bengaluru,High Value Loyal,93728.76,36,2025-09-24
+CUST-4229,Customer_229,Delhi,Price Sensitive,61450.63,20,2025-04-12
+CUST-4230,Customer_230,Chennai,High Value Loyal,108298.06,14,2025-02-27
+CUST-4231,Customer_231,Ahmedabad,At Risk,42252.9,11,2025-05-22
+CUST-4232,Customer_232,Jaipur,High Value Loyal,50986.52,16,2025-01-05
+CUST-4233,Customer_233,Mumbai,New Registrant,98475.72,31,2025-12-19
+CUST-4234,Customer_234,Jaipur,Frequent Buyer,47996.34,6,2025-05-08
+CUST-4235,Customer_235,Bengaluru,At Risk,13696.69,40,2025-06-23
+CUST-4236,Customer_236,Mumbai,High Value Loyal,46050.92,10,2025-12-26
+CUST-4237,Customer_237,Pune,High Value Loyal,17913.86,15,2025-06-12
+CUST-4238,Customer_238,Pune,Price Sensitive,101176.86,29,2026-01-11
+CUST-4239,Customer_239,Ahmedabad,High Value Loyal,86933.12,23,2026-01-06
+CUST-4240,Customer_240,Bengaluru,Price Sensitive,112586.22,32,2025-12-28
+CUST-4241,Customer_241,Kolkata,New Registrant,38602.54,45,2025-09-08
+CUST-4242,Customer_242,Ahmedabad,New Registrant,25361.77,23,2025-06-15
+CUST-4243,Customer_243,Kolkata,Price Sensitive,108788.58,39,2025-10-11
+CUST-4244,Customer_244,Bengaluru,High Value Loyal,67564.34,29,2025-06-01
+CUST-4245,Customer_245,Surat,New Registrant,47471.31,1,2026-02-02
+CUST-4246,Customer_246,Pune,At Risk,92373.07,2,2025-11-14
+CUST-4247,Customer_247,Chennai,New Registrant,31751.35,5,2025-12-04
+CUST-4248,Customer_248,Pune,At Risk,25759.01,44,2025-09-12
+CUST-4249,Customer_249,Pune,Frequent Buyer,77597.31,21,2025-07-29
+CUST-4250,Customer_250,Chennai,High Value Loyal,14291.4,43,2025-02-04
+CUST-4251,Customer_251,Mumbai,Frequent Buyer,24383.25,3,2025-04-14
+CUST-4252,Customer_252,Delhi,At Risk,25973.04,3,2025-10-20
+CUST-4253,Customer_253,Hyderabad,At Risk,66913.12,45,2025-10-30
+CUST-4254,Customer_254,Surat,High Value Loyal,47378.37,39,2026-01-03
+CUST-4255,Customer_255,Delhi,High Value Loyal,116450.85,14,2025-12-02
+CUST-4256,Customer_256,Kolkata,High Value Loyal,59837.25,41,2025-02-01
+CUST-4257,Customer_257,Chennai,New Registrant,93575.99,27,2025-07-08
+CUST-4258,Customer_258,Mumbai,New Registrant,35062.42,3,2026-01-11
+CUST-4259,Customer_259,Delhi,Price Sensitive,12047.08,14,2025-09-23
+CUST-4260,Customer_260,Delhi,High Value Loyal,91333.56,35,2025-07-17
+CUST-4261,Customer_261,Ahmedabad,Frequent Buyer,66958.52,16,2025-10-19
+CUST-4262,Customer_262,Bengaluru,New Registrant,94276.31,27,2026-01-18
+CUST-4263,Customer_263,Delhi,New Registrant,46350.51,30,2025-12-26
+CUST-4264,Customer_264,Hyderabad,High Value Loyal,22934.14,12,2025-10-09
+CUST-4265,Customer_265,Hyderabad,New Registrant,43845.33,11,2025-10-01
+CUST-4266,Customer_266,Jaipur,At Risk,116856.2,21,2025-10-09
+CUST-4267,Customer_267,Chennai,Price Sensitive,53012.05,41,2025-08-09
+CUST-4268,Customer_268,Chennai,New Registrant,31988.51,35,2025-04-20
+CUST-4269,Customer_269,Hyderabad,New Registrant,115953.0,17,2025-07-04
+CUST-4270,Customer_270,Kolkata,At Risk,120078.49,1,2026-01-07
+CUST-4271,Customer_271,Mumbai,Price Sensitive,75480.95,34,2025-03-11
+CUST-4272,Customer_272,Surat,High Value Loyal,39290.91,15,2025-04-20
+CUST-4273,Customer_273,Chennai,High Value Loyal,97011.58,45,2025-05-22
+CUST-4274,Customer_274,Pune,New Registrant,70649.58,37,2025-03-21
+CUST-4275,Customer_275,Delhi,High Value Loyal,58895.3,10,2025-03-12
+CUST-4276,Customer_276,Surat,Price Sensitive,111479.11,16,2025-04-30
+CUST-4277,Customer_277,Surat,Price Sensitive,13758.38,26,2025-10-19
+CUST-4278,Customer_278,Ahmedabad,High Value Loyal,91138.61,31,2025-03-30
+CUST-4279,Customer_279,Kolkata,New Registrant,102890.62,7,2025-11-01
+CUST-4280,Customer_280,Surat,High Value Loyal,92021.7,37,2025-07-15
+CUST-4281,Customer_281,Delhi,High Value Loyal,115429.26,22,2025-06-28
+CUST-4282,Customer_282,Hyderabad,At Risk,116455.15,8,2026-01-30
+CUST-4283,Customer_283,Ahmedabad,New Registrant,116260.01,41,2026-02-03
+CUST-4284,Customer_284,Hyderabad,High Value Loyal,39835.97,3,2025-06-13
+CUST-4285,Customer_285,Pune,New Registrant,20823.55,33,2025-12-24
+CUST-4286,Customer_286,Ahmedabad,Frequent Buyer,8688.68,26,2025-08-17
+CUST-4287,Customer_287,Jaipur,New Registrant,64329.34,15,2025-08-10
+CUST-4288,Customer_288,Surat,At Risk,20631.52,22,2025-02-12
+CUST-4289,Customer_289,Kolkata,New Registrant,93801.09,36,2025-07-24
+CUST-4290,Customer_290,Surat,High Value Loyal,51319.56,28,2026-02-01
+CUST-4291,Customer_291,Bengaluru,Frequent Buyer,61413.01,13,2025-09-07
+CUST-4292,Customer_292,Hyderabad,New Registrant,26522.16,40,2026-01-12
+CUST-4293,Customer_293,Pune,Frequent Buyer,32183.6,18,2026-02-02
+CUST-4294,Customer_294,Hyderabad,Price Sensitive,86380.4,37,2025-02-15
+CUST-4295,Customer_295,Delhi,At Risk,54383.72,23,2025-04-08
+CUST-4296,Customer_296,Chennai,Price Sensitive,75249.95,2,2026-01-30
+CUST-4297,Customer_297,Surat,Frequent Buyer,123487.36,40,2025-08-15
+CUST-4298,Customer_298,Jaipur,Frequent Buyer,56456.77,15,2025-04-13
+CUST-4299,Customer_299,Chennai,Frequent Buyer,95322.39,6,2025-02-27
+CUST-4300,Customer_300,Mumbai,Frequent Buyer,118745.26,10,2025-05-28
+CUST-4301,Customer_301,Mumbai,Price Sensitive,87489.92,8,2025-06-06
+CUST-4302,Customer_302,Kolkata,At Risk,5286.64,14,2026-01-14
+CUST-4303,Customer_303,Pune,Frequent Buyer,27465.67,34,2026-01-20
+CUST-4304,Customer_304,Surat,New Registrant,61670.73,10,2025-12-22
+CUST-4305,Customer_305,Mumbai,At Risk,73918.11,43,2025-09-27
+CUST-4306,Customer_306,Mumbai,Price Sensitive,23364.16,19,2025-04-13
+CUST-4307,Customer_307,Jaipur,Price Sensitive,9002.94,42,2025-01-05
+CUST-4308,Customer_308,Delhi,At Risk,83395.67,43,2025-12-04
+CUST-4309,Customer_309,Chennai,High Value Loyal,4837.09,42,2025-07-17
+CUST-4310,Customer_310,Ahmedabad,At Risk,64796.19,7,2025-06-11
+CUST-4311,Customer_311,Kolkata,New Registrant,67616.18,12,2025-04-12
+CUST-4312,Customer_312,Pune,At Risk,71184.22,2,2025-01-21
+CUST-4313,Customer_313,Ahmedabad,New Registrant,39853.62,32,2025-07-21
+CUST-4314,Customer_314,Bengaluru,High Value Loyal,44980.54,23,2025-07-01
+CUST-4315,Customer_315,Surat,Frequent Buyer,124509.32,33,2025-05-22
+CUST-4316,Customer_316,Mumbai,Price Sensitive,110137.97,2,2025-10-12
+CUST-4317,Customer_317,Surat,Frequent Buyer,21084.25,26,2025-12-03
+CUST-4318,Customer_318,Bengaluru,High Value Loyal,91911.48,34,2025-12-14
+CUST-4319,Customer_319,Jaipur,Frequent Buyer,53623.33,37,2025-03-20
+CUST-4320,Customer_320,Hyderabad,Price Sensitive,113942.59,22,2025-08-18
+CUST-4321,Customer_321,Pune,Frequent Buyer,27827.77,9,2025-10-25
+CUST-4322,Customer_322,Pune,Frequent Buyer,108166.99,20,2025-12-19
+CUST-4323,Customer_323,Pune,Frequent Buyer,55182.88,10,2025-12-02
+CUST-4324,Customer_324,Jaipur,Frequent Buyer,41393.29,36,2025-09-30
+CUST-4325,Customer_325,Delhi,Frequent Buyer,41405.7,10,2026-01-08
+CUST-4326,Customer_326,Mumbai,Price Sensitive,110316.16,27,2025-07-30
+CUST-4327,Customer_327,Surat,At Risk,93837.19,41,2026-01-14
+CUST-4328,Customer_328,Surat,Frequent Buyer,97940.72,7,2025-03-09
+CUST-4329,Customer_329,Bengaluru,High Value Loyal,95899.82,40,2025-11-12
+CUST-4330,Customer_330,Surat,New Registrant,71962.78,15,2025-11-02
+CUST-4331,Customer_331,Ahmedabad,Frequent Buyer,86703.79,23,2025-02-10
+CUST-4332,Customer_332,Kolkata,Frequent Buyer,64034.76,39,2025-08-29
+CUST-4333,Customer_333,Chennai,Frequent Buyer,106885.86,32,2025-08-31
+CUST-4334,Customer_334,Bengaluru,Frequent Buyer,26174.33,3,2025-07-29
+CUST-4335,Customer_335,Mumbai,Price Sensitive,118899.26,15,2026-01-16
+CUST-4336,Customer_336,Ahmedabad,Frequent Buyer,10601.7,29,2025-11-12
+CUST-4337,Customer_337,Kolkata,Price Sensitive,108679.93,16,2025-08-07
+CUST-4338,Customer_338,Hyderabad,High Value Loyal,76971.42,25,2026-01-04
+CUST-4339,Customer_339,Chennai,At Risk,77409.35,37,2025-11-01
+CUST-4340,Customer_340,Pune,New Registrant,81070.74,3,2025-09-24
+CUST-4341,Customer_341,Delhi,At Risk,58470.3,3,2025-05-06
+CUST-4342,Customer_342,Pune,New Registrant,50962.37,3,2025-10-13
+CUST-4343,Customer_343,Hyderabad,New Registrant,96232.08,4,2025-04-08
+CUST-4344,Customer_344,Surat,At Risk,51259.89,20,2026-02-01
+CUST-4345,Customer_345,Surat,At Risk,22894.61,19,2025-11-10
+CUST-4346,Customer_346,Mumbai,New Registrant,113200.27,30,2025-11-27
+CUST-4347,Customer_347,Kolkata,High Value Loyal,91024.23,8,2025-04-03
+CUST-4348,Customer_348,Jaipur,New Registrant,19075.07,27,2025-06-15
+CUST-4349,Customer_349,Kolkata,High Value Loyal,24412.63,38,2025-12-31
+CUST-4350,Customer_350,Ahmedabad,At Risk,13547.01,21,2025-12-21
+CUST-4351,Customer_351,Bengaluru,High Value Loyal,13670.93,29,2025-11-21
+CUST-4352,Customer_352,Chennai,High Value Loyal,66667.62,25,2026-01-08
+CUST-4353,Customer_353,Pune,New Registrant,118844.85,25,2025-10-09
+CUST-4354,Customer_354,Hyderabad,High Value Loyal,96611.89,22,2025-10-17
+CUST-4355,Customer_355,Bengaluru,Frequent Buyer,108930.27,12,2026-01-29
+CUST-4356,Customer_356,Mumbai,At Risk,40237.62,29,2025-05-28
+CUST-4357,Customer_357,Bengaluru,High Value Loyal,112571.38,13,2025-01-02
+CUST-4358,Customer_358,Jaipur,Price Sensitive,3995.45,32,2025-09-13
+CUST-4359,Customer_359,Pune,High Value Loyal,76978.03,32,2025-05-02
+CUST-4360,Customer_360,Ahmedabad,New Registrant,83285.15,30,2025-07-29
+CUST-4361,Customer_361,Kolkata,High Value Loyal,76149.03,1,2025-05-06
+CUST-4362,Customer_362,Pune,Price Sensitive,78421.34,36,2025-04-17
+CUST-4363,Customer_363,Mumbai,Frequent Buyer,20661.38,42,2025-06-28
+CUST-4364,Customer_364,Mumbai,Frequent Buyer,107094.09,43,2025-10-23
+CUST-4365,Customer_365,Jaipur,Price Sensitive,43061.11,6,2025-01-26
+CUST-4366,Customer_366,Delhi,At Risk,124232.56,11,2025-12-11
+CUST-4367,Customer_367,Surat,New Registrant,83463.26,45,2025-11-01
+CUST-4368,Customer_368,Jaipur,New Registrant,24233.86,30,2026-01-19
+CUST-4369,Customer_369,Jaipur,Price Sensitive,116606.28,6,2026-01-29
+CUST-4370,Customer_370,Surat,Price Sensitive,47649.75,25,2025-02-04
+CUST-4371,Customer_371,Hyderabad,New Registrant,10453.42,31,2025-03-10
+CUST-4372,Customer_372,Delhi,Price Sensitive,42828.04,27,2025-09-26
+CUST-4373,Customer_373,Ahmedabad,Frequent Buyer,77476.58,7,2025-10-20
+CUST-4374,Customer_374,Pune,High Value Loyal,61748.72,45,2025-11-06
+CUST-4375,Customer_375,Surat,At Risk,77083.46,21,2025-05-13
+CUST-4376,Customer_376,Pune,New Registrant,124390.48,23,2025-03-08
+CUST-4377,Customer_377,Jaipur,New Registrant,63308.62,41,2025-09-12
+CUST-4378,Customer_378,Kolkata,Frequent Buyer,110748.8,15,2025-12-29
+CUST-4379,Customer_379,Surat,Frequent Buyer,2693.66,2,2025-08-27
+CUST-4380,Customer_380,Delhi,Frequent Buyer,100446.63,27,2025-07-31
+CUST-4381,Customer_381,Mumbai,Price Sensitive,45332.13,41,2025-04-19
+CUST-4382,Customer_382,Mumbai,Frequent Buyer,87027.09,17,2025-02-04
+CUST-4383,Customer_383,Surat,Price Sensitive,64569.48,21,2026-01-28
+CUST-4384,Customer_384,Mumbai,High Value Loyal,86514.88,22,2025-07-22
+CUST-4385,Customer_385,Jaipur,New Registrant,120113.82,12,2025-04-10
+CUST-4386,Customer_386,Chennai,Price Sensitive,115479.27,31,2025-08-31
+CUST-4387,Customer_387,Mumbai,Frequent Buyer,61483.2,41,2025-08-24
+CUST-4388,Customer_388,Pune,Price Sensitive,59152.58,27,2026-01-16
+CUST-4389,Customer_389,Mumbai,New Registrant,39169.61,44,2025-06-11
+CUST-4390,Customer_390,Pune,New Registrant,4793.01,37,2025-12-17
+CUST-4391,Customer_391,Chennai,Price Sensitive,10611.1,10,2025-05-24
+CUST-4392,Customer_392,Mumbai,Price Sensitive,122993.3,41,2025-10-01
+CUST-4393,Customer_393,Bengaluru,New Registrant,76696.91,12,2025-11-01
+CUST-4394,Customer_394,Delhi,Price Sensitive,88895.11,21,2025-12-30
+CUST-4395,Customer_395,Mumbai,Price Sensitive,53199.02,32,2025-05-02
+CUST-4396,Customer_396,Chennai,At Risk,104108.54,20,2025-04-21
+CUST-4397,Customer_397,Pune,Price Sensitive,23939.06,24,2025-01-20
+CUST-4398,Customer_398,Ahmedabad,High Value Loyal,56862.33,2,2025-09-05
+CUST-4399,Customer_399,Pune,Frequent Buyer,25800.93,31,2026-01-11
+CUST-4400,Customer_400,Pune,Price Sensitive,97502.82,10,2026-01-29
+CUST-4401,Customer_401,Delhi,New Registrant,85397.87,9,2025-04-16
+CUST-4402,Customer_402,Mumbai,At Risk,49979.56,34,2025-03-01
+CUST-4403,Customer_403,Mumbai,Price Sensitive,116711.32,44,2025-11-01
+CUST-4404,Customer_404,Delhi,Price Sensitive,59692.3,3,2025-02-22
+CUST-4405,Customer_405,Pune,Price Sensitive,5253.83,20,2025-11-24
+CUST-4406,Customer_406,Ahmedabad,Price Sensitive,27068.05,19,2025-05-22
+CUST-4407,Customer_407,Pune,Price Sensitive,97166.42,43,2025-03-02
+CUST-4408,Customer_408,Surat,Frequent Buyer,21793.26,8,2025-01-08
+CUST-4409,Customer_409,Jaipur,New Registrant,65472.43,14,2025-10-05
+CUST-4410,Customer_410,Chennai,New Registrant,41514.4,10,2025-12-27
+CUST-4411,Customer_411,Surat,New Registrant,32491.07,5,2025-06-09
+CUST-4412,Customer_412,Jaipur,Price Sensitive,68720.69,4,2025-03-08
+CUST-4413,Customer_413,Mumbai,At Risk,113153.32,4,2025-02-24
+CUST-4414,Customer_414,Hyderabad,High Value Loyal,13049.65,26,2025-04-02
+CUST-4415,Customer_415,Jaipur,New Registrant,79610.16,45,2025-12-25
+CUST-4416,Customer_416,Kolkata,New Registrant,46063.98,22,2025-04-12
+CUST-4417,Customer_417,Pune,High Value Loyal,121776.03,30,2025-10-18
+CUST-4418,Customer_418,Bengaluru,High Value Loyal,102074.25,45,2025-08-28
+CUST-4419,Customer_419,Delhi,At Risk,40522.98,42,2025-12-30
+CUST-4420,Customer_420,Kolkata,At Risk,30882.54,15,2025-03-15
+CUST-4421,Customer_421,Jaipur,Price Sensitive,114325.55,26,2025-04-04
+CUST-4422,Customer_422,Chennai,Price Sensitive,58027.18,2,2025-02-03
+CUST-4423,Customer_423,Kolkata,High Value Loyal,45551.5,30,2025-03-29
+CUST-4424,Customer_424,Surat,Price Sensitive,76543.93,9,2025-09-18
+CUST-4425,Customer_425,Delhi,At Risk,102650.23,7,2025-06-16
+CUST-4426,Customer_426,Pune,High Value Loyal,99572.79,35,2025-08-25
+CUST-4427,Customer_427,Hyderabad,New Registrant,53146.63,40,2025-05-05
+CUST-4428,Customer_428,Pune,Frequent Buyer,121801.74,25,2025-02-03
+CUST-4429,Customer_429,Chennai,Frequent Buyer,102204.67,38,2025-08-09
+CUST-4430,Customer_430,Hyderabad,New Registrant,98947.53,35,2025-12-22
+CUST-4431,Customer_431,Ahmedabad,Frequent Buyer,83670.0,5,2026-01-14
+CUST-4432,Customer_432,Jaipur,At Risk,16504.55,39,2025-08-26
+CUST-4433,Customer_433,Chennai,New Registrant,14462.6,29,2025-04-01
+CUST-4434,Customer_434,Surat,At Risk,11026.94,7,2025-12-17
+CUST-4435,Customer_435,Jaipur,At Risk,42607.51,42,2025-12-05
+CUST-4436,Customer_436,Mumbai,High Value Loyal,29157.44,9,2025-10-25
+CUST-4437,Customer_437,Mumbai,Frequent Buyer,83457.97,29,2025-09-30
+CUST-4438,Customer_438,Surat,At Risk,77907.59,29,2025-04-11
+CUST-4439,Customer_439,Ahmedabad,Price Sensitive,39217.58,44,2025-06-05
+CUST-4440,Customer_440,Hyderabad,Price Sensitive,123810.43,38,2025-01-05
+CUST-4441,Customer_441,Jaipur,New Registrant,52014.18,9,2025-05-31
+CUST-4442,Customer_442,Mumbai,Price Sensitive,112881.77,4,2025-01-01
+CUST-4443,Customer_443,Pune,Price Sensitive,15938.04,19,2025-01-16
+CUST-4444,Customer_444,Ahmedabad,At Risk,88522.18,26,2025-11-17
+CUST-4445,Customer_445,Chennai,At Risk,52239.0,28,2025-10-07
+CUST-4446,Customer_446,Ahmedabad,Frequent Buyer,60671.75,13,2025-10-12
+CUST-4447,Customer_447,Hyderabad,Price Sensitive,105395.43,10,2025-05-28
+CUST-4448,Customer_448,Bengaluru,Frequent Buyer,3921.34,42,2025-01-09
+CUST-4449,Customer_449,Bengaluru,At Risk,83096.02,9,2025-02-13
+CUST-4450,Customer_450,Bengaluru,At Risk,107868.71,45,2025-11-06
+CUST-4451,Customer_451,Hyderabad,New Registrant,24525.18,33,2025-08-06
+CUST-4452,Customer_452,Pune,At Risk,49627.55,15,2025-04-06
+CUST-4453,Customer_453,Hyderabad,New Registrant,3410.17,32,2026-01-10
+CUST-4454,Customer_454,Ahmedabad,New Registrant,35483.18,35,2025-10-23
+CUST-4455,Customer_455,Chennai,High Value Loyal,122333.6,37,2025-09-05
+CUST-4456,Customer_456,Chennai,High Value Loyal,73582.93,45,2025-02-10
+CUST-4457,Customer_457,Bengaluru,New Registrant,122988.44,18,2025-08-27
+CUST-4458,Customer_458,Pune,High Value Loyal,66611.21,40,2025-02-15
+CUST-4459,Customer_459,Ahmedabad,At Risk,79756.2,43,2025-12-09
+CUST-4460,Customer_460,Delhi,New Registrant,100267.03,20,2025-11-10
+CUST-4461,Customer_461,Mumbai,Price Sensitive,68041.57,1,2025-08-29
+CUST-4462,Customer_462,Kolkata,New Registrant,113491.75,37,2026-01-11
+CUST-4463,Customer_463,Chennai,At Risk,45732.03,19,2025-05-29
+CUST-4464,Customer_464,Bengaluru,High Value Loyal,87643.77,39,2026-01-19
+CUST-4465,Customer_465,Surat,New Registrant,34404.28,41,2025-08-31
+CUST-4466,Customer_466,Jaipur,Frequent Buyer,72675.35,43,2025-05-30
+CUST-4467,Customer_467,Jaipur,High Value Loyal,37634.92,6,2025-03-06
+CUST-4468,Customer_468,Pune,High Value Loyal,106802.04,18,2025-05-10
+CUST-4469,Customer_469,Bengaluru,New Registrant,36919.06,17,2025-01-08
+CUST-4470,Customer_470,Delhi,New Registrant,23890.2,38,2026-01-14
+CUST-4471,Customer_471,Bengaluru,At Risk,47796.44,12,2025-05-14
+CUST-4472,Customer_472,Ahmedabad,At Risk,24649.13,34,2025-01-17
+CUST-4473,Customer_473,Chennai,High Value Loyal,120999.84,39,2025-03-20
+CUST-4474,Customer_474,Kolkata,At Risk,96870.05,16,2025-12-05
+CUST-4475,Customer_475,Kolkata,Frequent Buyer,28329.95,23,2025-01-28
+CUST-4476,Customer_476,Surat,High Value Loyal,8934.09,30,2025-07-24
+CUST-4477,Customer_477,Kolkata,Price Sensitive,60842.61,35,2025-04-30
+CUST-4478,Customer_478,Hyderabad,At Risk,60637.22,10,2025-09-29
+CUST-4479,Customer_479,Hyderabad,High Value Loyal,37877.05,29,2025-07-15
+CUST-4480,Customer_480,Chennai,New Registrant,86152.35,3,2025-02-19
+CUST-4481,Customer_481,Pune,Price Sensitive,119632.5,28,2025-11-09
+CUST-4482,Customer_482,Surat,Price Sensitive,35614.95,7,2025-05-11
+CUST-4483,Customer_483,Jaipur,At Risk,58985.8,44,2026-01-19
+CUST-4484,Customer_484,Ahmedabad,New Registrant,96885.92,34,2025-06-22
+CUST-4485,Customer_485,Bengaluru,Price Sensitive,69582.54,44,2025-01-05
+CUST-4486,Customer_486,Delhi,High Value Loyal,52877.97,34,2025-02-23
+CUST-4487,Customer_487,Kolkata,Price Sensitive,29378.5,19,2025-05-09
+CUST-4488,Customer_488,Ahmedabad,High Value Loyal,5403.31,6,2025-01-30
+CUST-4489,Customer_489,Jaipur,Frequent Buyer,118934.9,41,2025-03-04
+CUST-4490,Customer_490,Delhi,High Value Loyal,107414.0,9,2025-07-12
+CUST-4491,Customer_491,Jaipur,Frequent Buyer,112260.2,45,2025-04-05
+CUST-4492,Customer_492,Surat,Price Sensitive,59702.06,5,2025-11-24
+CUST-4493,Customer_493,Kolkata,Price Sensitive,96746.49,45,2025-12-08
+CUST-4494,Customer_494,Chennai,Price Sensitive,22340.84,5,2025-05-22
+CUST-4495,Customer_495,Mumbai,At Risk,50102.33,4,2025-05-13
+CUST-4496,Customer_496,Surat,Frequent Buyer,56470.42,32,2025-04-13
+CUST-4497,Customer_497,Jaipur,At Risk,24359.17,32,2025-02-25
+CUST-4498,Customer_498,Bengaluru,New Registrant,96666.65,14,2025-11-11
+CUST-4499,Customer_499,Delhi,At Risk,90136.54,7,2025-01-18
+CUST-4500,Customer_500,Delhi,High Value Loyal,72489.71,17,2026-02-02
+CUST-4501,Customer_501,Kolkata,High Value Loyal,112322.77,10,2025-12-01
+CUST-4502,Customer_502,Mumbai,High Value Loyal,83914.21,18,2025-03-19
+CUST-4503,Customer_503,Chennai,At Risk,72893.43,33,2025-12-29
+CUST-4504,Customer_504,Kolkata,At Risk,55917.06,5,2025-10-04
+CUST-4505,Customer_505,Ahmedabad,High Value Loyal,49591.92,45,2026-02-04
+CUST-4506,Customer_506,Kolkata,High Value Loyal,71987.38,23,2025-06-20
+CUST-4507,Customer_507,Surat,At Risk,9261.35,42,2025-02-16
+CUST-4508,Customer_508,Chennai,New Registrant,107034.4,22,2025-02-11
+CUST-4509,Customer_509,Kolkata,Price Sensitive,81854.59,12,2025-10-11
+CUST-4510,Customer_510,Mumbai,At Risk,83439.93,20,2025-12-23
+CUST-4511,Customer_511,Hyderabad,High Value Loyal,79750.59,23,2025-09-07
+CUST-4512,Customer_512,Delhi,At Risk,92577.21,9,2025-01-19
+CUST-4513,Customer_513,Ahmedabad,High Value Loyal,90668.03,38,2025-05-03
+CUST-4514,Customer_514,Kolkata,At Risk,10216.6,35,2025-11-26
+CUST-4515,Customer_515,Surat,At Risk,67907.66,29,2025-01-09
+CUST-4516,Customer_516,Mumbai,Price Sensitive,9366.67,3,2025-07-27
+CUST-4517,Customer_517,Delhi,Frequent Buyer,101370.2,43,2025-09-25
+CUST-4518,Customer_518,Kolkata,New Registrant,20746.82,38,2025-04-30
+CUST-4519,Customer_519,Delhi,High Value Loyal,92593.82,32,2025-12-01
+CUST-4520,Customer_520,Mumbai,At Risk,113629.41,40,2025-01-24
+CUST-4521,Customer_521,Ahmedabad,Frequent Buyer,4259.74,41,2025-01-26
+CUST-4522,Customer_522,Surat,High Value Loyal,58382.61,11,2025-10-30
+CUST-4523,Customer_523,Delhi,High Value Loyal,16487.01,39,2025-11-12
+CUST-4524,Customer_524,Ahmedabad,High Value Loyal,101045.56,28,2025-06-22
+CUST-4525,Customer_525,Hyderabad,Price Sensitive,17298.3,44,2025-10-22
+CUST-4526,Customer_526,Pune,Frequent Buyer,41894.76,14,2026-01-27
+CUST-4527,Customer_527,Mumbai,New Registrant,23747.34,5,2025-03-03
+CUST-4528,Customer_528,Surat,Frequent Buyer,95299.89,11,2025-12-23
+CUST-4529,Customer_529,Chennai,New Registrant,22713.25,16,2025-10-25
+CUST-4530,Customer_530,Mumbai,Frequent Buyer,14746.06,41,2025-11-10
+CUST-4531,Customer_531,Hyderabad,Frequent Buyer,4414.71,32,2025-02-11
+CUST-4532,Customer_532,Mumbai,High Value Loyal,24478.07,6,2025-12-28
+CUST-4533,Customer_533,Jaipur,Price Sensitive,53487.22,31,2025-12-21
+CUST-4534,Customer_534,Bengaluru,Frequent Buyer,20028.26,18,2025-09-25
+CUST-4535,Customer_535,Kolkata,At Risk,31808.59,12,2025-11-09
+CUST-4536,Customer_536,Mumbai,New Registrant,24550.06,32,2025-11-10
+CUST-4537,Customer_537,Delhi,Price Sensitive,45112.06,1,2025-10-13
+CUST-4538,Customer_538,Ahmedabad,Frequent Buyer,16894.71,34,2025-02-18
+CUST-4539,Customer_539,Jaipur,Price Sensitive,108184.55,35,2025-09-17
+CUST-4540,Customer_540,Ahmedabad,At Risk,96865.58,43,2025-04-17
+CUST-4541,Customer_541,Surat,High Value Loyal,26230.58,10,2025-12-17
+CUST-4542,Customer_542,Kolkata,At Risk,24099.67,43,2025-01-23
+CUST-4543,Customer_543,Mumbai,Price Sensitive,37420.4,28,2025-05-09
+CUST-4544,Customer_544,Chennai,New Registrant,101131.33,30,2025-01-23
+CUST-4545,Customer_545,Delhi,High Value Loyal,115795.51,12,2025-03-22
+CUST-4546,Customer_546,Mumbai,At Risk,65575.71,5,2025-05-01
+CUST-4547,Customer_547,Kolkata,New Registrant,73520.82,27,2025-04-12
+CUST-4548,Customer_548,Chennai,Frequent Buyer,97924.47,21,2025-04-27
+CUST-4549,Customer_549,Delhi,Frequent Buyer,92874.11,13,2025-07-12
+CUST-4550,Customer_550,Ahmedabad,High Value Loyal,60196.31,32,2025-01-28
+CUST-4551,Customer_551,Hyderabad,Frequent Buyer,28980.23,40,2025-08-21
+CUST-4552,Customer_552,Bengaluru,At Risk,48251.92,30,2026-01-04
+CUST-4553,Customer_553,Ahmedabad,Price Sensitive,122005.6,13,2025-06-21
+CUST-4554,Customer_554,Bengaluru,High Value Loyal,87295.79,4,2025-05-24
+CUST-4555,Customer_555,Bengaluru,High Value Loyal,106827.29,30,2025-08-03
+CUST-4556,Customer_556,Bengaluru,Price Sensitive,29432.06,19,2025-11-06
+CUST-4557,Customer_557,Bengaluru,New Registrant,113433.32,37,2025-10-11
+CUST-4558,Customer_558,Ahmedabad,High Value Loyal,52932.78,34,2025-09-08
+CUST-4559,Customer_559,Ahmedabad,New Registrant,60502.4,30,2025-05-23
+CUST-4560,Customer_560,Mumbai,At Risk,92681.91,16,2025-05-07
+CUST-4561,Customer_561,Chennai,At Risk,73484.71,38,2025-03-18
+CUST-4562,Customer_562,Jaipur,High Value Loyal,53677.05,3,2025-01-21
+CUST-4563,Customer_563,Kolkata,New Registrant,6618.52,34,2025-07-21
+CUST-4564,Customer_564,Kolkata,High Value Loyal,57924.07,16,2025-02-12
+CUST-4565,Customer_565,Pune,High Value Loyal,87412.08,27,2025-04-22
+CUST-4566,Customer_566,Bengaluru,Price Sensitive,38734.33,42,2025-02-16
+CUST-4567,Customer_567,Mumbai,At Risk,84456.86,11,2025-12-27
+CUST-4568,Customer_568,Kolkata,New Registrant,94042.62,2,2025-08-21
+CUST-4569,Customer_569,Kolkata,Frequent Buyer,109589.38,26,2025-04-05
+CUST-4570,Customer_570,Chennai,At Risk,88728.0,1,2025-11-18
+CUST-4571,Customer_571,Delhi,At Risk,111945.72,22,2025-09-29
+CUST-4572,Customer_572,Mumbai,Price Sensitive,54673.03,18,2025-12-24
+CUST-4573,Customer_573,Jaipur,New Registrant,72965.6,14,2025-12-17
+CUST-4574,Customer_574,Delhi,New Registrant,110403.79,4,2025-09-21
+CUST-4575,Customer_575,Chennai,High Value Loyal,16093.4,24,2025-08-27
+CUST-4576,Customer_576,Jaipur,High Value Loyal,47282.47,12,2025-11-28
+CUST-4577,Customer_577,Pune,High Value Loyal,71192.88,14,2025-03-12
+CUST-4578,Customer_578,Chennai,Frequent Buyer,68605.14,42,2025-09-02
+CUST-4579,Customer_579,Jaipur,Frequent Buyer,94763.75,15,2025-06-14
+CUST-4580,Customer_580,Chennai,Price Sensitive,64186.83,28,2025-05-22
+CUST-4581,Customer_581,Mumbai,High Value Loyal,48169.69,29,2025-09-06
+CUST-4582,Customer_582,Pune,New Registrant,104121.08,31,2025-12-30
+CUST-4583,Customer_583,Pune,New Registrant,112682.77,29,2025-11-14
+CUST-4584,Customer_584,Chennai,High Value Loyal,25573.31,30,2025-02-14
+CUST-4585,Customer_585,Delhi,At Risk,112498.37,19,2025-02-09
+CUST-4586,Customer_586,Delhi,Frequent Buyer,36302.99,45,2025-03-17
+CUST-4587,Customer_587,Kolkata,Frequent Buyer,109686.66,34,2025-11-18
+CUST-4588,Customer_588,Mumbai,Price Sensitive,53525.74,44,2025-10-05
+CUST-4589,Customer_589,Bengaluru,At Risk,44970.78,29,2026-01-13
+CUST-4590,Customer_590,Mumbai,Price Sensitive,25659.93,2,2025-04-29
+CUST-4591,Customer_591,Pune,Price Sensitive,52932.24,22,2025-12-02
+CUST-4592,Customer_592,Chennai,At Risk,75186.26,45,2025-09-29
+CUST-4593,Customer_593,Pune,At Risk,58605.87,37,2025-03-09
+CUST-4594,Customer_594,Surat,Frequent Buyer,99185.29,15,2025-09-05
+CUST-4595,Customer_595,Chennai,Price Sensitive,96794.34,4,2025-03-17
+CUST-4596,Customer_596,Chennai,Price Sensitive,58351.0,11,2025-11-13
+CUST-4597,Customer_597,Bengaluru,New Registrant,37442.71,12,2025-12-29
+CUST-4598,Customer_598,Bengaluru,Frequent Buyer,31643.4,3,2025-06-12
+CUST-4599,Customer_599,Jaipur,Frequent Buyer,56508.86,24,2025-04-05
+CUST-4600,Customer_600,Ahmedabad,New Registrant,89123.96,43,2025-06-12
+CUST-4601,Customer_601,Chennai,Frequent Buyer,48182.08,35,2025-03-25
+CUST-4602,Customer_602,Pune,Price Sensitive,17382.53,2,2025-07-27
+CUST-4603,Customer_603,Kolkata,Frequent Buyer,118604.16,21,2025-03-21
+CUST-4604,Customer_604,Mumbai,New Registrant,122011.13,22,2025-11-28
+CUST-4605,Customer_605,Surat,At Risk,112257.24,37,2025-12-08
+CUST-4606,Customer_606,Bengaluru,New Registrant,91746.61,29,2025-06-23
+CUST-4607,Customer_607,Delhi,At Risk,112771.37,9,2025-12-14
+CUST-4608,Customer_608,Pune,High Value Loyal,40240.07,26,2025-11-13
+CUST-4609,Customer_609,Ahmedabad,At Risk,46280.71,21,2025-01-29
+CUST-4610,Customer_610,Jaipur,Frequent Buyer,73970.35,15,2026-02-05
+CUST-4611,Customer_611,Surat,Frequent Buyer,5262.21,35,2025-08-17
+CUST-4612,Customer_612,Delhi,New Registrant,50816.89,32,2025-06-12
+CUST-4613,Customer_613,Jaipur,New Registrant,65165.59,4,2025-12-08
+CUST-4614,Customer_614,Chennai,At Risk,20623.38,28,2025-07-09
+CUST-4615,Customer_615,Hyderabad,Price Sensitive,3993.37,23,2025-06-29
+CUST-4616,Customer_616,Surat,At Risk,109601.96,6,2025-04-21
+CUST-4617,Customer_617,Kolkata,At Risk,100951.47,19,2025-03-25
+CUST-4618,Customer_618,Hyderabad,At Risk,19597.04,38,2025-11-03
+CUST-4619,Customer_619,Delhi,Frequent Buyer,27953.51,31,2025-09-26
+CUST-4620,Customer_620,Chennai,High Value Loyal,116811.24,38,2026-01-23
+CUST-4621,Customer_621,Hyderabad,High Value Loyal,3310.81,41,2025-05-20
+CUST-4622,Customer_622,Hyderabad,Frequent Buyer,70587.2,37,2026-01-22
+CUST-4623,Customer_623,Bengaluru,Frequent Buyer,25285.79,25,2025-05-29
+CUST-4624,Customer_624,Pune,At Risk,7673.53,20,2025-10-27
+CUST-4625,Customer_625,Surat,At Risk,71011.93,30,2025-04-25
+CUST-4626,Customer_626,Mumbai,High Value Loyal,21367.94,20,2025-11-24
+CUST-4627,Customer_627,Kolkata,High Value Loyal,82592.09,19,2025-08-02
+CUST-4628,Customer_628,Bengaluru,At Risk,113582.17,42,2025-05-06
+CUST-4629,Customer_629,Mumbai,High Value Loyal,96178.0,32,2025-02-04
+CUST-4630,Customer_630,Jaipur,Price Sensitive,73680.56,37,2025-08-12
+CUST-4631,Customer_631,Surat,At Risk,121846.7,8,2025-07-11
+CUST-4632,Customer_632,Pune,New Registrant,4649.27,17,2025-03-25
+CUST-4633,Customer_633,Jaipur,High Value Loyal,20401.8,30,2025-12-21
+CUST-4634,Customer_634,Bengaluru,Price Sensitive,22505.33,18,2025-07-04
+CUST-4635,Customer_635,Hyderabad,Price Sensitive,8467.58,19,2025-09-29
+CUST-4636,Customer_636,Delhi,New Registrant,26242.32,41,2025-04-04
+CUST-4637,Customer_637,Delhi,New Registrant,94696.99,35,2025-06-15
+CUST-4638,Customer_638,Chennai,Price Sensitive,35753.72,45,2025-12-19
+CUST-4639,Customer_639,Chennai,High Value Loyal,67966.49,23,2025-03-15
+CUST-4640,Customer_640,Mumbai,Frequent Buyer,65975.92,24,2026-02-03
+CUST-4641,Customer_641,Kolkata,At Risk,44188.35,11,2025-02-22
+CUST-4642,Customer_642,Ahmedabad,Frequent Buyer,64164.4,13,2025-10-14
+CUST-4643,Customer_643,Jaipur,New Registrant,106143.54,36,2025-12-26
+CUST-4644,Customer_644,Delhi,At Risk,58910.19,5,2025-03-01
+CUST-4645,Customer_645,Bengaluru,High Value Loyal,61240.98,20,2025-12-20
+CUST-4646,Customer_646,Chennai,Frequent Buyer,102587.24,39,2025-09-25
+CUST-4647,Customer_647,Chennai,Frequent Buyer,89462.12,2,2026-01-17
+CUST-4648,Customer_648,Delhi,Frequent Buyer,18267.52,45,2025-03-14
+CUST-4649,Customer_649,Ahmedabad,Price Sensitive,17854.66,9,2025-02-10
+CUST-4650,Customer_650,Hyderabad,High Value Loyal,12022.57,31,2026-01-23
+CUST-4651,Customer_651,Hyderabad,High Value Loyal,26553.0,3,2025-12-04
+CUST-4652,Customer_652,Pune,New Registrant,9759.99,8,2025-05-10
+CUST-4653,Customer_653,Mumbai,High Value Loyal,39451.61,1,2026-01-22
+CUST-4654,Customer_654,Delhi,High Value Loyal,115212.01,14,2025-10-28
+CUST-4655,Customer_655,Ahmedabad,Frequent Buyer,84648.58,2,2025-02-16
+CUST-4656,Customer_656,Bengaluru,Price Sensitive,118726.97,23,2025-06-30
+CUST-4657,Customer_657,Bengaluru,New Registrant,98148.26,40,2025-05-04
+CUST-4658,Customer_658,Pune,New Registrant,10871.29,38,2026-01-26
+CUST-4659,Customer_659,Mumbai,New Registrant,29082.26,13,2025-05-25
+CUST-4660,Customer_660,Bengaluru,New Registrant,3030.29,7,2025-04-20
+CUST-4661,Customer_661,Pune,At Risk,47391.72,38,2025-04-05
+CUST-4662,Customer_662,Kolkata,High Value Loyal,24653.95,23,2025-07-14
+CUST-4663,Customer_663,Hyderabad,Frequent Buyer,65495.75,27,2025-02-27
+CUST-4664,Customer_664,Chennai,High Value Loyal,59572.96,34,2025-03-11
+CUST-4665,Customer_665,Kolkata,Price Sensitive,88829.54,36,2026-01-05
+CUST-4666,Customer_666,Mumbai,High Value Loyal,42694.14,8,2025-07-17
+CUST-4667,Customer_667,Surat,At Risk,76047.71,20,2025-12-18
+CUST-4668,Customer_668,Kolkata,Frequent Buyer,70354.7,19,2025-08-08
+CUST-4669,Customer_669,Ahmedabad,High Value Loyal,112107.44,31,2025-12-14
+CUST-4670,Customer_670,Chennai,Frequent Buyer,4066.27,44,2025-09-09
+CUST-4671,Customer_671,Delhi,At Risk,56162.15,43,2025-12-13
+CUST-4672,Customer_672,Delhi,High Value Loyal,20062.53,26,2025-12-22
+CUST-4673,Customer_673,Jaipur,High Value Loyal,93325.44,11,2025-02-03
+CUST-4674,Customer_674,Chennai,Frequent Buyer,43982.38,39,2025-07-26
+CUST-4675,Customer_675,Delhi,Frequent Buyer,105168.37,32,2025-05-23
+CUST-4676,Customer_676,Jaipur,New Registrant,35939.17,42,2025-07-24
+CUST-4677,Customer_677,Chennai,At Risk,84167.93,26,2025-09-06
+CUST-4678,Customer_678,Pune,Price Sensitive,20553.33,30,2025-02-25
+CUST-4679,Customer_679,Delhi,Price Sensitive,62444.32,15,2025-11-18
+CUST-4680,Customer_680,Bengaluru,High Value Loyal,14701.42,4,2025-02-04
+CUST-4681,Customer_681,Kolkata,High Value Loyal,121578.89,25,2025-11-06
+CUST-4682,Customer_682,Chennai,Frequent Buyer,39587.19,40,2025-02-19
+CUST-4683,Customer_683,Delhi,New Registrant,96527.58,30,2025-04-14
+CUST-4684,Customer_684,Surat,At Risk,62555.67,17,2025-10-05
+CUST-4685,Customer_685,Chennai,New Registrant,69460.95,3,2025-08-09
+CUST-4686,Customer_686,Delhi,At Risk,57639.15,25,2025-08-15
+CUST-4687,Customer_687,Kolkata,High Value Loyal,6525.33,36,2025-12-04
+CUST-4688,Customer_688,Surat,Frequent Buyer,62706.25,9,2025-06-09
+CUST-4689,Customer_689,Hyderabad,At Risk,96091.36,37,2025-12-12
+CUST-4690,Customer_690,Kolkata,New Registrant,86458.34,37,2025-08-29
+CUST-4691,Customer_691,Kolkata,New Registrant,107158.06,33,2025-01-29
+CUST-4692,Customer_692,Hyderabad,Price Sensitive,63099.66,25,2025-11-12
+CUST-4693,Customer_693,Chennai,Price Sensitive,41759.14,2,2025-10-30
+CUST-4694,Customer_694,Mumbai,Frequent Buyer,105024.43,23,2026-01-15
+CUST-4695,Customer_695,Jaipur,High Value Loyal,96236.27,41,2025-06-24
+CUST-4696,Customer_696,Hyderabad,High Value Loyal,54948.15,23,2025-07-30
+CUST-4697,Customer_697,Chennai,High Value Loyal,83501.9,16,2025-05-01
+CUST-4698,Customer_698,Surat,New Registrant,12905.36,45,2025-02-03
+CUST-4699,Customer_699,Surat,High Value Loyal,43855.3,2,2025-10-03
+CUST-4700,Customer_700,Chennai,High Value Loyal,58961.4,28,2025-10-18
+CUST-4701,Customer_701,Pune,At Risk,35160.81,45,2025-08-29
+CUST-4702,Customer_702,Jaipur,High Value Loyal,123256.19,25,2025-10-20
+CUST-4703,Customer_703,Hyderabad,Price Sensitive,72635.98,32,2025-02-21
+CUST-4704,Customer_704,Ahmedabad,Price Sensitive,63349.6,43,2025-06-23
+CUST-4705,Customer_705,Bengaluru,New Registrant,39191.31,28,2025-04-14
+CUST-4706,Customer_706,Kolkata,High Value Loyal,105446.61,35,2025-04-20
+CUST-4707,Customer_707,Surat,Price Sensitive,8322.59,37,2025-07-25
+CUST-4708,Customer_708,Ahmedabad,New Registrant,93503.78,6,2026-01-03
+CUST-4709,Customer_709,Jaipur,High Value Loyal,75003.42,18,2025-02-04
+CUST-4710,Customer_710,Jaipur,New Registrant,60720.37,14,2025-06-27
+CUST-4711,Customer_711,Delhi,Price Sensitive,64318.34,20,2025-08-10
+CUST-4712,Customer_712,Pune,Price Sensitive,27009.43,26,2025-05-09
+CUST-4713,Customer_713,Jaipur,New Registrant,58020.5,36,2025-04-03
+CUST-4714,Customer_714,Mumbai,New Registrant,108181.95,37,2025-09-13
+CUST-4715,Customer_715,Ahmedabad,At Risk,35322.15,41,2025-09-30
+CUST-4716,Customer_716,Jaipur,At Risk,116992.9,41,2025-01-31
+CUST-4717,Customer_717,Pune,Frequent Buyer,47123.65,10,2025-05-04
+CUST-4718,Customer_718,Bengaluru,Price Sensitive,105904.94,27,2025-06-13
+CUST-4719,Customer_719,Delhi,Frequent Buyer,106130.96,18,2025-05-27
+CUST-4720,Customer_720,Bengaluru,Price Sensitive,86639.73,16,2025-07-27
+CUST-4721,Customer_721,Ahmedabad,High Value Loyal,20870.38,2,2025-05-06
+CUST-4722,Customer_722,Surat,At Risk,61959.34,28,2025-08-05
+CUST-4723,Customer_723,Mumbai,Frequent Buyer,22021.41,9,2025-01-15
+CUST-4724,Customer_724,Surat,Price Sensitive,83187.16,12,2025-11-26
+CUST-4725,Customer_725,Mumbai,At Risk,98323.63,4,2025-02-12
+CUST-4726,Customer_726,Chennai,New Registrant,39002.45,5,2025-07-28
+CUST-4727,Customer_727,Chennai,High Value Loyal,51119.64,9,2025-05-01
+CUST-4728,Customer_728,Delhi,New Registrant,92473.85,8,2025-09-25
+CUST-4729,Customer_729,Jaipur,New Registrant,33346.49,6,2025-05-02
+CUST-4730,Customer_730,Jaipur,High Value Loyal,97215.88,21,2025-06-18
+CUST-4731,Customer_731,Jaipur,At Risk,101215.6,16,2025-08-05
+CUST-4732,Customer_732,Ahmedabad,Frequent Buyer,15584.72,14,2025-05-21
+CUST-4733,Customer_733,Kolkata,At Risk,33652.48,38,2025-01-29
+CUST-4734,Customer_734,Kolkata,New Registrant,48401.36,8,2025-06-12
+CUST-4735,Customer_735,Pune,At Risk,60669.63,16,2025-05-23
+CUST-4736,Customer_736,Bengaluru,Price Sensitive,60714.67,24,2025-06-07
+CUST-4737,Customer_737,Mumbai,New Registrant,6764.16,43,2025-01-28
+CUST-4738,Customer_738,Ahmedabad,Price Sensitive,70209.17,20,2025-11-24
+CUST-4739,Customer_739,Chennai,High Value Loyal,68026.56,16,2025-08-15
+CUST-4740,Customer_740,Hyderabad,High Value Loyal,113949.16,26,2025-05-11
+CUST-4741,Customer_741,Surat,High Value Loyal,117199.49,16,2025-06-02
+CUST-4742,Customer_742,Ahmedabad,Frequent Buyer,114696.62,41,2025-06-12
+CUST-4743,Customer_743,Hyderabad,High Value Loyal,36069.47,6,2026-02-04
+CUST-4744,Customer_744,Kolkata,At Risk,92775.39,22,2026-01-03
+CUST-4745,Customer_745,Hyderabad,High Value Loyal,103489.11,45,2025-05-14
+CUST-4746,Customer_746,Pune,High Value Loyal,45602.4,39,2026-01-09
+CUST-4747,Customer_747,Pune,Price Sensitive,58024.56,2,2026-01-26
+CUST-4748,Customer_748,Mumbai,Frequent Buyer,79694.15,42,2025-03-11
+CUST-4749,Customer_749,Mumbai,At Risk,27009.23,20,2025-06-10
+CUST-4750,Customer_750,Jaipur,High Value Loyal,16076.45,16,2025-09-22
+CUST-4751,Customer_751,Bengaluru,New Registrant,86504.79,21,2025-08-20
+CUST-4752,Customer_752,Kolkata,Frequent Buyer,34433.29,44,2025-10-31
+CUST-4753,Customer_753,Chennai,Price Sensitive,26836.31,27,2025-07-08
+CUST-4754,Customer_754,Bengaluru,At Risk,109857.78,37,2025-04-25
+CUST-4755,Customer_755,Mumbai,High Value Loyal,115581.26,42,2025-11-10
+CUST-4756,Customer_756,Ahmedabad,High Value Loyal,121830.63,13,2025-05-15
+CUST-4757,Customer_757,Bengaluru,High Value Loyal,51626.78,28,2025-11-04
+CUST-4758,Customer_758,Surat,Frequent Buyer,13410.01,24,2025-03-29
+CUST-4759,Customer_759,Jaipur,High Value Loyal,4229.08,34,2025-08-11
+CUST-4760,Customer_760,Kolkata,At Risk,17017.76,14,2025-04-08
+CUST-4761,Customer_761,Surat,Price Sensitive,93939.27,25,2025-03-08
+CUST-4762,Customer_762,Hyderabad,Frequent Buyer,76010.14,19,2026-01-08
+CUST-4763,Customer_763,Ahmedabad,At Risk,24595.31,10,2025-01-15
+CUST-4764,Customer_764,Surat,Price Sensitive,31346.99,29,2025-05-08
+CUST-4765,Customer_765,Chennai,New Registrant,86322.72,30,2025-02-13
+CUST-4766,Customer_766,Mumbai,At Risk,18817.6,21,2025-12-21
+CUST-4767,Customer_767,Hyderabad,Frequent Buyer,89883.65,28,2026-01-12
+CUST-4768,Customer_768,Jaipur,Price Sensitive,11449.31,36,2025-01-31
+CUST-4769,Customer_769,Mumbai,Price Sensitive,116555.41,31,2025-07-01
+CUST-4770,Customer_770,Jaipur,New Registrant,89421.83,3,2025-01-03
+CUST-4771,Customer_771,Surat,New Registrant,78408.09,20,2025-07-22
+CUST-4772,Customer_772,Chennai,Frequent Buyer,121087.08,36,2025-01-22
+CUST-4773,Customer_773,Jaipur,Frequent Buyer,34385.73,33,2025-09-10
+CUST-4774,Customer_774,Chennai,At Risk,18660.14,21,2025-12-30
+CUST-4775,Customer_775,Pune,At Risk,19869.98,8,2025-06-10
+CUST-4776,Customer_776,Mumbai,Frequent Buyer,63653.3,18,2026-01-18
+CUST-4777,Customer_777,Chennai,At Risk,37158.37,17,2025-11-10
+CUST-4778,Customer_778,Surat,New Registrant,40843.76,11,2025-06-11
+CUST-4779,Customer_779,Kolkata,Frequent Buyer,70570.15,43,2025-11-22
+CUST-4780,Customer_780,Kolkata,High Value Loyal,25642.69,4,2025-04-28
+CUST-4781,Customer_781,Bengaluru,High Value Loyal,60105.32,11,2025-12-28
+CUST-4782,Customer_782,Kolkata,At Risk,16712.95,32,2025-01-21
+CUST-4783,Customer_783,Kolkata,Price Sensitive,123630.28,36,2025-09-06
+CUST-4784,Customer_784,Kolkata,At Risk,16280.13,10,2025-03-05
+CUST-4785,Customer_785,Chennai,High Value Loyal,27457.38,19,2025-04-03
+CUST-4786,Customer_786,Bengaluru,New Registrant,103265.04,37,2025-12-06
+CUST-4787,Customer_787,Jaipur,Frequent Buyer,73984.56,1,2025-09-27
+CUST-4788,Customer_788,Jaipur,Frequent Buyer,53511.33,5,2025-05-07
+CUST-4789,Customer_789,Kolkata,High Value Loyal,111202.54,2,2025-05-26
+CUST-4790,Customer_790,Delhi,At Risk,48260.89,7,2025-06-15
+CUST-4791,Customer_791,Bengaluru,High Value Loyal,12430.25,43,2025-09-03
+CUST-4792,Customer_792,Kolkata,Price Sensitive,75290.02,1,2025-06-18
+CUST-4793,Customer_793,Mumbai,New Registrant,118984.76,21,2026-01-10
+CUST-4794,Customer_794,Jaipur,Frequent Buyer,28392.44,4,2025-11-26
+CUST-4795,Customer_795,Surat,Price Sensitive,100273.0,5,2025-10-08
+CUST-4796,Customer_796,Jaipur,At Risk,13837.5,17,2025-04-02
+CUST-4797,Customer_797,Ahmedabad,At Risk,13425.57,14,2025-03-25
+CUST-4798,Customer_798,Hyderabad,At Risk,37404.65,42,2025-03-20
+CUST-4799,Customer_799,Delhi,Price Sensitive,62628.52,28,2026-01-12
+CUST-4800,Customer_800,Surat,New Registrant,18582.62,43,2025-02-19
+CUST-4801,Customer_801,Chennai,New Registrant,26984.23,29,2025-07-18
+CUST-4802,Customer_802,Kolkata,Price Sensitive,71474.49,28,2025-02-16
+CUST-4803,Customer_803,Hyderabad,Price Sensitive,77698.8,28,2025-11-19
+CUST-4804,Customer_804,Hyderabad,High Value Loyal,7453.67,22,2025-08-26
+CUST-4805,Customer_805,Ahmedabad,Frequent Buyer,116506.78,34,2025-11-19
+CUST-4806,Customer_806,Pune,High Value Loyal,38111.12,28,2025-02-10
+CUST-4807,Customer_807,Kolkata,Price Sensitive,20704.3,9,2025-12-17
+CUST-4808,Customer_808,Surat,Frequent Buyer,66578.78,19,2025-10-19
+CUST-4809,Customer_809,Mumbai,New Registrant,11875.23,3,2025-09-20
+CUST-4810,Customer_810,Delhi,New Registrant,54551.91,7,2025-08-26
+CUST-4811,Customer_811,Jaipur,Price Sensitive,46043.56,38,2025-02-11
+CUST-4812,Customer_812,Pune,High Value Loyal,16457.1,43,2025-08-25
+CUST-4813,Customer_813,Bengaluru,Frequent Buyer,105756.45,3,2025-02-12
+CUST-4814,Customer_814,Hyderabad,Price Sensitive,40958.43,30,2026-01-23
+CUST-4815,Customer_815,Kolkata,New Registrant,101459.67,22,2025-04-06
+CUST-4816,Customer_816,Ahmedabad,Frequent Buyer,12082.01,39,2025-05-13
+CUST-4817,Customer_817,Delhi,At Risk,67961.06,1,2025-07-22
+CUST-4818,Customer_818,Delhi,High Value Loyal,23537.58,31,2025-08-24
+CUST-4819,Customer_819,Hyderabad,New Registrant,91424.15,20,2025-11-13
+CUST-4820,Customer_820,Jaipur,Price Sensitive,87106.13,45,2025-12-12
+CUST-4821,Customer_821,Hyderabad,Price Sensitive,13235.3,9,2025-01-08
+CUST-4822,Customer_822,Ahmedabad,High Value Loyal,102456.11,45,2025-04-07
+CUST-4823,Customer_823,Mumbai,Frequent Buyer,61436.86,10,2025-11-29
+CUST-4824,Customer_824,Ahmedabad,At Risk,105655.99,35,2025-04-08
+CUST-4825,Customer_825,Delhi,Price Sensitive,96790.84,10,2025-08-31
+CUST-4826,Customer_826,Hyderabad,High Value Loyal,16766.21,10,2026-01-14
+CUST-4827,Customer_827,Kolkata,At Risk,60257.43,29,2025-10-27
+CUST-4828,Customer_828,Ahmedabad,Frequent Buyer,38616.85,26,2025-01-27
+CUST-4829,Customer_829,Chennai,High Value Loyal,15076.28,28,2025-08-01
+CUST-4830,Customer_830,Kolkata,New Registrant,75490.34,36,2025-05-29
+CUST-4831,Customer_831,Mumbai,At Risk,51460.85,33,2025-10-30
+CUST-4832,Customer_832,Jaipur,At Risk,30908.46,4,2025-09-28
+CUST-4833,Customer_833,Mumbai,At Risk,73109.41,36,2025-02-02
+CUST-4834,Customer_834,Surat,At Risk,111419.72,8,2025-09-11
+CUST-4835,Customer_835,Jaipur,Price Sensitive,57419.86,28,2025-01-11
+CUST-4836,Customer_836,Bengaluru,Price Sensitive,91460.62,31,2025-06-26
+CUST-4837,Customer_837,Kolkata,Frequent Buyer,64685.4,38,2025-12-17
+CUST-4838,Customer_838,Chennai,New Registrant,107048.09,43,2025-08-28
+CUST-4839,Customer_839,Bengaluru,Price Sensitive,91066.89,25,2025-08-02
+CUST-4840,Customer_840,Chennai,At Risk,100469.99,11,2025-11-15
+CUST-4841,Customer_841,Ahmedabad,Price Sensitive,87110.45,6,2025-12-08
+CUST-4842,Customer_842,Kolkata,Frequent Buyer,23728.16,11,2025-11-07
+CUST-4843,Customer_843,Kolkata,High Value Loyal,99701.6,32,2025-06-05
+CUST-4844,Customer_844,Ahmedabad,Frequent Buyer,70711.74,2,2025-07-03
+CUST-4845,Customer_845,Surat,Price Sensitive,85423.66,12,2025-09-15
+CUST-4846,Customer_846,Mumbai,High Value Loyal,43872.51,8,2025-11-13
+CUST-4847,Customer_847,Ahmedabad,High Value Loyal,71342.73,32,2025-05-13
+CUST-4848,Customer_848,Chennai,Price Sensitive,96748.3,36,2025-05-17
+CUST-4849,Customer_849,Bengaluru,New Registrant,76525.46,7,2025-12-28
+CUST-4850,Customer_850,Mumbai,At Risk,100375.89,8,2025-02-24
+CUST-4851,Customer_851,Jaipur,New Registrant,98314.14,7,2025-10-15
+CUST-4852,Customer_852,Mumbai,New Registrant,15412.86,41,2025-03-02
+CUST-4853,Customer_853,Ahmedabad,Price Sensitive,21736.49,19,2025-12-29
+CUST-4854,Customer_854,Kolkata,New Registrant,63552.9,7,2025-03-20
+CUST-4855,Customer_855,Chennai,Price Sensitive,102847.2,8,2025-04-14
+CUST-4856,Customer_856,Kolkata,At Risk,96729.36,1,2025-05-06
+CUST-4857,Customer_857,Kolkata,Price Sensitive,37627.89,11,2025-02-13
+CUST-4858,Customer_858,Surat,Price Sensitive,90111.97,27,2025-07-04
+CUST-4859,Customer_859,Ahmedabad,Frequent Buyer,94767.77,34,2025-08-04
+CUST-4860,Customer_860,Ahmedabad,Frequent Buyer,100716.66,27,2025-07-29
+CUST-4861,Customer_861,Kolkata,New Registrant,99839.4,24,2025-01-16
+CUST-4862,Customer_862,Kolkata,Frequent Buyer,96843.6,34,2025-02-05
+CUST-4863,Customer_863,Delhi,Price Sensitive,41063.56,11,2025-08-11
+CUST-4864,Customer_864,Mumbai,At Risk,95501.07,43,2025-11-25
+CUST-4865,Customer_865,Bengaluru,New Registrant,9581.7,41,2026-01-01
+CUST-4866,Customer_866,Pune,Price Sensitive,53864.9,44,2025-12-25
+CUST-4867,Customer_867,Pune,Price Sensitive,90890.0,21,2025-06-26
+CUST-4868,Customer_868,Mumbai,Price Sensitive,112775.54,40,2025-03-17
+CUST-4869,Customer_869,Hyderabad,At Risk,81375.22,35,2025-11-16
+CUST-4870,Customer_870,Jaipur,At Risk,87940.19,42,2025-07-27
+CUST-4871,Customer_871,Ahmedabad,Price Sensitive,12824.41,35,2025-06-21
+CUST-4872,Customer_872,Hyderabad,Frequent Buyer,66257.54,35,2025-05-26
+CUST-4873,Customer_873,Ahmedabad,High Value Loyal,65179.77,20,2025-09-24
+CUST-4874,Customer_874,Chennai,Frequent Buyer,5369.16,35,2025-10-31
+CUST-4875,Customer_875,Surat,Frequent Buyer,104448.05,20,2026-01-07
+CUST-4876,Customer_876,Hyderabad,New Registrant,16029.13,4,2025-07-10
+CUST-4877,Customer_877,Surat,New Registrant,45922.98,4,2026-01-23
+CUST-4878,Customer_878,Delhi,At Risk,39000.24,1,2025-08-21
+CUST-4879,Customer_879,Chennai,Frequent Buyer,101159.98,38,2025-10-17
+CUST-4880,Customer_880,Pune,New Registrant,31145.14,20,2025-05-26
+CUST-4881,Customer_881,Jaipur,Frequent Buyer,90007.99,34,2026-01-13
+CUST-4882,Customer_882,Ahmedabad,High Value Loyal,42661.25,38,2025-04-09
+CUST-4883,Customer_883,Chennai,At Risk,14503.51,28,2025-07-30
+CUST-4884,Customer_884,Delhi,High Value Loyal,10118.72,9,2025-09-01
+CUST-4885,Customer_885,Ahmedabad,At Risk,12063.9,44,2025-09-27
+CUST-4886,Customer_886,Hyderabad,New Registrant,70973.64,26,2025-05-16
+CUST-4887,Customer_887,Jaipur,At Risk,80466.49,29,2025-12-19
+CUST-4888,Customer_888,Kolkata,At Risk,103416.95,10,2025-09-16
+CUST-4889,Customer_889,Bengaluru,At Risk,89615.94,9,2025-12-27
+CUST-4890,Customer_890,Pune,New Registrant,16962.12,14,2025-08-22
+CUST-4891,Customer_891,Kolkata,High Value Loyal,93945.8,36,2025-07-09
+CUST-4892,Customer_892,Delhi,New Registrant,106908.93,8,2025-03-03
+CUST-4893,Customer_893,Chennai,New Registrant,37974.85,34,2025-03-20
+CUST-4894,Customer_894,Delhi,Price Sensitive,39853.26,24,2025-06-05
+CUST-4895,Customer_895,Surat,At Risk,5927.28,10,2025-03-14
+CUST-4896,Customer_896,Jaipur,At Risk,8459.75,20,2025-05-26
+CUST-4897,Customer_897,Ahmedabad,Frequent Buyer,102842.82,32,2025-01-02
+CUST-4898,Customer_898,Delhi,New Registrant,45209.5,3,2025-08-02
+CUST-4899,Customer_899,Kolkata,New Registrant,40438.48,29,2025-06-22
+CUST-4900,Customer_900,Hyderabad,At Risk,104721.35,39,2025-03-09
+CUST-4901,Customer_901,Bengaluru,New Registrant,80466.38,29,2025-12-08
+CUST-4902,Customer_902,Kolkata,Frequent Buyer,108627.33,21,2025-02-15
+CUST-4903,Customer_903,Jaipur,New Registrant,52679.47,15,2025-07-22
+CUST-4904,Customer_904,Chennai,New Registrant,8112.92,43,2025-08-15
+CUST-4905,Customer_905,Surat,High Value Loyal,108579.31,2,2025-10-20
+CUST-4906,Customer_906,Surat,New Registrant,81532.06,42,2025-10-14
+CUST-4907,Customer_907,Delhi,Frequent Buyer,119508.12,35,2025-10-23
+CUST-4908,Customer_908,Mumbai,New Registrant,66414.84,31,2025-09-15
+CUST-4909,Customer_909,Mumbai,High Value Loyal,83136.17,35,2025-04-03
+CUST-4910,Customer_910,Mumbai,Price Sensitive,98877.74,16,2025-12-28
+CUST-4911,Customer_911,Jaipur,At Risk,12869.37,35,2025-11-07
+CUST-4912,Customer_912,Chennai,At Risk,74639.4,32,2025-01-12
+CUST-4913,Customer_913,Chennai,At Risk,24612.23,2,2025-09-28
+CUST-4914,Customer_914,Chennai,At Risk,34004.28,8,2025-02-20
+CUST-4915,Customer_915,Pune,Frequent Buyer,37455.59,12,2025-05-11
+CUST-4916,Customer_916,Delhi,Frequent Buyer,40082.29,27,2025-12-14
+CUST-4917,Customer_917,Bengaluru,High Value Loyal,77773.24,21,2025-04-03
+CUST-4918,Customer_918,Mumbai,High Value Loyal,39007.98,7,2025-06-13
+CUST-4919,Customer_919,Bengaluru,At Risk,111893.85,17,2025-07-12
+CUST-4920,Customer_920,Delhi,High Value Loyal,27313.53,39,2025-10-28
+CUST-4921,Customer_921,Ahmedabad,At Risk,64806.11,33,2025-07-17
+CUST-4922,Customer_922,Delhi,Price Sensitive,9927.42,30,2025-10-11
+CUST-4923,Customer_923,Hyderabad,High Value Loyal,61811.01,27,2025-11-21
+CUST-4924,Customer_924,Ahmedabad,High Value Loyal,35472.07,38,2025-12-12
+CUST-4925,Customer_925,Delhi,Frequent Buyer,95964.84,42,2025-03-06
+CUST-4926,Customer_926,Surat,New Registrant,52326.38,6,2025-11-22
+CUST-4927,Customer_927,Pune,Frequent Buyer,98402.99,10,2025-07-11
+CUST-4928,Customer_928,Pune,Frequent Buyer,98297.9,35,2025-08-05
+CUST-4929,Customer_929,Pune,At Risk,7619.53,30,2025-11-14
+CUST-4930,Customer_930,Surat,Frequent Buyer,2566.51,31,2025-05-20
+CUST-4931,Customer_931,Jaipur,Price Sensitive,105337.25,25,2025-06-29
+CUST-4932,Customer_932,Ahmedabad,New Registrant,105483.81,19,2025-01-24
+CUST-4933,Customer_933,Bengaluru,New Registrant,71477.49,20,2025-02-15
+CUST-4934,Customer_934,Hyderabad,High Value Loyal,104236.02,36,2025-05-24
+CUST-4935,Customer_935,Hyderabad,Frequent Buyer,77279.55,21,2025-12-16
+CUST-4936,Customer_936,Chennai,Price Sensitive,122505.94,29,2025-05-20
+CUST-4937,Customer_937,Ahmedabad,Price Sensitive,44349.65,30,2025-11-03
+CUST-4938,Customer_938,Chennai,High Value Loyal,114467.23,9,2025-11-27
+CUST-4939,Customer_939,Mumbai,New Registrant,60874.8,1,2025-12-11
+CUST-4940,Customer_940,Bengaluru,At Risk,70584.36,45,2025-12-27
+CUST-4941,Customer_941,Kolkata,At Risk,68421.1,42,2025-11-30
+CUST-4942,Customer_942,Delhi,New Registrant,6291.07,43,2025-08-16
+CUST-4943,Customer_943,Delhi,Price Sensitive,121574.78,25,2025-11-04
+CUST-4944,Customer_944,Chennai,At Risk,24205.36,45,2025-01-05
+CUST-4945,Customer_945,Delhi,At Risk,47883.88,13,2025-08-16
+CUST-4946,Customer_946,Mumbai,Frequent Buyer,93535.19,18,2025-12-15
+CUST-4947,Customer_947,Chennai,Frequent Buyer,13520.9,40,2025-11-17
+CUST-4948,Customer_948,Surat,Frequent Buyer,31196.6,32,2025-07-05
+CUST-4949,Customer_949,Mumbai,Price Sensitive,62872.64,39,2025-04-18
+CUST-4950,Customer_950,Mumbai,Frequent Buyer,123072.28,41,2025-07-22
+CUST-4951,Customer_951,Delhi,Price Sensitive,72215.02,32,2025-03-29
+CUST-4952,Customer_952,Pune,Frequent Buyer,83330.21,37,2025-12-11
+CUST-4953,Customer_953,Jaipur,New Registrant,24002.28,38,2025-03-07
+CUST-4954,Customer_954,Delhi,Frequent Buyer,34304.0,37,2025-04-27
+CUST-4955,Customer_955,Pune,Price Sensitive,26001.81,44,2025-01-12
+CUST-4956,Customer_956,Pune,New Registrant,33482.83,36,2025-08-21
+CUST-4957,Customer_957,Mumbai,At Risk,81018.37,42,2025-01-27
+CUST-4958,Customer_958,Chennai,At Risk,105931.84,27,2025-05-21
+CUST-4959,Customer_959,Delhi,New Registrant,59656.87,24,2025-09-22
+CUST-4960,Customer_960,Mumbai,Frequent Buyer,8253.17,27,2025-09-30
+CUST-4961,Customer_961,Kolkata,Price Sensitive,3132.01,13,2025-06-21
+CUST-4962,Customer_962,Delhi,New Registrant,101439.93,15,2025-12-20
+CUST-4963,Customer_963,Hyderabad,High Value Loyal,114831.91,13,2025-03-26
+CUST-4964,Customer_964,Chennai,Price Sensitive,10198.41,41,2025-02-19
+CUST-4965,Customer_965,Mumbai,At Risk,55413.75,2,2025-10-31
+CUST-4966,Customer_966,Chennai,Price Sensitive,32776.31,31,2025-05-03
+CUST-4967,Customer_967,Chennai,High Value Loyal,103150.14,34,2025-05-02
+CUST-4968,Customer_968,Delhi,New Registrant,78396.9,7,2025-11-17
+CUST-4969,Customer_969,Kolkata,New Registrant,17791.23,4,2025-01-18
+CUST-4970,Customer_970,Hyderabad,Price Sensitive,111535.26,45,2025-02-03
+CUST-4971,Customer_971,Bengaluru,High Value Loyal,115091.68,29,2025-01-29
+CUST-4972,Customer_972,Surat,New Registrant,79207.69,5,2025-02-22
+CUST-4973,Customer_973,Mumbai,New Registrant,8894.89,25,2025-07-25
+CUST-4974,Customer_974,Delhi,New Registrant,94615.51,15,2025-11-03
+CUST-4975,Customer_975,Jaipur,High Value Loyal,58042.88,30,2025-08-08
+CUST-4976,Customer_976,Jaipur,New Registrant,14906.55,42,2025-12-12
+CUST-4977,Customer_977,Mumbai,At Risk,65858.58,38,2025-04-09
+CUST-4978,Customer_978,Delhi,High Value Loyal,4005.35,5,2025-10-31
+CUST-4979,Customer_979,Ahmedabad,New Registrant,17932.75,33,2025-05-12
+CUST-4980,Customer_980,Chennai,At Risk,61471.41,40,2025-08-16
+CUST-4981,Customer_981,Bengaluru,Frequent Buyer,19364.91,3,2025-01-31
+CUST-4982,Customer_982,Bengaluru,Price Sensitive,74103.98,33,2025-11-30
+CUST-4983,Customer_983,Chennai,Price Sensitive,73999.08,35,2026-02-02
+CUST-4984,Customer_984,Bengaluru,Frequent Buyer,60016.66,39,2025-06-25
+CUST-4985,Customer_985,Surat,Price Sensitive,121358.2,34,2025-10-28
+CUST-4986,Customer_986,Bengaluru,High Value Loyal,31579.95,36,2025-01-28
+CUST-4987,Customer_987,Hyderabad,Price Sensitive,26437.37,13,2025-11-24
+CUST-4988,Customer_988,Ahmedabad,High Value Loyal,44340.11,43,2025-09-01
+CUST-4989,Customer_989,Kolkata,New Registrant,87320.7,38,2025-10-17
+CUST-4990,Customer_990,Chennai,New Registrant,39204.87,22,2025-03-25
+CUST-4991,Customer_991,Delhi,At Risk,109822.92,3,2025-09-11
+CUST-4992,Customer_992,Ahmedabad,High Value Loyal,80748.96,45,2025-04-28
+CUST-4993,Customer_993,Kolkata,New Registrant,28609.47,31,2026-01-12
+CUST-4994,Customer_994,Chennai,At Risk,27651.25,12,2025-01-04
+CUST-4995,Customer_995,Chennai,High Value Loyal,11532.07,2,2025-10-12
+CUST-4996,Customer_996,Delhi,Frequent Buyer,38095.59,13,2025-11-20
+CUST-4997,Customer_997,Jaipur,Price Sensitive,7878.34,2,2025-04-12
+CUST-4998,Customer_998,Ahmedabad,Price Sensitive,23832.96,17,2026-01-04
+CUST-4999,Customer_999,Bengaluru,Price Sensitive,106322.94,16,2025-04-02
+CUST-5000,Customer_1000,Ahmedabad,High Value Loyal,24069.48,17,2025-02-21

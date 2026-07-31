@@ -1,0 +1,19 @@
+category_id,category_name,avg_gross_margin_pct,return_benchmark_pct
+CAT-101,Textiles & Handblock Prints,50.58,1.76
+CAT-102,Pure Silk & Traditional Sarees,36.0,3.84
+CAT-103,Knitwear & Everyday Apparel,54.46,8.61
+CAT-104,Brass & Artisan Metalcraft,60.69,2.41
+CAT-105,Ayurvedic Beauty & Wellness,41.88,1.81
+CAT-106,Leather Footwear & Travel Goods,33.75,6.81
+CAT-107,Eco-Friendly Packaging,26.06,3.59
+CAT-108,Consumer Electronics Accessories,51.0,7.22
+CAT-109,Organic Home & Kitchenware,33.82,7.69
+CAT-110,Handloom Bed Linen & Curtains,57.38,1.57
+CAT-111,Spices & Gourmet Food Crafts,57.23,8.83
+CAT-112,Jewelry & Fashion Accessories,38.61,3.13
+CAT-113,Footwear & Athletic Shoes,63.29,5.03
+CAT-114,Stationery & Corporate Gifting,28.71,2.52
+CAT-115,Pet Care & Organic Treats,58.9,7.84
+CAT-116,Kids Wear & Wooden Toys,57.29,9.16
+CAT-117,Fitness Gear & Yoga Accessories,46.45,11.72
+CAT-118,Automotive Accessories,40.14,7.3

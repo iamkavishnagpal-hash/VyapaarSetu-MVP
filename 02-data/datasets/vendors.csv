@@ -1,0 +1,251 @@
+vendor_id,name,category,location,rating,lead_time_days,on_time_rate_pct,defect_rate_pct,min_order_qty,escrow_verified,contact_email
+VND-1001,Mysuru Jewelry Enterprise 1,Jewelry & Fashion Accessories,Mysuru KA,4.5,4,79.7,0.5,50,TRUE,b2b_sales_1@mysuruenterprise.in
+VND-1002,Jodhpur Brass Enterprise 2,Brass & Artisan Metalcraft,Jodhpur RJ,4.0,8,81.8,3.3,50,TRUE,b2b_sales_2@jodhpurenterprise.in
+VND-1003,Kochi Organic Enterprise 3,Organic Home & Kitchenware,Kochi KL,4.6,10,89.9,1.0,200,TRUE,b2b_sales_3@kochienterprise.in
+VND-1004,Gwalior Organic Enterprise 4,Organic Home & Kitchenware,Gwalior MP,4.7,6,80.4,1.8,25,TRUE,b2b_sales_4@gwaliorenterprise.in
+VND-1005,Salem Spices Enterprise 5,Spices & Gourmet Food Crafts,Salem TN,4.9,6,81.6,1.2,200,TRUE,b2b_sales_5@salementerprise.in
+VND-1006,Guwahati Footwear Enterprise 6,Footwear & Athletic Shoes,Guwahati AS,4.6,14,78.5,0.9,500,TRUE,b2b_sales_6@guwahatienterprise.in
+VND-1007,Madurai Stationery Enterprise 7,Stationery & Corporate Gifting,Madurai TN,5.0,4,84.8,1.3,25,FALSE,b2b_sales_7@maduraienterprise.in
+VND-1008,Delhi Brass Enterprise 8,Brass & Artisan Metalcraft,Delhi NCR,4.1,9,90.4,4.0,200,TRUE,b2b_sales_8@delhienterprise.in
+VND-1009,Jalandhar Pet Enterprise 9,Pet Care & Organic Treats,Jalandhar PB,4.9,13,81.2,2.9,500,TRUE,b2b_sales_9@jalandharenterprise.in
+VND-1010,Nagpur Organic Enterprise 10,Organic Home & Kitchenware,Nagpur MH,4.2,11,77.7,2.3,50,TRUE,b2b_sales_10@nagpurenterprise.in
+VND-1011,Bengaluru Fitness Enterprise 11,Fitness Gear & Yoga Accessories,Bengaluru KA,4.5,5,96.3,1.6,100,TRUE,b2b_sales_11@bengaluruenterprise.in
+VND-1012,Amritsar Leather Enterprise 12,Leather Footwear & Travel Goods,Amritsar PB,4.9,10,98.4,4.6,25,TRUE,b2b_sales_12@amritsarenterprise.in
+VND-1013,Rajkot Brass Enterprise 13,Brass & Artisan Metalcraft,Rajkot GJ,4.0,6,96.5,4.2,500,TRUE,b2b_sales_13@rajkotenterprise.in
+VND-1014,Kanpur Knitwear Enterprise 14,Knitwear & Everyday Apparel,Kanpur UP,5.0,5,92.9,4.1,200,TRUE,b2b_sales_14@kanpurenterprise.in
+VND-1015,Ludhiana Automotive Enterprise 15,Automotive Accessories,Ludhiana PB,4.1,11,81.5,4.4,50,TRUE,b2b_sales_15@ludhianaenterprise.in
+VND-1016,Salem Handloom Enterprise 16,Handloom Bed Linen & Curtains,Salem TN,4.2,4,99.4,3.3,50,FALSE,b2b_sales_16@salementerprise.in
+VND-1017,Kochi Consumer Enterprise 17,Consumer Electronics Accessories,Kochi KL,3.8,3,83.3,3.0,25,TRUE,b2b_sales_17@kochienterprise.in
+VND-1018,Chennai Pure Enterprise 18,Pure Silk & Traditional Sarees,Chennai TN,4.0,7,76.7,0.4,200,TRUE,b2b_sales_18@chennaienterprise.in
+VND-1019,Amritsar Eco-Friendly Enterprise 19,Eco-Friendly Packaging,Amritsar PB,4.4,6,78.2,4.7,200,FALSE,b2b_sales_19@amritsarenterprise.in
+VND-1020,Ahmedabad Stationery Enterprise 20,Stationery & Corporate Gifting,Ahmedabad GJ,4.0,10,77.3,3.4,25,FALSE,b2b_sales_20@ahmedabadenterprise.in
+VND-1021,Moradabad Brass Enterprise 21,Brass & Artisan Metalcraft,Moradabad UP,4.8,6,84.9,1.8,50,TRUE,b2b_sales_21@moradabadenterprise.in
+VND-1022,Nashik Automotive Enterprise 22,Automotive Accessories,Nashik MH,4.2,10,78.4,1.1,500,TRUE,b2b_sales_22@nashikenterprise.in
+VND-1023,Moradabad Brass Enterprise 23,Brass & Artisan Metalcraft,Moradabad UP,3.5,15,91.0,2.8,50,TRUE,b2b_sales_23@moradabadenterprise.in
+VND-1024,Bareilly Leather Enterprise 24,Leather Footwear & Travel Goods,Bareilly UP,4.1,5,86.9,1.2,200,TRUE,b2b_sales_24@bareillyenterprise.in
+VND-1025,Jodhpur Textiles Enterprise 25,Textiles & Handblock Prints,Jodhpur RJ,4.2,14,81.5,4.0,500,FALSE,b2b_sales_25@jodhpurenterprise.in
+VND-1026,Delhi Kids Enterprise 26,Kids Wear & Wooden Toys,Delhi NCR,3.6,14,79.7,1.2,100,TRUE,b2b_sales_26@delhienterprise.in
+VND-1027,Moradabad Pure Enterprise 27,Pure Silk & Traditional Sarees,Moradabad UP,4.8,3,89.3,2.6,500,TRUE,b2b_sales_27@moradabadenterprise.in
+VND-1028,Agra Knitwear Enterprise 28,Knitwear & Everyday Apparel,Agra UP,4.8,4,76.7,0.5,500,FALSE,b2b_sales_28@agraenterprise.in
+VND-1029,Madurai Consumer Enterprise 29,Consumer Electronics Accessories,Madurai TN,4.1,7,89.6,3.2,50,TRUE,b2b_sales_29@maduraienterprise.in
+VND-1030,Kolkata Spices Enterprise 30,Spices & Gourmet Food Crafts,Kolkata WB,4.5,8,81.5,0.8,25,FALSE,b2b_sales_30@kolkataenterprise.in
+VND-1031,Guwahati Textiles Enterprise 31,Textiles & Handblock Prints,Guwahati AS,3.6,11,90.2,2.9,100,TRUE,b2b_sales_31@guwahatienterprise.in
+VND-1032,Pune Ayurvedic Enterprise 32,Ayurvedic Beauty & Wellness,Pune MH,4.1,10,96.6,4.4,500,TRUE,b2b_sales_32@puneenterprise.in
+VND-1033,Udaipur Handloom Enterprise 33,Handloom Bed Linen & Curtains,Udaipur RJ,4.3,13,99.1,4.1,25,TRUE,b2b_sales_33@udaipurenterprise.in
+VND-1034,Indore Ayurvedic Enterprise 34,Ayurvedic Beauty & Wellness,Indore MP,4.3,7,77.8,0.7,500,TRUE,b2b_sales_34@indoreenterprise.in
+VND-1035,Nagpur Eco-Friendly Enterprise 35,Eco-Friendly Packaging,Nagpur MH,3.9,7,80.0,3.2,25,FALSE,b2b_sales_35@nagpurenterprise.in
+VND-1036,Meerut Knitwear Enterprise 36,Knitwear & Everyday Apparel,Meerut UP,4.0,13,95.3,0.4,100,TRUE,b2b_sales_36@meerutenterprise.in
+VND-1037,Nashik Leather Enterprise 37,Leather Footwear & Travel Goods,Nashik MH,3.5,14,88.5,2.3,50,TRUE,b2b_sales_37@nashikenterprise.in
+VND-1038,Tirupur Automotive Enterprise 38,Automotive Accessories,Tirupur TN,3.7,3,95.4,3.0,100,TRUE,b2b_sales_38@tirupurenterprise.in
+VND-1039,Tirupur Jewelry Enterprise 39,Jewelry & Fashion Accessories,Tirupur TN,3.9,8,97.0,1.2,500,TRUE,b2b_sales_39@tirupurenterprise.in
+VND-1040,Udaipur Stationery Enterprise 40,Stationery & Corporate Gifting,Udaipur RJ,3.9,15,93.4,4.6,50,TRUE,b2b_sales_40@udaipurenterprise.in
+VND-1041,Surat Stationery Enterprise 41,Stationery & Corporate Gifting,Surat GJ,4.7,15,79.4,4.6,50,FALSE,b2b_sales_41@suratenterprise.in
+VND-1042,Ludhiana Organic Enterprise 42,Organic Home & Kitchenware,Ludhiana PB,4.8,6,94.3,0.7,50,FALSE,b2b_sales_42@ludhianaenterprise.in
+VND-1043,Pune Pet Enterprise 43,Pet Care & Organic Treats,Pune MH,3.8,13,82.5,4.0,50,TRUE,b2b_sales_43@puneenterprise.in
+VND-1044,Nagpur Footwear Enterprise 44,Footwear & Athletic Shoes,Nagpur MH,4.7,13,81.8,0.5,500,TRUE,b2b_sales_44@nagpurenterprise.in
+VND-1045,Amritsar Footwear Enterprise 45,Footwear & Athletic Shoes,Amritsar PB,4.8,5,83.1,0.3,500,TRUE,b2b_sales_45@amritsarenterprise.in
+VND-1046,Tirupur Organic Enterprise 46,Organic Home & Kitchenware,Tirupur TN,4.6,9,77.7,2.3,500,TRUE,b2b_sales_46@tirupurenterprise.in
+VND-1047,Bhiwandi Fitness Enterprise 47,Fitness Gear & Yoga Accessories,Bhiwandi MH,3.9,3,84.4,3.0,500,FALSE,b2b_sales_47@bhiwandienterprise.in
+VND-1048,Ahmedabad Automotive Enterprise 48,Automotive Accessories,Ahmedabad GJ,4.5,12,83.9,0.5,100,TRUE,b2b_sales_48@ahmedabadenterprise.in
+VND-1049,Varanasi Brass Enterprise 49,Brass & Artisan Metalcraft,Varanasi UP,4.0,11,87.4,3.4,50,TRUE,b2b_sales_49@varanasienterprise.in
+VND-1050,Bareilly Eco-Friendly Enterprise 50,Eco-Friendly Packaging,Bareilly UP,4.6,12,91.3,2.0,500,TRUE,b2b_sales_50@bareillyenterprise.in
+VND-1051,Salem Handloom Enterprise 51,Handloom Bed Linen & Curtains,Salem TN,3.9,15,88.4,0.2,500,FALSE,b2b_sales_51@salementerprise.in
+VND-1052,Guwahati Spices Enterprise 52,Spices & Gourmet Food Crafts,Guwahati AS,4.3,13,85.8,3.4,25,TRUE,b2b_sales_52@guwahatienterprise.in
+VND-1053,Chandigarh Handloom Enterprise 53,Handloom Bed Linen & Curtains,Chandigarh UT,3.6,13,91.3,3.2,100,TRUE,b2b_sales_53@chandigarhenterprise.in
+VND-1054,Ahmedabad Consumer Enterprise 54,Consumer Electronics Accessories,Ahmedabad GJ,5.0,10,78.6,0.4,200,TRUE,b2b_sales_54@ahmedabadenterprise.in
+VND-1055,Jodhpur Eco-Friendly Enterprise 55,Eco-Friendly Packaging,Jodhpur RJ,4.5,15,87.1,1.4,25,TRUE,b2b_sales_55@jodhpurenterprise.in
+VND-1056,Chennai Stationery Enterprise 56,Stationery & Corporate Gifting,Chennai TN,4.3,11,79.3,4.8,50,TRUE,b2b_sales_56@chennaienterprise.in
+VND-1057,Guwahati Brass Enterprise 57,Brass & Artisan Metalcraft,Guwahati AS,4.3,15,78.3,2.4,200,TRUE,b2b_sales_57@guwahatienterprise.in
+VND-1058,Meerut Fitness Enterprise 58,Fitness Gear & Yoga Accessories,Meerut UP,4.8,10,95.3,2.8,100,FALSE,b2b_sales_58@meerutenterprise.in
+VND-1059,Coimbatore Consumer Enterprise 59,Consumer Electronics Accessories,Coimbatore TN,4.4,10,93.8,2.7,25,TRUE,b2b_sales_59@coimbatoreenterprise.in
+VND-1060,Kolkata Handloom Enterprise 60,Handloom Bed Linen & Curtains,Kolkata WB,4.3,5,81.7,1.7,50,TRUE,b2b_sales_60@kolkataenterprise.in
+VND-1061,Delhi Footwear Enterprise 61,Footwear & Athletic Shoes,Delhi NCR,4.1,9,92.3,0.5,25,FALSE,b2b_sales_61@delhienterprise.in
+VND-1062,Bareilly Eco-Friendly Enterprise 62,Eco-Friendly Packaging,Bareilly UP,4.9,15,84.5,3.9,500,TRUE,b2b_sales_62@bareillyenterprise.in
+VND-1063,Patna Footwear Enterprise 63,Footwear & Athletic Shoes,Patna BR,4.6,11,75.1,1.9,500,FALSE,b2b_sales_63@patnaenterprise.in
+VND-1064,Bhubaneswar Consumer Enterprise 64,Consumer Electronics Accessories,Bhubaneswar OD,3.5,13,80.4,2.3,200,TRUE,b2b_sales_64@bhubaneswarenterprise.in
+VND-1065,Guwahati Leather Enterprise 65,Leather Footwear & Travel Goods,Guwahati AS,4.3,12,97.5,4.9,500,FALSE,b2b_sales_65@guwahatienterprise.in
+VND-1066,Kanpur Textiles Enterprise 66,Textiles & Handblock Prints,Kanpur UP,4.2,7,90.7,0.9,200,TRUE,b2b_sales_66@kanpurenterprise.in
+VND-1067,Hyderabad Spices Enterprise 67,Spices & Gourmet Food Crafts,Hyderabad TS,4.8,15,86.1,1.8,200,TRUE,b2b_sales_67@hyderabadenterprise.in
+VND-1068,Kanpur Organic Enterprise 68,Organic Home & Kitchenware,Kanpur UP,3.6,6,86.5,3.8,25,TRUE,b2b_sales_68@kanpurenterprise.in
+VND-1069,Surat Pure Enterprise 69,Pure Silk & Traditional Sarees,Surat GJ,3.5,6,98.3,1.2,50,TRUE,b2b_sales_69@suratenterprise.in
+VND-1070,Bhiwandi Kids Enterprise 70,Kids Wear & Wooden Toys,Bhiwandi MH,4.5,5,88.8,1.2,500,TRUE,b2b_sales_70@bhiwandienterprise.in
+VND-1071,Ludhiana Brass Enterprise 71,Brass & Artisan Metalcraft,Ludhiana PB,3.5,12,98.6,0.7,200,TRUE,b2b_sales_71@ludhianaenterprise.in
+VND-1072,Ahmedabad Footwear Enterprise 72,Footwear & Athletic Shoes,Ahmedabad GJ,4.4,14,76.9,3.5,100,TRUE,b2b_sales_72@ahmedabadenterprise.in
+VND-1073,Mysuru Brass Enterprise 73,Brass & Artisan Metalcraft,Mysuru KA,4.1,4,94.2,1.9,500,TRUE,b2b_sales_73@mysuruenterprise.in
+VND-1074,Jaipur Spices Enterprise 74,Spices & Gourmet Food Crafts,Jaipur RJ,3.7,13,95.8,4.1,200,TRUE,b2b_sales_74@jaipurenterprise.in
+VND-1075,Meerut Ayurvedic Enterprise 75,Ayurvedic Beauty & Wellness,Meerut UP,4.5,10,79.3,2.7,200,FALSE,b2b_sales_75@meerutenterprise.in
+VND-1076,Dehradun Organic Enterprise 76,Organic Home & Kitchenware,Dehradun UK,3.6,6,95.9,4.2,200,FALSE,b2b_sales_76@dehradunenterprise.in
+VND-1077,Nagpur Footwear Enterprise 77,Footwear & Athletic Shoes,Nagpur MH,3.8,8,75.7,4.3,100,TRUE,b2b_sales_77@nagpurenterprise.in
+VND-1078,Coimbatore Spices Enterprise 78,Spices & Gourmet Food Crafts,Coimbatore TN,3.9,11,96.6,3.6,50,TRUE,b2b_sales_78@coimbatoreenterprise.in
+VND-1079,Kolkata Knitwear Enterprise 79,Knitwear & Everyday Apparel,Kolkata WB,4.6,13,92.6,2.5,200,FALSE,b2b_sales_79@kolkataenterprise.in
+VND-1080,Surat Pet Enterprise 80,Pet Care & Organic Treats,Surat GJ,4.5,13,77.3,1.3,500,TRUE,b2b_sales_80@suratenterprise.in
+VND-1081,Patna Jewelry Enterprise 81,Jewelry & Fashion Accessories,Patna BR,5.0,8,88.6,1.9,200,TRUE,b2b_sales_81@patnaenterprise.in
+VND-1082,Varanasi Organic Enterprise 82,Organic Home & Kitchenware,Varanasi UP,3.8,14,81.2,0.8,500,TRUE,b2b_sales_82@varanasienterprise.in
+VND-1083,Ahmedabad Leather Enterprise 83,Leather Footwear & Travel Goods,Ahmedabad GJ,4.6,4,80.3,2.5,50,TRUE,b2b_sales_83@ahmedabadenterprise.in
+VND-1084,Chennai Handloom Enterprise 84,Handloom Bed Linen & Curtains,Chennai TN,4.6,7,83.8,1.7,25,TRUE,b2b_sales_84@chennaienterprise.in
+VND-1085,Gwalior Pure Enterprise 85,Pure Silk & Traditional Sarees,Gwalior MP,4.5,4,82.2,4.7,25,FALSE,b2b_sales_85@gwaliorenterprise.in
+VND-1086,Patna Handloom Enterprise 86,Handloom Bed Linen & Curtains,Patna BR,4.9,10,86.7,1.8,25,TRUE,b2b_sales_86@patnaenterprise.in
+VND-1087,Salem Knitwear Enterprise 87,Knitwear & Everyday Apparel,Salem TN,4.5,5,87.0,3.0,500,TRUE,b2b_sales_87@salementerprise.in
+VND-1088,Kanpur Handloom Enterprise 88,Handloom Bed Linen & Curtains,Kanpur UP,4.6,15,99.4,0.8,500,TRUE,b2b_sales_88@kanpurenterprise.in
+VND-1089,Nashik Footwear Enterprise 89,Footwear & Athletic Shoes,Nashik MH,4.4,7,97.3,1.6,500,FALSE,b2b_sales_89@nashikenterprise.in
+VND-1090,Udaipur Pure Enterprise 90,Pure Silk & Traditional Sarees,Udaipur RJ,4.6,7,98.5,0.7,25,TRUE,b2b_sales_90@udaipurenterprise.in
+VND-1091,Kolkata Leather Enterprise 91,Leather Footwear & Travel Goods,Kolkata WB,3.5,14,79.3,0.6,500,FALSE,b2b_sales_91@kolkataenterprise.in
+VND-1092,Panipat Kids Enterprise 92,Kids Wear & Wooden Toys,Panipat HR,3.9,4,75.8,1.6,50,FALSE,b2b_sales_92@panipatenterprise.in
+VND-1093,Madurai Organic Enterprise 93,Organic Home & Kitchenware,Madurai TN,4.1,13,91.2,4.7,50,TRUE,b2b_sales_93@maduraienterprise.in
+VND-1094,Delhi Organic Enterprise 94,Organic Home & Kitchenware,Delhi NCR,4.0,10,76.7,1.0,25,TRUE,b2b_sales_94@delhienterprise.in
+VND-1095,Varanasi Pet Enterprise 95,Pet Care & Organic Treats,Varanasi UP,4.3,10,92.1,4.7,25,FALSE,b2b_sales_95@varanasienterprise.in
+VND-1096,Meerut Pure Enterprise 96,Pure Silk & Traditional Sarees,Meerut UP,3.5,13,93.0,3.1,500,TRUE,b2b_sales_96@meerutenterprise.in
+VND-1097,Coimbatore Textiles Enterprise 97,Textiles & Handblock Prints,Coimbatore TN,3.8,7,89.1,3.9,50,FALSE,b2b_sales_97@coimbatoreenterprise.in
+VND-1098,Bhubaneswar Stationery Enterprise 98,Stationery & Corporate Gifting,Bhubaneswar OD,4.1,13,98.7,2.5,25,TRUE,b2b_sales_98@bhubaneswarenterprise.in
+VND-1099,Nagpur Leather Enterprise 99,Leather Footwear & Travel Goods,Nagpur MH,4.5,15,85.1,2.6,500,FALSE,b2b_sales_99@nagpurenterprise.in
+VND-1100,Guwahati Pure Enterprise 100,Pure Silk & Traditional Sarees,Guwahati AS,3.7,11,77.2,1.4,25,FALSE,b2b_sales_100@guwahatienterprise.in
+VND-1101,Guwahati Automotive Enterprise 101,Automotive Accessories,Guwahati AS,4.0,13,85.1,1.1,200,FALSE,b2b_sales_101@guwahatienterprise.in
+VND-1102,Hyderabad Pure Enterprise 102,Pure Silk & Traditional Sarees,Hyderabad TS,3.9,4,81.5,0.8,25,FALSE,b2b_sales_102@hyderabadenterprise.in
+VND-1103,Ludhiana Consumer Enterprise 103,Consumer Electronics Accessories,Ludhiana PB,4.1,4,82.6,0.3,200,TRUE,b2b_sales_103@ludhianaenterprise.in
+VND-1104,Delhi Brass Enterprise 104,Brass & Artisan Metalcraft,Delhi NCR,4.3,9,87.2,3.6,200,TRUE,b2b_sales_104@delhienterprise.in
+VND-1105,Kolkata Kids Enterprise 105,Kids Wear & Wooden Toys,Kolkata WB,3.8,4,86.2,0.9,100,TRUE,b2b_sales_105@kolkataenterprise.in
+VND-1106,Nagpur Stationery Enterprise 106,Stationery & Corporate Gifting,Nagpur MH,4.7,14,97.9,2.6,100,TRUE,b2b_sales_106@nagpurenterprise.in
+VND-1107,Delhi Kids Enterprise 107,Kids Wear & Wooden Toys,Delhi NCR,4.0,10,85.9,2.5,100,FALSE,b2b_sales_107@delhienterprise.in
+VND-1108,Kolkata Eco-Friendly Enterprise 108,Eco-Friendly Packaging,Kolkata WB,4.7,8,89.0,1.3,200,TRUE,b2b_sales_108@kolkataenterprise.in
+VND-1109,Jodhpur Footwear Enterprise 109,Footwear & Athletic Shoes,Jodhpur RJ,4.5,10,99.2,4.0,25,TRUE,b2b_sales_109@jodhpurenterprise.in
+VND-1110,Chandigarh Ayurvedic Enterprise 110,Ayurvedic Beauty & Wellness,Chandigarh UT,3.7,4,98.7,1.8,500,FALSE,b2b_sales_110@chandigarhenterprise.in
+VND-1111,Jaipur Pet Enterprise 111,Pet Care & Organic Treats,Jaipur RJ,4.5,4,92.7,2.2,200,TRUE,b2b_sales_111@jaipurenterprise.in
+VND-1112,Nagpur Organic Enterprise 112,Organic Home & Kitchenware,Nagpur MH,3.6,13,90.3,2.1,500,TRUE,b2b_sales_112@nagpurenterprise.in
+VND-1113,Dehradun Footwear Enterprise 113,Footwear & Athletic Shoes,Dehradun UK,4.2,12,90.4,4.5,25,TRUE,b2b_sales_113@dehradunenterprise.in
+VND-1114,Panipat Consumer Enterprise 114,Consumer Electronics Accessories,Panipat HR,4.2,15,99.4,3.8,25,TRUE,b2b_sales_114@panipatenterprise.in
+VND-1115,Ludhiana Pet Enterprise 115,Pet Care & Organic Treats,Ludhiana PB,3.6,7,92.0,4.5,100,TRUE,b2b_sales_115@ludhianaenterprise.in
+VND-1116,Meerut Jewelry Enterprise 116,Jewelry & Fashion Accessories,Meerut UP,4.3,5,78.6,2.7,50,TRUE,b2b_sales_116@meerutenterprise.in
+VND-1117,Udaipur Knitwear Enterprise 117,Knitwear & Everyday Apparel,Udaipur RJ,3.9,6,96.3,3.2,200,TRUE,b2b_sales_117@udaipurenterprise.in
+VND-1118,Guwahati Organic Enterprise 118,Organic Home & Kitchenware,Guwahati AS,4.7,13,81.3,0.2,500,TRUE,b2b_sales_118@guwahatienterprise.in
+VND-1119,Kochi Leather Enterprise 119,Leather Footwear & Travel Goods,Kochi KL,4.4,14,85.8,1.9,100,FALSE,b2b_sales_119@kochienterprise.in
+VND-1120,Varanasi Pet Enterprise 120,Pet Care & Organic Treats,Varanasi UP,4.2,9,79.9,2.0,500,TRUE,b2b_sales_120@varanasienterprise.in
+VND-1121,Mysuru Jewelry Enterprise 121,Jewelry & Fashion Accessories,Mysuru KA,3.5,7,82.2,3.6,25,FALSE,b2b_sales_121@mysuruenterprise.in
+VND-1122,Vijayawada Pure Enterprise 122,Pure Silk & Traditional Sarees,Vijayawada AP,4.9,12,93.3,4.2,100,TRUE,b2b_sales_122@vijayawadaenterprise.in
+VND-1123,Ahmedabad Consumer Enterprise 123,Consumer Electronics Accessories,Ahmedabad GJ,4.6,13,90.2,3.5,25,TRUE,b2b_sales_123@ahmedabadenterprise.in
+VND-1124,Varanasi Pure Enterprise 124,Pure Silk & Traditional Sarees,Varanasi UP,4.0,4,94.3,0.4,100,TRUE,b2b_sales_124@varanasienterprise.in
+VND-1125,Bareilly Spices Enterprise 125,Spices & Gourmet Food Crafts,Bareilly UP,4.3,11,79.3,0.8,500,TRUE,b2b_sales_125@bareillyenterprise.in
+VND-1126,Ludhiana Organic Enterprise 126,Organic Home & Kitchenware,Ludhiana PB,4.2,14,81.3,4.2,100,TRUE,b2b_sales_126@ludhianaenterprise.in
+VND-1127,Guwahati Brass Enterprise 127,Brass & Artisan Metalcraft,Guwahati AS,4.9,15,98.6,0.9,500,FALSE,b2b_sales_127@guwahatienterprise.in
+VND-1128,Kanpur Jewelry Enterprise 128,Jewelry & Fashion Accessories,Kanpur UP,4.3,8,94.4,0.3,100,FALSE,b2b_sales_128@kanpurenterprise.in
+VND-1129,Rajkot Footwear Enterprise 129,Footwear & Athletic Shoes,Rajkot GJ,3.5,12,77.7,1.3,50,TRUE,b2b_sales_129@rajkotenterprise.in
+VND-1130,Guwahati Knitwear Enterprise 130,Knitwear & Everyday Apparel,Guwahati AS,4.1,3,97.3,1.7,25,TRUE,b2b_sales_130@guwahatienterprise.in
+VND-1131,Bhubaneswar Handloom Enterprise 131,Handloom Bed Linen & Curtains,Bhubaneswar OD,4.3,10,77.8,1.3,100,FALSE,b2b_sales_131@bhubaneswarenterprise.in
+VND-1132,Bareilly Automotive Enterprise 132,Automotive Accessories,Bareilly UP,4.8,10,89.4,3.7,500,TRUE,b2b_sales_132@bareillyenterprise.in
+VND-1133,Coimbatore Stationery Enterprise 133,Stationery & Corporate Gifting,Coimbatore TN,4.2,8,75.8,2.0,25,TRUE,b2b_sales_133@coimbatoreenterprise.in
+VND-1134,Amritsar Jewelry Enterprise 134,Jewelry & Fashion Accessories,Amritsar PB,3.6,6,97.1,3.3,25,TRUE,b2b_sales_134@amritsarenterprise.in
+VND-1135,Kanpur Pet Enterprise 135,Pet Care & Organic Treats,Kanpur UP,4.4,3,91.2,3.3,100,TRUE,b2b_sales_135@kanpurenterprise.in
+VND-1136,Mumbai Consumer Enterprise 136,Consumer Electronics Accessories,Mumbai MH,4.7,12,94.3,1.2,50,TRUE,b2b_sales_136@mumbaienterprise.in
+VND-1137,Nagpur Consumer Enterprise 137,Consumer Electronics Accessories,Nagpur MH,4.4,5,94.0,4.0,50,TRUE,b2b_sales_137@nagpurenterprise.in
+VND-1138,Indore Automotive Enterprise 138,Automotive Accessories,Indore MP,4.8,3,94.6,0.7,100,TRUE,b2b_sales_138@indoreenterprise.in
+VND-1139,Madurai Consumer Enterprise 139,Consumer Electronics Accessories,Madurai TN,3.6,11,82.9,1.0,25,FALSE,b2b_sales_139@maduraienterprise.in
+VND-1140,Patna Knitwear Enterprise 140,Knitwear & Everyday Apparel,Patna BR,4.4,11,86.0,1.9,50,FALSE,b2b_sales_140@patnaenterprise.in
+VND-1141,Jalandhar Pure Enterprise 141,Pure Silk & Traditional Sarees,Jalandhar PB,3.5,9,82.4,3.3,200,FALSE,b2b_sales_141@jalandharenterprise.in
+VND-1142,Bhubaneswar Brass Enterprise 142,Brass & Artisan Metalcraft,Bhubaneswar OD,4.8,12,92.5,2.3,50,TRUE,b2b_sales_142@bhubaneswarenterprise.in
+VND-1143,Mumbai Knitwear Enterprise 143,Knitwear & Everyday Apparel,Mumbai MH,4.3,9,81.7,3.2,500,TRUE,b2b_sales_143@mumbaienterprise.in
+VND-1144,Panipat Fitness Enterprise 144,Fitness Gear & Yoga Accessories,Panipat HR,3.6,13,86.1,3.1,500,TRUE,b2b_sales_144@panipatenterprise.in
+VND-1145,Meerut Eco-Friendly Enterprise 145,Eco-Friendly Packaging,Meerut UP,4.0,9,86.1,1.3,200,FALSE,b2b_sales_145@meerutenterprise.in
+VND-1146,Dehradun Brass Enterprise 146,Brass & Artisan Metalcraft,Dehradun UK,4.1,13,85.5,3.4,200,TRUE,b2b_sales_146@dehradunenterprise.in
+VND-1147,Kanpur Knitwear Enterprise 147,Knitwear & Everyday Apparel,Kanpur UP,3.6,15,95.4,0.6,50,TRUE,b2b_sales_147@kanpurenterprise.in
+VND-1148,Moradabad Automotive Enterprise 148,Automotive Accessories,Moradabad UP,4.0,9,89.4,2.9,100,TRUE,b2b_sales_148@moradabadenterprise.in
+VND-1149,Moradabad Stationery Enterprise 149,Stationery & Corporate Gifting,Moradabad UP,4.0,5,98.7,3.1,200,TRUE,b2b_sales_149@moradabadenterprise.in
+VND-1150,Bengaluru Consumer Enterprise 150,Consumer Electronics Accessories,Bengaluru KA,3.7,12,83.6,2.9,50,TRUE,b2b_sales_150@bengaluruenterprise.in
+VND-1151,Gwalior Stationery Enterprise 151,Stationery & Corporate Gifting,Gwalior MP,4.4,12,98.9,4.1,100,TRUE,b2b_sales_151@gwaliorenterprise.in
+VND-1152,Agra Textiles Enterprise 152,Textiles & Handblock Prints,Agra UP,4.9,3,81.7,3.9,50,TRUE,b2b_sales_152@agraenterprise.in
+VND-1153,Mysuru Ayurvedic Enterprise 153,Ayurvedic Beauty & Wellness,Mysuru KA,4.6,4,91.1,0.5,500,TRUE,b2b_sales_153@mysuruenterprise.in
+VND-1154,Jodhpur Eco-Friendly Enterprise 154,Eco-Friendly Packaging,Jodhpur RJ,4.1,15,85.3,1.8,500,TRUE,b2b_sales_154@jodhpurenterprise.in
+VND-1155,Moradabad Knitwear Enterprise 155,Knitwear & Everyday Apparel,Moradabad UP,3.6,7,78.8,3.8,200,TRUE,b2b_sales_155@moradabadenterprise.in
+VND-1156,Bhubaneswar Stationery Enterprise 156,Stationery & Corporate Gifting,Bhubaneswar OD,3.8,8,89.9,2.2,200,TRUE,b2b_sales_156@bhubaneswarenterprise.in
+VND-1157,Panipat Brass Enterprise 157,Brass & Artisan Metalcraft,Panipat HR,4.3,3,91.6,3.0,50,TRUE,b2b_sales_157@panipatenterprise.in
+VND-1158,Vijayawada Footwear Enterprise 158,Footwear & Athletic Shoes,Vijayawada AP,4.9,15,76.3,1.2,100,TRUE,b2b_sales_158@vijayawadaenterprise.in
+VND-1159,Dehradun Handloom Enterprise 159,Handloom Bed Linen & Curtains,Dehradun UK,4.1,9,77.9,2.6,500,TRUE,b2b_sales_159@dehradunenterprise.in
+VND-1160,Chandigarh Consumer Enterprise 160,Consumer Electronics Accessories,Chandigarh UT,4.0,14,88.7,3.4,25,FALSE,b2b_sales_160@chandigarhenterprise.in
+VND-1161,Surat Stationery Enterprise 161,Stationery & Corporate Gifting,Surat GJ,4.0,12,86.3,0.6,200,FALSE,b2b_sales_161@suratenterprise.in
+VND-1162,Panipat Stationery Enterprise 162,Stationery & Corporate Gifting,Panipat HR,4.0,14,77.8,0.3,100,FALSE,b2b_sales_162@panipatenterprise.in
+VND-1163,Meerut Knitwear Enterprise 163,Knitwear & Everyday Apparel,Meerut UP,4.4,9,95.7,1.4,100,TRUE,b2b_sales_163@meerutenterprise.in
+VND-1164,Chennai Spices Enterprise 164,Spices & Gourmet Food Crafts,Chennai TN,4.3,11,83.2,1.0,500,TRUE,b2b_sales_164@chennaienterprise.in
+VND-1165,Pune Eco-Friendly Enterprise 165,Eco-Friendly Packaging,Pune MH,4.5,6,83.6,4.8,25,TRUE,b2b_sales_165@puneenterprise.in
+VND-1166,Indore Ayurvedic Enterprise 166,Ayurvedic Beauty & Wellness,Indore MP,4.6,5,79.8,3.1,200,TRUE,b2b_sales_166@indoreenterprise.in
+VND-1167,Mysuru Pet Enterprise 167,Pet Care & Organic Treats,Mysuru KA,4.9,13,93.6,2.4,100,TRUE,b2b_sales_167@mysuruenterprise.in
+VND-1168,Nashik Ayurvedic Enterprise 168,Ayurvedic Beauty & Wellness,Nashik MH,4.0,12,76.7,2.3,25,TRUE,b2b_sales_168@nashikenterprise.in
+VND-1169,Chandigarh Jewelry Enterprise 169,Jewelry & Fashion Accessories,Chandigarh UT,3.6,7,76.8,2.4,25,TRUE,b2b_sales_169@chandigarhenterprise.in
+VND-1170,Udaipur Knitwear Enterprise 170,Knitwear & Everyday Apparel,Udaipur RJ,4.4,10,89.6,2.0,500,TRUE,b2b_sales_170@udaipurenterprise.in
+VND-1171,Dehradun Eco-Friendly Enterprise 171,Eco-Friendly Packaging,Dehradun UK,4.9,4,89.8,2.6,100,FALSE,b2b_sales_171@dehradunenterprise.in
+VND-1172,Chandigarh Knitwear Enterprise 172,Knitwear & Everyday Apparel,Chandigarh UT,4.6,11,90.8,0.4,500,FALSE,b2b_sales_172@chandigarhenterprise.in
+VND-1173,Rajkot Leather Enterprise 173,Leather Footwear & Travel Goods,Rajkot GJ,4.1,13,84.1,1.6,500,TRUE,b2b_sales_173@rajkotenterprise.in
+VND-1174,Nagpur Pure Enterprise 174,Pure Silk & Traditional Sarees,Nagpur MH,4.5,7,76.6,0.7,500,TRUE,b2b_sales_174@nagpurenterprise.in
+VND-1175,Nagpur Ayurvedic Enterprise 175,Ayurvedic Beauty & Wellness,Nagpur MH,4.9,13,77.0,3.4,200,TRUE,b2b_sales_175@nagpurenterprise.in
+VND-1176,Vijayawada Ayurvedic Enterprise 176,Ayurvedic Beauty & Wellness,Vijayawada AP,4.3,5,92.4,0.6,500,TRUE,b2b_sales_176@vijayawadaenterprise.in
+VND-1177,Meerut Knitwear Enterprise 177,Knitwear & Everyday Apparel,Meerut UP,4.0,8,87.5,0.3,200,TRUE,b2b_sales_177@meerutenterprise.in
+VND-1178,Chennai Eco-Friendly Enterprise 178,Eco-Friendly Packaging,Chennai TN,3.9,11,99.5,0.9,500,TRUE,b2b_sales_178@chennaienterprise.in
+VND-1179,Tirupur Fitness Enterprise 179,Fitness Gear & Yoga Accessories,Tirupur TN,4.4,5,91.2,4.4,50,FALSE,b2b_sales_179@tirupurenterprise.in
+VND-1180,Udaipur Leather Enterprise 180,Leather Footwear & Travel Goods,Udaipur RJ,4.2,8,94.8,1.0,50,FALSE,b2b_sales_180@udaipurenterprise.in
+VND-1181,Udaipur Pet Enterprise 181,Pet Care & Organic Treats,Udaipur RJ,4.2,7,82.0,3.8,200,TRUE,b2b_sales_181@udaipurenterprise.in
+VND-1182,Rajkot Eco-Friendly Enterprise 182,Eco-Friendly Packaging,Rajkot GJ,4.2,15,91.6,2.9,200,TRUE,b2b_sales_182@rajkotenterprise.in
+VND-1183,Jalandhar Fitness Enterprise 183,Fitness Gear & Yoga Accessories,Jalandhar PB,3.8,7,85.3,1.0,25,TRUE,b2b_sales_183@jalandharenterprise.in
+VND-1184,Rajkot Kids Enterprise 184,Kids Wear & Wooden Toys,Rajkot GJ,4.8,7,88.6,0.7,25,TRUE,b2b_sales_184@rajkotenterprise.in
+VND-1185,Coimbatore Leather Enterprise 185,Leather Footwear & Travel Goods,Coimbatore TN,4.7,6,86.0,2.7,200,TRUE,b2b_sales_185@coimbatoreenterprise.in
+VND-1186,Surat Jewelry Enterprise 186,Jewelry & Fashion Accessories,Surat GJ,4.1,4,85.2,2.1,100,FALSE,b2b_sales_186@suratenterprise.in
+VND-1187,Surat Consumer Enterprise 187,Consumer Electronics Accessories,Surat GJ,4.6,15,82.8,0.7,50,TRUE,b2b_sales_187@suratenterprise.in
+VND-1188,Tirupur Ayurvedic Enterprise 188,Ayurvedic Beauty & Wellness,Tirupur TN,4.5,15,82.0,4.2,200,TRUE,b2b_sales_188@tirupurenterprise.in
+VND-1189,Udaipur Pet Enterprise 189,Pet Care & Organic Treats,Udaipur RJ,3.9,11,75.1,0.6,500,TRUE,b2b_sales_189@udaipurenterprise.in
+VND-1190,Meerut Fitness Enterprise 190,Fitness Gear & Yoga Accessories,Meerut UP,4.0,6,77.7,1.6,200,TRUE,b2b_sales_190@meerutenterprise.in
+VND-1191,Kochi Pet Enterprise 191,Pet Care & Organic Treats,Kochi KL,4.4,13,77.7,4.5,500,TRUE,b2b_sales_191@kochienterprise.in
+VND-1192,Delhi Consumer Enterprise 192,Consumer Electronics Accessories,Delhi NCR,4.0,5,82.1,0.2,25,FALSE,b2b_sales_192@delhienterprise.in
+VND-1193,Rajkot Fitness Enterprise 193,Fitness Gear & Yoga Accessories,Rajkot GJ,4.3,9,76.7,2.7,200,TRUE,b2b_sales_193@rajkotenterprise.in
+VND-1194,Jodhpur Pure Enterprise 194,Pure Silk & Traditional Sarees,Jodhpur RJ,3.5,8,99.0,1.4,50,TRUE,b2b_sales_194@jodhpurenterprise.in
+VND-1195,Madurai Brass Enterprise 195,Brass & Artisan Metalcraft,Madurai TN,3.6,13,93.0,1.8,50,TRUE,b2b_sales_195@maduraienterprise.in
+VND-1196,Patna Pet Enterprise 196,Pet Care & Organic Treats,Patna BR,3.6,3,90.5,4.1,100,FALSE,b2b_sales_196@patnaenterprise.in
+VND-1197,Tirupur Eco-Friendly Enterprise 197,Eco-Friendly Packaging,Tirupur TN,4.0,11,94.4,4.5,200,TRUE,b2b_sales_197@tirupurenterprise.in
+VND-1198,Patna Automotive Enterprise 198,Automotive Accessories,Patna BR,3.8,15,81.2,3.8,25,TRUE,b2b_sales_198@patnaenterprise.in
+VND-1199,Coimbatore Spices Enterprise 199,Spices & Gourmet Food Crafts,Coimbatore TN,4.8,9,78.0,2.0,100,FALSE,b2b_sales_199@coimbatoreenterprise.in
+VND-1200,Bhubaneswar Leather Enterprise 200,Leather Footwear & Travel Goods,Bhubaneswar OD,4.7,15,92.0,2.0,25,TRUE,b2b_sales_200@bhubaneswarenterprise.in
+VND-1201,Kanpur Stationery Enterprise 201,Stationery & Corporate Gifting,Kanpur UP,3.8,8,85.5,5.0,25,TRUE,b2b_sales_201@kanpurenterprise.in
+VND-1202,Dehradun Knitwear Enterprise 202,Knitwear & Everyday Apparel,Dehradun UK,4.4,5,91.2,1.7,200,FALSE,b2b_sales_202@dehradunenterprise.in
+VND-1203,Nashik Jewelry Enterprise 203,Jewelry & Fashion Accessories,Nashik MH,4.0,7,76.0,4.4,25,FALSE,b2b_sales_203@nashikenterprise.in
+VND-1204,Salem Knitwear Enterprise 204,Knitwear & Everyday Apparel,Salem TN,4.5,5,83.9,4.0,500,TRUE,b2b_sales_204@salementerprise.in
+VND-1205,Tirupur Pet Enterprise 205,Pet Care & Organic Treats,Tirupur TN,4.5,9,78.1,1.3,500,TRUE,b2b_sales_205@tirupurenterprise.in
+VND-1206,Vijayawada Pure Enterprise 206,Pure Silk & Traditional Sarees,Vijayawada AP,4.1,15,78.8,2.4,25,FALSE,b2b_sales_206@vijayawadaenterprise.in
+VND-1207,Jalandhar Ayurvedic Enterprise 207,Ayurvedic Beauty & Wellness,Jalandhar PB,3.9,3,84.0,1.7,50,TRUE,b2b_sales_207@jalandharenterprise.in
+VND-1208,Jalandhar Kids Enterprise 208,Kids Wear & Wooden Toys,Jalandhar PB,3.9,14,84.5,2.9,200,TRUE,b2b_sales_208@jalandharenterprise.in
+VND-1209,Udaipur Eco-Friendly Enterprise 209,Eco-Friendly Packaging,Udaipur RJ,4.2,5,82.0,4.6,25,TRUE,b2b_sales_209@udaipurenterprise.in
+VND-1210,Agra Pet Enterprise 210,Pet Care & Organic Treats,Agra UP,3.6,13,97.0,2.3,100,TRUE,b2b_sales_210@agraenterprise.in
+VND-1211,Gwalior Knitwear Enterprise 211,Knitwear & Everyday Apparel,Gwalior MP,4.8,15,88.3,4.5,100,TRUE,b2b_sales_211@gwaliorenterprise.in
+VND-1212,Chennai Fitness Enterprise 212,Fitness Gear & Yoga Accessories,Chennai TN,3.7,3,78.0,1.2,100,FALSE,b2b_sales_212@chennaienterprise.in
+VND-1213,Mysuru Automotive Enterprise 213,Automotive Accessories,Mysuru KA,4.3,4,84.0,4.1,100,TRUE,b2b_sales_213@mysuruenterprise.in
+VND-1214,Patna Footwear Enterprise 214,Footwear & Athletic Shoes,Patna BR,4.7,5,87.9,3.9,100,TRUE,b2b_sales_214@patnaenterprise.in
+VND-1215,Nashik Knitwear Enterprise 215,Knitwear & Everyday Apparel,Nashik MH,3.7,15,86.4,2.7,50,TRUE,b2b_sales_215@nashikenterprise.in
+VND-1216,Chandigarh Stationery Enterprise 216,Stationery & Corporate Gifting,Chandigarh UT,3.7,7,97.3,0.5,50,TRUE,b2b_sales_216@chandigarhenterprise.in
+VND-1217,Dehradun Leather Enterprise 217,Leather Footwear & Travel Goods,Dehradun UK,4.9,4,97.9,1.3,100,TRUE,b2b_sales_217@dehradunenterprise.in
+VND-1218,Gwalior Eco-Friendly Enterprise 218,Eco-Friendly Packaging,Gwalior MP,4.4,11,81.7,3.2,50,TRUE,b2b_sales_218@gwaliorenterprise.in
+VND-1219,Ludhiana Ayurvedic Enterprise 219,Ayurvedic Beauty & Wellness,Ludhiana PB,4.4,3,91.1,3.7,25,TRUE,b2b_sales_219@ludhianaenterprise.in
+VND-1220,Mysuru Pure Enterprise 220,Pure Silk & Traditional Sarees,Mysuru KA,4.4,10,81.5,1.2,500,TRUE,b2b_sales_220@mysuruenterprise.in
+VND-1221,Varanasi Handloom Enterprise 221,Handloom Bed Linen & Curtains,Varanasi UP,4.5,10,86.8,4.1,25,TRUE,b2b_sales_221@varanasienterprise.in
+VND-1222,Ludhiana Pure Enterprise 222,Pure Silk & Traditional Sarees,Ludhiana PB,3.8,8,85.8,2.5,100,TRUE,b2b_sales_222@ludhianaenterprise.in
+VND-1223,Salem Jewelry Enterprise 223,Jewelry & Fashion Accessories,Salem TN,4.3,6,78.2,2.0,200,TRUE,b2b_sales_223@salementerprise.in
+VND-1224,Coimbatore Brass Enterprise 224,Brass & Artisan Metalcraft,Coimbatore TN,3.6,12,86.0,0.9,200,FALSE,b2b_sales_224@coimbatoreenterprise.in
+VND-1225,Ludhiana Consumer Enterprise 225,Consumer Electronics Accessories,Ludhiana PB,4.6,15,94.9,4.7,50,TRUE,b2b_sales_225@ludhianaenterprise.in
+VND-1226,Chandigarh Kids Enterprise 226,Kids Wear & Wooden Toys,Chandigarh UT,4.2,9,86.4,4.4,500,TRUE,b2b_sales_226@chandigarhenterprise.in
+VND-1227,Kolkata Pet Enterprise 227,Pet Care & Organic Treats,Kolkata WB,3.6,12,80.3,1.9,200,FALSE,b2b_sales_227@kolkataenterprise.in
+VND-1228,Amritsar Handloom Enterprise 228,Handloom Bed Linen & Curtains,Amritsar PB,3.7,14,75.2,0.7,100,TRUE,b2b_sales_228@amritsarenterprise.in
+VND-1229,Rajkot Footwear Enterprise 229,Footwear & Athletic Shoes,Rajkot GJ,4.3,11,76.1,0.4,100,TRUE,b2b_sales_229@rajkotenterprise.in
+VND-1230,Jodhpur Knitwear Enterprise 230,Knitwear & Everyday Apparel,Jodhpur RJ,3.9,5,87.4,3.9,25,TRUE,b2b_sales_230@jodhpurenterprise.in
+VND-1231,Rajkot Footwear Enterprise 231,Footwear & Athletic Shoes,Rajkot GJ,4.9,6,94.5,1.8,500,TRUE,b2b_sales_231@rajkotenterprise.in
+VND-1232,Salem Fitness Enterprise 232,Fitness Gear & Yoga Accessories,Salem TN,3.7,15,87.3,0.4,200,TRUE,b2b_sales_232@salementerprise.in
+VND-1233,Guwahati Fitness Enterprise 233,Fitness Gear & Yoga Accessories,Guwahati AS,3.7,5,78.6,4.5,200,TRUE,b2b_sales_233@guwahatienterprise.in
+VND-1234,Madurai Handloom Enterprise 234,Handloom Bed Linen & Curtains,Madurai TN,4.3,10,83.2,4.2,25,TRUE,b2b_sales_234@maduraienterprise.in
+VND-1235,Nagpur Jewelry Enterprise 235,Jewelry & Fashion Accessories,Nagpur MH,4.4,12,91.5,4.9,200,TRUE,b2b_sales_235@nagpurenterprise.in
+VND-1236,Madurai Organic Enterprise 236,Organic Home & Kitchenware,Madurai TN,4.4,11,89.2,3.7,500,TRUE,b2b_sales_236@maduraienterprise.in
+VND-1237,Delhi Footwear Enterprise 237,Footwear & Athletic Shoes,Delhi NCR,4.4,6,95.1,1.4,25,TRUE,b2b_sales_237@delhienterprise.in
+VND-1238,Dehradun Pet Enterprise 238,Pet Care & Organic Treats,Dehradun UK,3.8,14,85.3,2.2,25,FALSE,b2b_sales_238@dehradunenterprise.in
+VND-1239,Jalandhar Ayurvedic Enterprise 239,Ayurvedic Beauty & Wellness,Jalandhar PB,4.5,8,80.1,1.8,50,FALSE,b2b_sales_239@jalandharenterprise.in
+VND-1240,Amritsar Pet Enterprise 240,Pet Care & Organic Treats,Amritsar PB,4.7,12,83.4,1.9,200,TRUE,b2b_sales_240@amritsarenterprise.in
+VND-1241,Kolkata Eco-Friendly Enterprise 241,Eco-Friendly Packaging,Kolkata WB,4.9,15,81.8,1.6,100,TRUE,b2b_sales_241@kolkataenterprise.in
+VND-1242,Bhubaneswar Eco-Friendly Enterprise 242,Eco-Friendly Packaging,Bhubaneswar OD,4.9,7,82.8,1.9,25,TRUE,b2b_sales_242@bhubaneswarenterprise.in
+VND-1243,Jodhpur Automotive Enterprise 243,Automotive Accessories,Jodhpur RJ,4.0,7,96.9,2.1,25,TRUE,b2b_sales_243@jodhpurenterprise.in
+VND-1244,Kanpur Handloom Enterprise 244,Handloom Bed Linen & Curtains,Kanpur UP,3.9,6,83.5,2.3,50,FALSE,b2b_sales_244@kanpurenterprise.in
+VND-1245,Coimbatore Automotive Enterprise 245,Automotive Accessories,Coimbatore TN,3.7,6,97.9,3.5,25,TRUE,b2b_sales_245@coimbatoreenterprise.in
+VND-1246,Chennai Fitness Enterprise 246,Fitness Gear & Yoga Accessories,Chennai TN,4.1,4,90.6,0.5,50,FALSE,b2b_sales_246@chennaienterprise.in
+VND-1247,Gwalior Textiles Enterprise 247,Textiles & Handblock Prints,Gwalior MP,4.5,10,99.0,1.0,50,FALSE,b2b_sales_247@gwaliorenterprise.in
+VND-1248,Dehradun Handloom Enterprise 248,Handloom Bed Linen & Curtains,Dehradun UK,4.7,11,82.0,0.5,25,TRUE,b2b_sales_248@dehradunenterprise.in
+VND-1249,Bareilly Leather Enterprise 249,Leather Footwear & Travel Goods,Bareilly UP,4.9,15,96.6,1.0,200,FALSE,b2b_sales_249@bareillyenterprise.in
+VND-1250,Panipat Leather Enterprise 250,Leather Footwear & Travel Goods,Panipat HR,4.4,8,96.5,0.2,100,TRUE,b2b_sales_250@panipatenterprise.in

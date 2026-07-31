@@ -1,0 +1,101 @@
+vendor_id,vendor_name,category,city,rating,sla_compliance_pct,status
+VND-1001,Vendor 1 Wholesale Ltd,Apparel,Mumbai,4.61,88.6,Active
+VND-1002,Vendor 2 Wholesale Ltd,Apparel,Pune,3.63,91.3,Active
+VND-1003,Vendor 3 Wholesale Ltd,Apparel,Ahmedabad,3.85,94.0,Active
+VND-1004,Vendor 4 Wholesale Ltd,Beauty & Personal Care,Ahmedabad,4.17,89.1,Active
+VND-1005,Vendor 5 Wholesale Ltd,FMCG,Hyderabad,4.01,87.3,Active
+VND-1006,Vendor 6 Wholesale Ltd,Apparel,Delhi,4.07,90.3,Active
+VND-1007,Vendor 7 Wholesale Ltd,Industrial Hardware,Mumbai,4.59,93.0,Under Review
+VND-1008,Vendor 8 Wholesale Ltd,Apparel,Pune,3.94,94.4,Active
+VND-1009,Vendor 9 Wholesale Ltd,Home & Kitchen,Delhi,3.57,88.4,Active
+VND-1010,Vendor 10 Wholesale Ltd,Apparel,Ahmedabad,4.8,90.7,Under Review
+VND-1011,Vendor 11 Wholesale Ltd,Footwear,Bengaluru,4.06,88.1,Active
+VND-1012,Vendor 12 Wholesale Ltd,Apparel,Jaipur,4.45,93.0,Active
+VND-1013,Vendor 13 Wholesale Ltd,FMCG,Kolkata,4.07,99.7,Active
+VND-1014,Vendor 14 Wholesale Ltd,Footwear,Mumbai,3.84,85.5,Active
+VND-1015,Vendor 15 Wholesale Ltd,Beauty & Personal Care,Surat,3.6,98.6,Active
+VND-1016,Vendor 16 Wholesale Ltd,Home & Kitchen,Kolkata,4.09,98.6,Under Review
+VND-1017,Vendor 17 Wholesale Ltd,FMCG,Surat,3.71,96.1,Active
+VND-1018,Vendor 18 Wholesale Ltd,Beauty & Personal Care,Jaipur,4.1,88.3,Active
+VND-1019,Vendor 19 Wholesale Ltd,Stationery,Delhi,4.63,97.8,Active
+VND-1020,Vendor 20 Wholesale Ltd,FMCG,Hyderabad,4.39,90.7,Under Review
+VND-1021,Vendor 21 Wholesale Ltd,Industrial Hardware,Pune,4.79,85.2,Active
+VND-1022,Vendor 22 Wholesale Ltd,Industrial Hardware,Chennai,3.67,91.5,Under Review
+VND-1023,Vendor 23 Wholesale Ltd,Electronics,Surat,4.96,96.4,Active
+VND-1024,Vendor 24 Wholesale Ltd,Industrial Hardware,Pune,4.41,87.3,Active
+VND-1025,Vendor 25 Wholesale Ltd,Electronics,Jaipur,3.99,85.3,Active
+VND-1026,Vendor 26 Wholesale Ltd,Industrial Hardware,Ahmedabad,3.59,98.1,Active
+VND-1027,Vendor 27 Wholesale Ltd,Apparel,Kolkata,4.72,99.6,Active
+VND-1028,Vendor 28 Wholesale Ltd,FMCG,Kolkata,4.92,87.5,Under Review
+VND-1029,Vendor 29 Wholesale Ltd,Home & Kitchen,Pune,4.63,95.3,Active
+VND-1030,Vendor 30 Wholesale Ltd,Beauty & Personal Care,Chennai,4.16,92.7,Active
+VND-1031,Vendor 31 Wholesale Ltd,Home & Kitchen,Ahmedabad,3.6,85.3,Active
+VND-1032,Vendor 32 Wholesale Ltd,Home & Kitchen,Mumbai,3.61,94.4,Active
+VND-1033,Vendor 33 Wholesale Ltd,Apparel,Mumbai,4.79,86.1,Active
+VND-1034,Vendor 34 Wholesale Ltd,Industrial Hardware,Kolkata,3.82,87.0,Under Review
+VND-1035,Vendor 35 Wholesale Ltd,Home & Kitchen,Kolkata,4.71,87.8,Active
+VND-1036,Vendor 36 Wholesale Ltd,Beauty & Personal Care,Chennai,4.14,92.0,Active
+VND-1037,Vendor 37 Wholesale Ltd,Apparel,Mumbai,4.1,90.1,Active
+VND-1038,Vendor 38 Wholesale Ltd,Home & Kitchen,Ahmedabad,3.79,91.7,Under Review
+VND-1039,Vendor 39 Wholesale Ltd,FMCG,Surat,4.19,98.0,Active
+VND-1040,Vendor 40 Wholesale Ltd,Stationery,Pune,3.65,94.7,Active
+VND-1041,Vendor 41 Wholesale Ltd,Apparel,Ahmedabad,3.75,92.2,Active
+VND-1042,Vendor 42 Wholesale Ltd,Beauty & Personal Care,Mumbai,3.75,85.0,Under Review
+VND-1043,Vendor 43 Wholesale Ltd,Industrial Hardware,Kolkata,3.93,95.4,Under Review
+VND-1044,Vendor 44 Wholesale Ltd,FMCG,Ahmedabad,3.95,99.4,Active
+VND-1045,Vendor 45 Wholesale Ltd,Footwear,Mumbai,3.58,92.1,Active
+VND-1046,Vendor 46 Wholesale Ltd,Electronics,Pune,3.62,87.8,Active
+VND-1047,Vendor 47 Wholesale Ltd,Home & Kitchen,Hyderabad,3.68,98.3,Active
+VND-1048,Vendor 48 Wholesale Ltd,Electronics,Jaipur,3.62,94.8,Active
+VND-1049,Vendor 49 Wholesale Ltd,Industrial Hardware,Ahmedabad,4.5,89.7,Active
+VND-1050,Vendor 50 Wholesale Ltd,Beauty & Personal Care,Bengaluru,4.51,89.5,Active
+VND-1051,Vendor 51 Wholesale Ltd,Apparel,Mumbai,4.19,99.9,Active
+VND-1052,Vendor 52 Wholesale Ltd,Apparel,Pune,3.82,89.0,Active
+VND-1053,Vendor 53 Wholesale Ltd,Apparel,Ahmedabad,4.05,87.4,Active
+VND-1054,Vendor 54 Wholesale Ltd,Electronics,Pune,3.95,94.9,Active
+VND-1055,Vendor 55 Wholesale Ltd,Industrial Hardware,Delhi,4.83,96.1,Active
+VND-1056,Vendor 56 Wholesale Ltd,Industrial Hardware,Surat,4.41,95.7,Active
+VND-1057,Vendor 57 Wholesale Ltd,Industrial Hardware,Pune,4.23,98.5,Active
+VND-1058,Vendor 58 Wholesale Ltd,Apparel,Hyderabad,4.74,85.7,Active
+VND-1059,Vendor 59 Wholesale Ltd,FMCG,Surat,3.74,91.6,Under Review
+VND-1060,Vendor 60 Wholesale Ltd,Electronics,Delhi,3.61,98.2,Active
+VND-1061,Vendor 61 Wholesale Ltd,Electronics,Chennai,4.37,87.2,Active
+VND-1062,Vendor 62 Wholesale Ltd,Electronics,Surat,4.05,98.9,Active
+VND-1063,Vendor 63 Wholesale Ltd,Footwear,Ahmedabad,4.52,94.9,Active
+VND-1064,Vendor 64 Wholesale Ltd,Beauty & Personal Care,Jaipur,4.62,98.8,Active
+VND-1065,Vendor 65 Wholesale Ltd,FMCG,Bengaluru,4.82,85.4,Active
+VND-1066,Vendor 66 Wholesale Ltd,Beauty & Personal Care,Ahmedabad,3.9,96.7,Active
+VND-1067,Vendor 67 Wholesale Ltd,Beauty & Personal Care,Mumbai,4.79,88.3,Under Review
+VND-1068,Vendor 68 Wholesale Ltd,Footwear,Surat,4.73,98.0,Active
+VND-1069,Vendor 69 Wholesale Ltd,Electronics,Ahmedabad,4.1,89.2,Active
+VND-1070,Vendor 70 Wholesale Ltd,Industrial Hardware,Chennai,4.46,91.0,Active
+VND-1071,Vendor 71 Wholesale Ltd,Electronics,Delhi,4.82,88.9,Active
+VND-1072,Vendor 72 Wholesale Ltd,Electronics,Delhi,4.39,90.2,Active
+VND-1073,Vendor 73 Wholesale Ltd,Beauty & Personal Care,Jaipur,4.98,86.7,Active
+VND-1074,Vendor 74 Wholesale Ltd,Industrial Hardware,Mumbai,4.56,85.0,Active
+VND-1075,Vendor 75 Wholesale Ltd,Footwear,Hyderabad,3.6,94.9,Active
+VND-1076,Vendor 76 Wholesale Ltd,Footwear,Delhi,4.58,89.5,Active
+VND-1077,Vendor 77 Wholesale Ltd,Beauty & Personal Care,Chennai,4.1,89.4,Active
+VND-1078,Vendor 78 Wholesale Ltd,Home & Kitchen,Hyderabad,4.5,90.6,Active
+VND-1079,Vendor 79 Wholesale Ltd,Industrial Hardware,Hyderabad,4.32,85.0,Active
+VND-1080,Vendor 80 Wholesale Ltd,Home & Kitchen,Hyderabad,4.68,94.0,Active
+VND-1081,Vendor 81 Wholesale Ltd,Stationery,Kolkata,4.16,88.2,Under Review
+VND-1082,Vendor 82 Wholesale Ltd,FMCG,Delhi,3.93,94.9,Active
+VND-1083,Vendor 83 Wholesale Ltd,Apparel,Ahmedabad,4.51,88.3,Active
+VND-1084,Vendor 84 Wholesale Ltd,FMCG,Mumbai,3.57,99.7,Active
+VND-1085,Vendor 85 Wholesale Ltd,Stationery,Hyderabad,4.83,93.6,Under Review
+VND-1086,Vendor 86 Wholesale Ltd,Stationery,Hyderabad,3.87,94.8,Active
+VND-1087,Vendor 87 Wholesale Ltd,Apparel,Hyderabad,3.83,97.0,Under Review
+VND-1088,Vendor 88 Wholesale Ltd,Electronics,Pune,3.87,97.6,Under Review
+VND-1089,Vendor 89 Wholesale Ltd,FMCG,Kolkata,4.5,99.7,Active
+VND-1090,Vendor 90 Wholesale Ltd,Stationery,Jaipur,4.72,98.3,Under Review
+VND-1091,Vendor 91 Wholesale Ltd,Stationery,Bengaluru,4.62,92.1,Active
+VND-1092,Vendor 92 Wholesale Ltd,Home & Kitchen,Surat,4.65,92.8,Active
+VND-1093,Vendor 93 Wholesale Ltd,Industrial Hardware,Kolkata,3.62,89.3,Active
+VND-1094,Vendor 94 Wholesale Ltd,Footwear,Chennai,4.84,86.2,Active
+VND-1095,Vendor 95 Wholesale Ltd,Home & Kitchen,Hyderabad,4.54,95.5,Active
+VND-1096,Vendor 96 Wholesale Ltd,Beauty & Personal Care,Hyderabad,4.0,91.9,Active
+VND-1097,Vendor 97 Wholesale Ltd,Home & Kitchen,Hyderabad,4.08,96.5,Active
+VND-1098,Vendor 98 Wholesale Ltd,Beauty & Personal Care,Kolkata,3.51,90.2,Under Review
+VND-1099,Vendor 99 Wholesale Ltd,Beauty & Personal Care,Pune,4.62,93.1,Active
+VND-1100,Vendor 100 Wholesale Ltd,Stationery,Ahmedabad,3.91,92.2,Under Review

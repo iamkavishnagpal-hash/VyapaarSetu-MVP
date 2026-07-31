@@ -1,0 +1,114 @@
+{
+  "project": "VyapaarSetu",
+  "version": "1.0",
+  "frame": {
+    "device": "iPhone 17 Pro Max",
+    "width": 440,
+    "height": 956,
+    "safeArea": 44
+  },
+  "components": {
+    "primary-button": {
+      "height": 52,
+      "radius": 12,
+      "background": "#0066FF",
+      "textColor": "#FFFFFF",
+      "fontSize": 16,
+      "fontWeight": 600,
+      "shadow": "0 2px 8px rgba(0,102,255,0.3)"
+    },
+    "secondary-button": {
+      "height": 52,
+      "radius": 12,
+      "background": "#F3F4F6",
+      "textColor": "#1A1A2E",
+      "fontSize": 16,
+      "fontWeight": 600,
+      "border": "1px solid #E5E7EB"
+    },
+    "action-card": {
+      "padding": 16,
+      "radius": 12,
+      "background": "#FFFFFF",
+      "shadow": "0 2px 8px rgba(0,0,0,0.06)",
+      "marginBottom": 12
+    },
+    "store-card": {
+      "imageWidth": 160,
+      "imageHeight": 90,
+      "radius": 12,
+      "padding": 12
+    },
+    "cta-card": {
+      "width": "100%",
+      "height": 100,
+      "radius": 12,
+      "padding": 16,
+      "gap": 12
+    },
+    "filter-chip": {
+      "height": 36,
+      "radius": 18,
+      "paddingHorizontal": 12,
+      "fontSize": 13,
+      "fontWeight": 500
+    },
+    "input-field": {
+      "height": 48,
+      "radius": 12,
+      "border": "1px solid #E5E7EB",
+      "fontSize": 14,
+      "padding": 12
+    },
+    "badge": {
+      "height": 22,
+      "radius": 11,
+      "paddingHorizontal": 8,
+      "fontSize": 11,
+      "fontWeight": 500
+    },
+    "tabbar": {
+      "height": 72,
+      "iconSize": 24,
+      "labelSize": 10,
+      "activeColor": "#0066FF",
+      "inactiveColor": "#9CA3AF"
+    },
+    "header": {
+      "height": 56,
+      "padding": 16,
+      "fontSize": 14,
+      "fontWeight": 500
+    },
+    "pipeline-dot": {
+      "size": 16,
+      "lineWidth": 2,
+      "activeColor": "#10B981",
+      "inactiveColor": "#E5E7EB"
+    },
+    "progress-step": {
+      "circleSize": 32,
+      "labelSize": 12,
+      "checkColor": "#10B981",
+      "pendingColor": "#E5E7EB"
+    },
+    "profile-avatar": {
+      "size": 64,
+      "radius": 32
+    }
+  },
+  "colors": {
+    "primary": "#0066FF",
+    "secondary": "#1A1A2E",
+    "accent": "#00D4AA",
+    "background": "#F8F9FB",
+    "surface": "#FFFFFF",
+    "textPrimary": "#1A1A2E",
+    "textSecondary": "#6B7280",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "error": "#EF4444",
+    "escrow": "#8B5CF6",
+    "border": "#E5E7EB"
+  }
+}

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <rect width="1000" height="500" fill="#0f172a" rx="16"/>
+  <rect x="2" y="2" width="996" height="496" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" rx="14"/>
+
+  <!-- Title -->
+  <text x="40" y="45" fill="#ffffff" font-family="system-ui" font-size="22" font-weight="700">VyapaarSetu System Architecture & Module Interconnects</text>
+  <text x="40" y="70" fill="#94a3b8" font-family="system-ui" font-size="14">Production-grade decoupled data, API, automation and BI layer</text>
+
+  <!-- Layer 1: Frontend -->
+  <g transform="translate(40, 110)">
+    <rect width="260" height="340" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" rx="10"/>
+    <text x="20" y="35" fill="#6366f1" font-family="system-ui" font-size="16" font-weight="700">1. Client / UX Layer</text>
+    <rect x="20" y="60" width="220" height="50" fill="rgba(99,102,241,0.15)" rx="6"/>
+    <text x="35" y="90" fill="#ffffff" font-family="system-ui" font-size="13">Interactive HTML Showcase</text>
+    <rect x="20" y="125" width="220" height="50" fill="rgba(99,102,241,0.15)" rx="6"/>
+    <text x="35" y="155" fill="#ffffff" font-family="system-ui" font-size="13">Next.js Merchant Portal</text>
+    <rect x="20" y="190" width="220" height="50" fill="rgba(99,102,241,0.15)" rx="6"/>
+    <text x="35" y="220" fill="#ffffff" font-family="system-ui" font-size="13">Clickable Prototype Map</text>
+  </g>
+
+  <!-- Connectors 1 to 2 -->
+  <path d="M300,280 L370,280" stroke="#6366f1" stroke-width="3" stroke-dasharray="6"/>
+
+  <!-- Layer 2: Automation Engines -->
+  <g transform="translate(370, 110)">
+    <rect width="260" height="340" fill="#1e293b" stroke="#10b981" stroke-width="1.5" rx="10"/>
+    <text x="20" y="35" fill="#10b981" font-family="system-ui" font-size="16" font-weight="700">2. Automation Engines</text>
+    <rect x="20" y="60" width="220" height="40" fill="rgba(16,185,129,0.15)" rx="6"/>
+    <text x="30" y="85" fill="#ffffff" font-family="system-ui" font-size="12">inventory_sync.py</text>
+    <rect x="20" y="110" width="220" height="40" fill="rgba(16,185,129,0.15)" rx="6"/>
+    <text x="30" y="135" fill="#ffffff" font-family="system-ui" font-size="12">escrow_workflow.py</text>
+    <rect x="20" y="160" width="220" height="40" fill="rgba(16,185,129,0.15)" rx="6"/>
+    <text x="30" y="185" fill="#ffffff" font-family="system-ui" font-size="12">vendor_matching.py</text>
+    <rect x="20" y="210" width="220" height="40" fill="rgba(16,185,129,0.15)" rx="6"/>
+    <text x="30" y="235" fill="#ffffff" font-family="system-ui" font-size="12">forecast_engine.py</text>
+    <rect x="20" y="260" width="220" height="40" fill="rgba(16,185,129,0.15)" rx="6"/>
+    <text x="30" y="285" fill="#ffffff" font-family="system-ui" font-size="12">business_health_engine.py</text>
+  </g>
+
+  <!-- Connectors 2 to 3 -->
+  <path d="M630,280 L700,280" stroke="#10b981" stroke-width="3" stroke-dasharray="6"/>
+
+  <!-- Layer 3: Data & Analytics -->
+  <g transform="translate(700, 110)">
+    <rect width="260" height="340" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" rx="10"/>
+    <text x="20" y="35" fill="#f59e0b" font-family="system-ui" font-size="16" font-weight="700">3. Data & Analytics</text>
+    <rect x="20" y="60" width="220" height="70" fill="rgba(245,158,11,0.15)" rx="6"/>
+    <text x="30" y="88" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="600">17 CSV Datasets</text>
+    <text x="30" y="110" fill="#94a3b8" font-family="system-ui" font-size="11">data/ layer (50-500 rows/file)</text>
+    <rect x="20" y="145" width="220" height="70" fill="rgba(245,158,11,0.15)" rx="6"/>
+    <text x="30" y="173" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="600">25 ANSI SQL Queries</text>
+    <text x="30" y="195" fill="#94a3b8" font-family="system-ui" font-size="11">analytics/sql_queries.sql</text>
+    <rect x="20" y="230" width="220" height="70" fill="rgba(245,158,11,0.15)" rx="6"/>
+    <text x="30" y="258" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="600">Power BI 8-Tab Spec</text>
+    <text x="30" y="280" fill="#94a3b8" font-family="system-ui" font-size="11">analytics/dashboard-spec.md</text>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "VyapaarSetu MSME Business OS API",
+    "version": "1.0.0",
+    "description": "RESTful API for Inventory Sync, Vendor Discovery, Escrow Wallet, Carrier Logistics, and Turnkey Store Exchange."
+  },
+  "paths": {
+    "/api/v1/inventory/deduct": {
+      "post": {
+        "summary": "Deduct POS stock and sync online storefronts",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "store_id": { "type": "string", "example": "STR-501" },
+                  "product_id": { "type": "string", "example": "PRD-5001" },
+                  "quantity": { "type": "integer", "example": 1 }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Stock successfully deducted and webhooks pushed." }
+        }
+      }
+    },
+    "/api/v1/vendors/recommend": {
+      "get": {
+        "summary": "Get AI matched verified B2B suppliers",
+        "parameters": [
+          { "name": "category", "in": "query", "schema": { "type": "string" } },
+          { "name": "max_lead_time", "in": "query", "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "List of matched suppliers sorted by composite health score." }
+        }
+      }
+    },
+    "/api/v1/escrow/lock": {
+      "post": {
+        "summary": "Lock funds in multi-sig escrow wallet",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "reference_id": { "type": "string" },
+                  "amount_inr": { "type": "number" },
+                  "seller_id": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Escrow transaction created and locked." }
+        }
+      }
+    }
+  }
+}

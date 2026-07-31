@@ -1,0 +1,40 @@
+// ============================================================================
+// VYAPAARSETU POWER BI DAX MEASURE LIBRARY
+// Production DAX Measures for MSME Business OS Intelligence
+// ============================================================================
+
+// 1. Total Gross Sales Revenue (INR)
+[Total Gross Sales] = 
+SUM(orders[total_amount_inr])
+
+// 2. Total Cost of Goods Sold (COGS)
+[Total COGS] = 
+SUMX(
+    orders,
+    orders[quantity] * RELATED(products[cost_price_inr])
+)
+
+// 3. Total Shipping Expense
+[Total Shipping] = 
+SUM(orders[shipping_cost_inr])
+
+// 4. Net Contribution Margin (INR)
+[Net Contribution Margin] = 
+[Total Gross Sales] - [Total COGS] - [Total Shipping]
+
+// 5. Net Margin Percentage
+[Net Margin Pct] = 
+DIVIDE([Net Contribution Margin], [Total Gross Sales], 0.0)
+
+// 6. Active Escrow Volume Held
+[Escrow Volume Held] = 
+CALCULATE(
+    SUM(escrow_logs[amount_inr]),
+    escrow_logs[status] = "Held"
+)
+
+// 7. Composite Vendor Health Score
+[Vendor Health Score] = 
+AVERAGE(vendors[on_time_rate_pct]) * 0.40 + 
+(100 - AVERAGE(vendors[defect_rate_pct])) * 0.40 + 
+AVERAGE(vendors[rating]) * 4.0

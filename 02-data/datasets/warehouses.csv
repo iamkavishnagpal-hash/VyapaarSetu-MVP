@@ -1,0 +1,5 @@
+warehouse_id,name,city,capacity_units,active_status
+WH-101,Jaipur North Hub,Jaipur RJ,150000,ACTIVE
+WH-102,Surat Central Textile WH,Surat GJ,250000,ACTIVE
+WH-103,Bhiwandi Mega Fulfillment Center,Bhiwandi MH,500000,ACTIVE
+WH-104,Bengaluru South Logistics Hub,Bengaluru KA,300000,ACTIVE

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="100%">
+  <rect width="1000" height="300" fill="#0f172a" rx="16"/>
+  <rect x="2" y="2" width="996" height="296" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" rx="14"/>
+
+  <!-- Flow Nodes -->
+  <g transform="translate(40, 80)">
+    <rect width="180" height="140" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" rx="10"/>
+    <text x="20" y="40" fill="#6366f1" font-family="system-ui" font-size="14" font-weight="700">1. CSV Data Layer</text>
+    <text x="20" y="70" fill="#ffffff" font-family="system-ui" font-size="12">17 CSV Datasets</text>
+    <text x="20" y="95" fill="#94a3b8" font-family="system-ui" font-size="11">data/*.csv</text>
+  </g>
+
+  <path d="M220,150 L270,150" stroke="#6366f1" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(270, 80)">
+    <rect width="180" height="140" fill="#1e293b" stroke="#10b981" stroke-width="1.5" rx="10"/>
+    <text x="20" y="40" fill="#10b981" font-family="system-ui" font-size="14" font-weight="700">2. SQL Analytics</text>
+    <text x="20" y="70" fill="#ffffff" font-family="system-ui" font-size="12">25 Business Queries</text>
+    <text x="20" y="95" fill="#94a3b8" font-family="system-ui" font-size="11">sql_queries.sql</text>
+  </g>
+
+  <path d="M450,150 L500,150" stroke="#10b981" stroke-width="3"/>
+
+  <g transform="translate(500, 80)">
+    <rect width="180" height="140" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" rx="10"/>
+    <text x="20" y="40" fill="#f59e0b" font-family="system-ui" font-size="14" font-weight="700">3. Automation</text>
+    <text x="20" y="70" fill="#ffffff" font-family="system-ui" font-size="12">10 Python Engines</text>
+    <text x="20" y="95" fill="#94a3b8" font-family="system-ui" font-size="11">automation/*.py</text>
+  </g>
+
+  <path d="M680,150 L730,150" stroke="#f59e0b" stroke-width="3"/>
+
+  <g transform="translate(730, 80)">
+    <rect width="230" height="140" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" rx="10"/>
+    <text x="20" y="40" fill="#ef4444" font-family="system-ui" font-size="14" font-weight="700">4. Business Dashboards</text>
+    <text x="20" y="70" fill="#ffffff" font-family="system-ui" font-size="12">Power BI & UX Showcase</text>
+    <text x="20" y="95" fill="#94a3b8" font-family="system-ui" font-size="11">dashboard-spec.md</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+shipment_id,order_id,carrier,sla_days,actual_days,cost
+SHIP-1001,ORD-1001,XpressBees,3,3,120.00
+SHIP-1002,ORD-1002,Shadowfax,4,5,140.00
+SHIP-1003,ORD-1003,BlueDart,2,2,110.00
+SHIP-1004,ORD-1004,Delhivery,5,6,150.00
+SHIP-1005,ORD-1005,Ecom Express,3,4,130.00
+SHIP-1006,ORD-1006,XpressBees,3,3,118.00
+SHIP-1007,ORD-1007,Shadowfax,4,4,135.00
+SHIP-1008,ORD-1008,BlueDart,2,3,115.00
+SHIP-1009,ORD-1009,Delhivery,5,5,148.00
+SHIP-1010,ORD-1010,Ecom Express,3,3,125.00
