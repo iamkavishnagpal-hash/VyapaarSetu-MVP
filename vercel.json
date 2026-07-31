@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "vyapaarsetu-mvp",
+  "cleanUrls": true,
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

@@ -17,21 +17,21 @@ class BusinessAlertingMonitor:
     def scan_for_critical_alerts(self) -> List[Dict[str, Any]]:
         alerts = []
         
-        # 1. Scan Inventory for Leakage
+        # 1. Scan Inventory for Leakage & Ageing Stock Risk
         inv_file = os.path.join(self.data_dir, "inventory.csv")
         if os.path.exists(inv_file):
             with open(inv_file, mode='r', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    shrinkage = float(row['shrinkage_rate_pct'])
-                    if shrinkage > 2.0:
+                    stock_age = int(row.get('stock_age_days', 0))
+                    if stock_age > 120:
                         alerts.append({
                             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                             "severity": "HIGH",
                             "category": "INVENTORY_LEAKAGE",
-                            "title": f"Excessive Shrinkage in Store {row['store_id']}",
-                            "details": f"Product {row['product_id']} at {row['warehouse_location']} recorded shrinkage of {shrinkage}%.",
-                            "action_required": "Conduct immediate physical audit of POS logs vs shelf inventory."
+                            "title": f"Ageing Inventory Risk for Product {row.get('product_id')}",
+                            "details": f"Product {row.get('product_id')} at {row.get('warehouse_location')} recorded stock age of {stock_age} days.",
+                            "action_required": "Conduct immediate physical audit or apply markdown discount."
                         })
 
         # 2. Scan Logistics for SLA Breaches
@@ -40,13 +40,13 @@ class BusinessAlertingMonitor:
             with open(log_file, mode='r', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    if row['sla_status'] == 'SLA Breached':
+                    if row.get('status') == 'Delayed' or row.get('carrier_status') == 'Delayed':
                         alerts.append({
                             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                             "severity": "MEDIUM",
                             "category": "LOGISTICS_BREACH",
-                            "title": f"Carrier SLA Failure: {row['carrier_name']}",
-                            "details": f"Order {row['order_id']} delayed by {int(row['actual_days']) - int(row['promised_days'])} days.",
+                            "title": f"Carrier SLA Failure: {row.get('carrier_name')}",
+                            "details": f"Order {row.get('order_id')} delayed.",
                             "action_required": "Re-route subsequent shipments to alternative carrier."
                         })
 
@@ -56,14 +56,14 @@ class BusinessAlertingMonitor:
             with open(escrow_file, mode='r', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    if row['status'] == 'Held' and float(row['amount_inr']) >= 1000000:
+                    if row.get('escrow_status') == 'LOCKED' and float(row.get('escrow_amount_inr', 0)) >= 100000:
                         alerts.append({
                             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                             "severity": "CRITICAL",
                             "category": "ESCROW_HIGH_VALUE",
-                            "title": f"High Value Acquisition Escrow Hold",
-                            "details": f"Escrow ID {row['escrow_txn_id']} holding ₹{float(row['amount_inr']):,.0f} pending P&L verification.",
-                            "action_required": "Assign Senior Auditor to verify bank statement feed."
+                            "title": "High Value Escrow Hold Alert",
+                            "details": f"Escrow ID {row.get('escrow_id')} holding INR {float(row.get('escrow_amount_inr', 0)):,.0f}.",
+                            "action_required": "Assign Senior Auditor to verify delivery status."
                         })
 
         return alerts
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     active_alerts = monitor.scan_for_critical_alerts()
 
     print("==================================================================")
-    print("VYAPAARSETU BUSINESS ALERTING MONITOR — LIVE SYSTEM SCAN")
+    print("VYAPAARSETU BUSINESS ALERTING MONITOR -- LIVE SYSTEM SCAN")
     print("==================================================================")
     print(f"Total Active Alerts Found: {len(active_alerts)}\n")
-    print(json.dumps(active_alerts, indent=2))
+    print(json.dumps(active_alerts[:5], indent=2))

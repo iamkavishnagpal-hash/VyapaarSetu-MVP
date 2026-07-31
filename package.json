@@ -1,0 +1,20 @@
+{
+  "name": "vyapaarsetu-mvp",
+  "version": "2.0.0",
+  "description": "VyapaarSetu — B2B MSME E-Commerce & Merchant Infrastructure Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "test:automation": "python -m automation.run_all_automation"
+  },
+  "keywords": [
+    "b2b",
+    "ecommerce",
+    "msme",
+    "escrow",
+    "analytics",
+    "automation"
+  ],
+  "author": "Kavish Nagpal",
+  "license": "MIT"
+}

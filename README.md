@@ -5,10 +5,11 @@
 <div align="center">
 
 [![Version](https://img.shields.io/badge/Version-2.0%20Portfolio%20Edition-6366f1.svg?style=for-the-badge)](docs/repository-audit.md)
+[![Live Showcase](https://img.shields.io/badge/Vercel-Live%20Deployment-10b981.svg?style=for-the-badge&logo=vercel)](https://vyapaarsetu-mvp.vercel.app)
 [![Evidence Chain](https://img.shields.io/badge/Evidence%20Chain-100%25%20Verified-10b981.svg?style=for-the-badge)](docs/evidence-traceability.md)
 [![SQL Queries](https://img.shields.io/badge/SQL%20Queries-25%20Production%20Queries-f59e0b.svg?style=for-the-badge)](analytics/sql_queries.sql)
-[![Automation Engines](https://img.shields.io/badge/Python%20Automation-10%20Modules-ef4444.svg?style=for-the-badge)](automation/)
-[![UX Showcase](https://img.shields.io/badge/UX%20Showcase-Interactive%20HTML-3b82f6.svg?style=for-the-badge)](prototype/wireframe-preview.html)
+[![Automation Engines](https://img.shields.io/badge/Python%20Automation-12%20Modules-ef4444.svg?style=for-the-badge)](automation/)
+[![UX Showcase](https://img.shields.io/badge/UX%20Showcase-Interactive%20HTML-3b82f6.svg?style=for-the-badge)](index.html)
 
 </div>
 
@@ -19,8 +20,8 @@
 > **Evaluator Summary:** VyapaarSetu is an enterprise-grade product system designed to digitize India's MSME retail storefronts, eliminate working capital stockout losses, enforce supplier SLAs, secure B2B trade via ICICI escrow vaults, and enable transparent store M&A acquisitions.
 
 ### Quick Verification Actions:
-1. **Interactive UX Showcase:** Open [wireframe-preview.html](prototype/wireframe-preview.html) directly in any web browser to test live views (`Dashboard`, `Start Business`, `Run Business`, `Sell Store`, `Analytics`).
-2. **Execute Python Automation Suite:** Run `python automation/inventory_sync.py` or `python automation/business_health_engine.py` to inspect real-time synthetic engine outputs.
+1. **Interactive UX Showcase:** Open [index.html](index.html) directly in any web browser or visit the live Vercel deployment to test interactive views (`Dashboard`, `Start Business`, `Run Business`, `Sell Store`, `Analytics`).
+2. **Execute Python Automation Suite:** Run `python -m automation.run_all_automation` to inspect 100% pass verification across all 12 modular automation engines.
 3. **Inspect 25 Production SQL Queries:** View [analytics/sql_queries.sql](analytics/sql_queries.sql) for complex financial, inventory ageing, and vendor SLA queries.
 4. **Inspect Relational Datasets:** Browse 17 production CSV files in [data/](data/) containing 50–500 relational rows per entity.
 5. **Review Power BI & KPI Governance:** Check [analytics/dashboard-spec.md](analytics/dashboard-spec.md) and [analytics/kpis.md](analytics/kpis.md).
