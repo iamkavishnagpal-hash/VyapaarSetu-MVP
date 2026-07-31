@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-This report concludes the full transformation of the **VyapaarSetu** repository into an enterprise-grade **Evidence Repository**. Every product claim, architecture diagram, business model, and UX flow described in the [README.md](README.md) is supported by synthetic transactional data, ANSI SQL analytics, runnable Python automation modules, Power BI dashboard specifications, and an interactive HTML UI showcase.
+This report concludes the full transformation of the **VyapaarSetu** repository into an enterprise-grade **Evidence Repository**. Every product claim, architecture diagram, business model, and UX flow described in the [../README.md](../README.md) is supported by synthetic transactional data, ANSI SQL analytics, runnable Python automation modules, Power BI dashboard specifications, and an interactive HTML UI showcase.
 
 ---
 
@@ -17,7 +17,7 @@ This report concludes the full transformation of the **VyapaarSetu** repository 
 
 ```
 VyapaarSetu Root Directory
-├── README.md                              (Recruiter Landing Page, relative links, SVGs, Mermaid)
+├── ../README.md                              (Recruiter Landing Page, relative links, SVGs, Mermaid)
 ├── LICENSE                                (MIT License declaration)
 ├── .gitignore                             (Python, node, data ignore rules)
 ├── CONTRIBUTING.md                        (Open-source contribution guidelines)
@@ -123,15 +123,15 @@ VyapaarSetu Root Directory
 
 | Audit Requirement | Status | Proof Artifact |
 | :--- | :--- | :--- |
-| **1. Repository Hygiene** | RESOLVED | Root directory clean; 100% of markdown links converted from local absolute paths to repository-relative paths (`[orders.csv](data/orders.csv)`). |
+| **1. Repository Hygiene** | RESOLVED | Root directory clean; 100% of markdown links converted from local absolute paths to repository-relative paths (`[orders.csv](../data/orders.csv)`). |
 | **2. Documentation Depth** | RESOLVED | Completed all 10 core docs including `docs/case-study-summary.md` and `docs/faqs.md`. |
 | **3. Data Layer Scale** | RESOLVED | 17 CSV datasets scaled to 500–2,500 rows/file with `docs/data_dictionary.md` schema documentation. |
 | **4. SQL & Analytics Pack** | RESOLVED | 25 production SQL queries (`analytics/sql_queries.sql`) + 4 specialized analytics deep-dive reports. |
 | **5. Power BI Specification** | RESOLVED | 8-tab specification, DAX formulas, filter rules, and offline mockup SVG previews in `analytics/dashboard-spec.md`. |
 | **6. Automation Suite** | RESOLVED | 13 Python scripts compiled and runnable via CLI, covering inventory sync, vendor match, escrow, forecasting, pricing, and logistics. |
 | **7. UX & Prototype Proof** | RESOLVED | 8 UX design docs + static interactive showcase (`wireframe-preview.html`) with tab switcher across all views. |
-| **8. Visual Asset Suite** | RESOLVED | 9 SVG diagrams + native GitHub Mermaid charts integrated into `README.md` and `assets/`. |
-| **9. README Line-by-Line Match**| RESOLVED | Every single statement, metric, script, and artifact mentioned in `README.md` exists and is verifiable. |
+| **8. Visual Asset Suite** | RESOLVED | 9 SVG diagrams + native GitHub Mermaid charts integrated into `../README.md` and `assets/`. |
+| **9. README Line-by-Line Match**| RESOLVED | Every single statement, metric, script, and artifact mentioned in `../README.md` exists and is verifiable. |
 | **10. 5-Minute Recruiter UX** | RESOLVED | Evaluators can inspect raw CSV data, run Python CLI modules, check SQL queries, or launch `wireframe-preview.html` instantly. |
 
 ---

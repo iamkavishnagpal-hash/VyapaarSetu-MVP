@@ -52,7 +52,7 @@ Every business KPI and feature claim in VyapaarSetu is backed by synthetic trans
 - **SQL Layer:** 25 ANSI SQL queries supporting PostgreSQL 14+, DuckDB, BigQuery, and Snowflake.
 - **Automation Layer:** 10 modular, typed Python scripts (`inventory_sync.py`, `vendor_matching.py`, `escrow_workflow.py`, `ai_advisor_flow.py`, `logistics_assignment.py`, etc.).
 - **BI Layer:** 8-tab Power BI specification with DAX measures catalog and global filter panel mechanics.
-- **UX Layer:** Sleek dark/glassmorphic responsive HTML showcase ([wireframe-preview.html](wireframe-preview.html)) with live tab switching.
+- **UX Layer:** Sleek dark/glassmorphic responsive HTML showcase ([../prototype/wireframe-preview.html](../prototype/wireframe-preview.html)) with live tab switching.
 
 ---
 
@@ -67,5 +67,5 @@ python automation/ai_advisor_flow.py
 python automation/business_health_engine.py
 
 # Inspect UX Interactive Showcase
-Open wireframe-preview.html in any modern browser
+Open ../prototype/wireframe-preview.html in any modern browser
 ```

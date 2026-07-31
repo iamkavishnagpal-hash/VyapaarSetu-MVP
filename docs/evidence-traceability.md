@@ -41,7 +41,7 @@
 
 ## 2. Master Traceability Matrix
 
-| Business Problem | Data Source (`data/`) | SQL Analytics Query (`analytics/sql_queries.sql`) | Power BI Tab (`analytics/dashboard-spec.md`) | UX Screen & Wireframe (`ux/` & HTML Showcase) | Python Automation Module (`automation/`) | Quantified Business Impact |
+| Business Problem | Data Source (`data/`) | SQL Analytics Query (`../analytics/sql_queries.sql`) | Power BI Tab (`analytics/dashboard-spec.md`) | UX Screen & Wireframe (`ux/` & HTML Showcase) | Python Automation Module (`automation/`) | Quantified Business Impact |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Inventory Stockouts & Capital Lockup** | `inventory.csv`<br>`products.csv`<br>`inventory_movements.csv` | **Query 5:** Inventory Ageing >90 Days<br>**Query 6:** ABC Inventory Classification | **Tab 2:** Inventory & Stock Health | **Screen:** `Run Business / Inventory Command` | `inventory_sync.py`<br>`forecast_engine.py` | 32% reduction in dead stock capital; 99.4% stock availability for A-tier SKUs. |
 | **Merchant Supplier Risk & Delivery Delays** | `vendors.csv`<br>`vendor_ratings.csv`<br>`logistics.csv` | **Query 4:** Vendor Reliability & SLA Ranking<br>**Query 16:** Logistics On-Time Rate | **Tab 5:** Vendor Performance & Supply Chain | **Screen:** `Vendor Marketplace / Supplier Cards` | `vendor_matching.py`<br>`order_routing.py` | 45% decrease in fulfillment delays; 18% improvement in vendor SLA compliance. |
@@ -58,7 +58,7 @@
 - **Dataset Verification:** `data/inventory.csv` combined with `data/products.csv` tracks reorder thresholds, safety stock levels, and historical lead times.
 - **SQL Proof:** Query 6 (`ABC Inventory Classification`) partitions SKUs into Class A (Top 80% revenue), Class B (15%), and Class C (5% revenue, high holding cost).
 - **Dashboard Representation:** `Tab 2 (Inventory)` renders a dynamic scatter plot of Margin vs. Turnover Days alongside an alert card for SKUs below safety stock.
-- **UX Workflow:** Merchant receives an automated notification card in `wireframe-preview.html` under **Run Business** with a one-click "Approve Purchase Order" trigger.
+- **UX Workflow:** Merchant receives an automated notification card in `../prototype/wireframe-preview.html` under **Run Business** with a one-click "Approve Purchase Order" trigger.
 - **Python Automation:** `automation/inventory_sync.py` recalculates dynamic safety stock levels based on exponential smoothing from `automation/forecast_engine.py` and dispatches auto-PO payloads.
 - **Measured Impact:** Working capital efficiency increased by 38%, holding costs reduced by ₹1.4M annually per mid-sized retail store.
 
@@ -69,7 +69,7 @@
 - **Dataset Verification:** `data/vendors.csv`, `data/vendor_ratings.csv`, and `data/logistics.csv` contain geolocation data, fulfillment history, and cost per km.
 - **SQL Proof:** Query 4 (`Vendor Reliability & SLA Performance`) ranks suppliers by past fulfillment SLA %, defect rates, and pricing competitiveness.
 - **Dashboard Representation:** `Tab 5 (Vendor Performance)` displays vendor scorecard heatmaps and regional fulfillment latency maps.
-- **UX Workflow:** In `wireframe-preview.html` (**Vendor Marketplace**), merchants filter suppliers by rating, lead time, and MOQ, with instant contract execution.
+- **UX Workflow:** In `../prototype/wireframe-preview.html` (**Vendor Marketplace**), merchants filter suppliers by rating, lead time, and MOQ, with instant contract execution.
 - **Python Automation:** `automation/order_routing.py` evaluates incoming orders and assigns optimal vendors based on minimum distance and inventory availability.
 - **Measured Impact:** Average fulfillment time reduced from 4.2 days to 1.8 days; shipping expenditure dropped by 19.5%.
 
@@ -80,7 +80,7 @@
 - **Dataset Verification:** `data/escrow_transactions.csv` logs milestone statuses (Funded, In-Inspection, Disputed, Released).
 - **SQL Proof:** Query 15 (`Escrow Locked vs Released`) calculates total active vault liquidity and release turnaround times.
 - **Dashboard Representation:** `Tab 8 (Operations & Escrow)` monitors live vault balance, dispute velocity, and payout schedules.
-- **UX Workflow:** `wireframe-preview.html` (**Start Business / Escrow**) displays interactive milestone progress bars with release approval toggles.
+- **UX Workflow:** `../prototype/wireframe-preview.html` (**Start Business / Escrow**) displays interactive milestone progress bars with release approval toggles.
 - **Python Automation:** `automation/escrow_workflow.py` executes state transitions, listens for courier delivery webhooks from `automation/notification_engine.py`, and triggers automated fund releases upon inspection window expiry.
 - **Measured Impact:** Transaction dispute rate lowered to <1.2%, merchant payout speed accelerated by 300%.
 
@@ -90,7 +90,7 @@
 
 To independently verify the evidence chain across this codebase:
 
-1. **Verify Raw Data:** Inspect [data/](data) directory to review 17 relational CSV files.
-2. **Execute SQL Queries:** Run queries from [analytics/sql_queries.sql](analytics/sql_queries.sql) against any PostgreSQL database loaded with the CSV files.
+1. **Verify Raw Data:** Inspect [data/](../data) directory to review 17 relational CSV files.
+2. **Execute SQL Queries:** Run queries from [../analytics/sql_queries.sql](../analytics/sql_queries.sql) against any PostgreSQL database loaded with the CSV files.
 3. **Execute Python Engines:** Run `python automation/inventory_sync.py` or `python automation/business_health_engine.py` to observe synthetic execution outputs.
-4. **Inspect UX Showcase:** Open [wireframe-preview.html](wireframe-preview.html) directly in any modern browser.
+4. **Inspect UX Showcase:** Open [../prototype/wireframe-preview.html](../prototype/wireframe-preview.html) directly in any modern browser.
