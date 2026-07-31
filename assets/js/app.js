@@ -19,6 +19,7 @@ const App = {
 
   init: function() {
     this.populateFilterDropdowns();
+    this.renderOnboardingModalGrid();
     this.bindEvents();
     this.renderActiveView();
     this.showToast('🚀 System Online: 12 Business OS Engines Active');
@@ -31,26 +32,61 @@ const App = {
     const catSel = document.getElementById('filter-category');
     const chanSel = document.getElementById('filter-channel');
 
-    if (monthSel) {
-      monthSel.innerHTML = VyapaarData.months.map(m => `<option value="${m.id}">${m.name}</option>`).join('');
-    }
-    if (regionSel) {
-      regionSel.innerHTML = VyapaarData.regions.map(r => `<option value="${r.id}">${r.name}</option>`).join('');
-    }
-    if (storeSel) {
-      storeSel.innerHTML = `<option value="all">All Storefronts (18 Active)</option>` + 
-        VyapaarData.stores.map(s => `<option value="${s.id}">${s.name}</option>`).join('');
-    }
-    if (catSel) {
-      catSel.innerHTML = VyapaarData.categories.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
-    }
-    if (chanSel) {
-      chanSel.innerHTML = VyapaarData.channels.map(ch => `<option value="${ch.id}">${ch.name}</option>`).join('');
+    if (monthSel) monthSel.innerHTML = VyapaarData.months.map(m => `<option value="${m.id}">${m.name}</option>`).join('');
+    if (regionSel) regionSel.innerHTML = VyapaarData.regions.map(r => `<option value="${r.id}">${r.name}</option>`).join('');
+    if (storeSel) storeSel.innerHTML = `<option value="all">All Storefronts (18 Active)</option>` + VyapaarData.stores.map(s => `<option value="${s.id}">${s.name}</option>`).join('');
+    if (catSel) catSel.innerHTML = VyapaarData.categories.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+    if (chanSel) chanSel.innerHTML = VyapaarData.channels.map(ch => `<option value="${ch.id}">${ch.name}</option>`).join('');
+  },
+
+  renderOnboardingModalGrid: function() {
+    const container = document.getElementById('onboarding-goals-grid');
+    if (!container) return;
+
+    container.innerHTML = VyapaarData.b2bOnboardingGoals.map(goal => `
+      <div class="onboarding-btn" onclick="App.selectBusinessObjective('${goal.id}')">
+        <div style="font-size:1.5rem;">${goal.icon}</div>
+        <div>
+          <div class="onboarding-btn-title">${goal.title}</div>
+          <div class="onboarding-btn-desc">${goal.desc}</div>
+        </div>
+      </div>
+    `).join('');
+  },
+
+  openOnboardingModal: function() {
+    const modal = document.getElementById('modal-onboarding');
+    if (modal) modal.classList.add('active');
+  },
+
+  closeOnboardingModal: function() {
+    const modal = document.getElementById('modal-onboarding');
+    if (modal) modal.classList.remove('active');
+  },
+
+  selectBusinessObjective: function(goalId) {
+    const goal = VyapaarData.b2bOnboardingGoals.find(g => g.id === goalId);
+    if (goal) {
+      this.closeOnboardingModal();
+      this.switchMode(goal.mode);
+      this.switchView(goal.view, document.getElementById(`nav-${goal.view}`));
+      
+      const banner = document.getElementById('consequence-banner');
+      if (banner) {
+        banner.innerHTML = `
+          <div class="consequence-icon">🎯</div>
+          <div>
+            <div class="consequence-title">Active B2B Business Objective: ${goal.title}</div>
+            <div class="consequence-body">System configured to optimize ${goal.desc}. Platform telemetry and AI recommendations tuned to this goal.</div>
+          </div>
+        `;
+        banner.style.display = 'flex';
+      }
+      this.showToast(`Selected Business Goal: ${goal.title}`);
     }
   },
 
   bindEvents: function() {
-    // Filter listeners
     ['month', 'region', 'store', 'category', 'channel'].forEach(filterKey => {
       const elem = document.getElementById(`filter-${filterKey}`);
       if (elem) {
@@ -62,9 +98,7 @@ const App = {
     });
 
     const resetBtn = document.getElementById('btn-reset-filters');
-    if (resetBtn) {
-      resetBtn.addEventListener('click', () => this.resetFilters());
-    }
+    if (resetBtn) resetBtn.addEventListener('click', () => this.resetFilters());
   },
 
   switchView: function(viewId, navElem) {
@@ -100,17 +134,23 @@ const App = {
     this.state.activeMode = mode;
     document.querySelectorAll('.mode-btn').forEach(el => el.classList.remove('active'));
     if (btnElem) btnElem.classList.add('active');
-
     this.showToast(`Switched Business Mode: ${mode.toUpperCase()}`);
-    
-    // Jump to mode relevant screen
-    if (mode === 'start') this.switchView('store-health', document.getElementById('nav-store-health'));
-    if (mode === 'run') this.switchView('dashboard', document.getElementById('nav-dashboard'));
-    if (mode === 'grow') this.switchView('growth', document.getElementById('nav-growth'));
-    if (mode === 'sell') this.switchView('store-health', document.getElementById('nav-store-health'));
   },
 
   onFilterChange: function() {
+    const consequence = VyapaarEngine.getBusinessConsequence('filter_change', this.state.filters);
+    const banner = document.getElementById('consequence-banner');
+    if (banner) {
+      banner.innerHTML = `
+        <div class="consequence-icon">📊</div>
+        <div>
+          <div class="consequence-title">${consequence.title}</div>
+          <div class="consequence-body">${consequence.body}</div>
+        </div>
+      `;
+      banner.style.display = 'flex';
+    }
+
     this.showToast('🔍 Analytics recalculated for selected filters');
     this.renderActiveView();
   },
@@ -124,7 +164,6 @@ const App = {
 
   renderActiveView: function() {
     const view = this.state.activeView;
-
     if (view === 'dashboard') this.renderDashboardView();
     if (view === 'ai-advisor') this.renderAiAdvisorView();
     if (view === 'automation') this.renderAutomationView();
@@ -136,14 +175,13 @@ const App = {
   },
 
   /**
-   * Module 1: Power BI Style Analytics Dashboard
+   * Module 1: Executive Dashboard (Line Chart, Donut Chart, Bar Chart, Heatmap Grid)
    */
   renderDashboardView: function() {
     const filteredOrders = VyapaarData.getFilteredOrders(this.state.filters);
     
-    // Calculate dynamic KPIs
     let grossGmv = filteredOrders.reduce((sum, o) => sum + o.amount, 0);
-    if (grossGmv === 0 && this.state.filters.month === 'all') grossGmv = 4850200; // default baseline
+    if (grossGmv === 0 && this.state.filters.month === 'all') grossGmv = 4850200;
 
     let lockedEscrow = VyapaarData.escrow_transactions
       .filter(t => t.vault_status.includes('Locked'))
@@ -151,7 +189,6 @@ const App = {
 
     let lowStockCount = VyapaarData.inventory.filter(i => i.qty <= i.reorder_level).length;
 
-    // Update UI KPI cards
     const gmvElem = document.getElementById('kpi-gmv');
     if (gmvElem) gmvElem.innerText = '₹ ' + grossGmv.toLocaleString();
 
@@ -161,7 +198,6 @@ const App = {
     const riskElem = document.getElementById('kpi-risk-skus');
     if (riskElem) riskElem.innerText = lowStockCount + ' SKUs';
 
-    // Render Orders Table
     const tableBody = document.getElementById('dashboard-orders-tbody');
     if (tableBody) {
       const displayOrders = filteredOrders.length > 0 ? filteredOrders : VyapaarData.orders;
@@ -179,70 +215,86 @@ const App = {
     }
 
     this.renderDashboardCharts(filteredOrders);
+    this.renderHeatmapGrid();
   },
 
   renderDashboardCharts: function(filteredOrders) {
     if (typeof Chart === 'undefined') return;
 
-    // Line Chart: Revenue Trend
+    // Line Chart
     const ctxLine = document.getElementById('chart-revenue-line');
     if (ctxLine) {
       if (this.state.charts.line) this.state.charts.line.destroy();
-
-      const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
-      const dataGmv = [3200000, 3500000, 3900000, 4100000, 4400000, 4650000, 4850200, 5100000];
-      const dataMargin = [420000, 480000, 520000, 580000, 640000, 690000, 740000, 810000];
-
       this.state.charts.line = new Chart(ctxLine, {
         type: 'line',
         data: {
-          labels: labels,
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
           datasets: [
-            { label: 'Gross GMV (INR)', data: dataGmv, borderColor: '#6366f1', backgroundColor: 'rgba(99, 102, 241, 0.1)', fill: true, tension: 0.4 },
-            { label: 'Net Profit Margin (INR)', data: dataMargin, borderColor: '#10b981', borderDash: [5, 5], fill: false, tension: 0.4 }
+            { label: 'Gross GMV (INR)', data: [3200000, 3500000, 3900000, 4100000, 4400000, 4650000, 4850200, 5100000], borderColor: '#6366f1', backgroundColor: 'rgba(99, 102, 241, 0.1)', fill: true, tension: 0.4 },
+            { label: 'Net Profit Margin (INR)', data: [420000, 480000, 520000, 580000, 640000, 690000, 740000, 810000], borderColor: '#10b981', borderDash: [5, 5], fill: false, tension: 0.4 }
           ]
         },
         options: {
-          responsive: true,
-          maintainAspectRatio: false,
+          responsive: true, maintainAspectRatio: false,
           plugins: { legend: { labels: { color: '#94a3b8' } } },
-          scales: {
-            x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
-            y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } }
-          }
+          scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } }
         }
       });
     }
 
-    // Donut Chart: Sales Channel Split
+    // Donut Chart
     const ctxDonut = document.getElementById('chart-channel-donut');
     if (ctxDonut) {
       if (this.state.charts.donut) this.state.charts.donut.destroy();
-
       this.state.charts.donut = new Chart(ctxDonut, {
         type: 'doughnut',
         data: {
           labels: ['B2B Portal', 'WhatsApp Commerce', 'Direct ERP API', 'Wholesale Hub'],
-          datasets: [{
-            data: [45, 30, 15, 10],
-            backgroundColor: ['#6366f1', '#10b981', '#06b6d4', '#f59e0b'],
-            borderWidth: 0
-          }]
+          datasets: [{ data: [45, 30, 15, 10], backgroundColor: ['#6366f1', '#10b981', '#06b6d4', '#f59e0b'], borderWidth: 0 }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8', font: { size: 10 } } } } }
+      });
+    }
+
+    // Bar Chart: Storefront GMV vs Solvency
+    const ctxBar = document.getElementById('chart-store-bar');
+    if (ctxBar) {
+      if (this.state.charts.bar) this.state.charts.bar.destroy();
+      this.state.charts.bar = new Chart(ctxBar, {
+        type: 'bar',
+        data: {
+          labels: ['Bengaluru', 'Surat', 'Hyderabad', 'Mumbai', 'Jaipur', 'Delhi'],
+          datasets: [
+            { label: 'Monthly GMV (₹ Lakhs)', data: [23.8, 18.0, 20.7, 11.8, 15.0, 14.5], backgroundColor: '#6366f1' },
+            { label: 'Solvency Score (/100)', data: [95, 94, 91, 86, 80, 78], backgroundColor: '#10b981' }
+          ]
         },
         options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8', font: { size: 10 } } } }
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { labels: { color: '#94a3b8' } } },
+          scales: { x: { ticks: { color: '#94a3b8' } }, y: { ticks: { color: '#94a3b8' } } }
         }
       });
     }
   },
 
-  /**
-   * Module 2: Live Automation Workflow Runner
-   */
-  renderAutomationView: function() {
-    // Stepper logic set to step 1 initial
+  renderHeatmapGrid: function() {
+    const container = document.getElementById('heatmap-container');
+    if (!container) return;
+
+    const regions = [
+      { name: 'West Region (Surat/Mumbai)', status: 'high', val: '98.2% Stock Density' },
+      { name: 'North Region (Delhi/Jaipur)', status: 'med', val: '84.0% Stock Density' },
+      { name: 'South Region (Blr/Hyd)', status: 'high', val: '96.5% Stock Density' },
+      { name: 'East Region (Kolkata)', status: 'low', val: '68.0% Stock Density' }
+    ];
+
+    container.innerHTML = regions.map(r => `
+      <div class="heatmap-cell ${r.status}">
+        <div style="font-weight:700; margin-bottom:0.2rem;">${r.name}</div>
+        <div>${r.val}</div>
+      </div>
+    `).join('');
   },
 
   triggerOrderSimulation: function() {
@@ -266,7 +318,6 @@ const App = {
     VyapaarEngine.simulateOrderWorkflow(
       sampleOrder,
       (stepInfo, progressPct) => {
-        // Update workflow step nodes
         const stepElem = document.getElementById(`wf-step-${stepInfo.step}`);
         if (stepElem) {
           stepElem.classList.add('active');
@@ -286,6 +337,20 @@ const App = {
       },
       () => {
         if (btn) btn.disabled = false;
+        const consequence = VyapaarEngine.getBusinessConsequence('order_automated', sampleOrder);
+        
+        const banner = document.getElementById('consequence-banner');
+        if (banner) {
+          banner.innerHTML = `
+            <div class="consequence-icon">⚡</div>
+            <div>
+              <div class="consequence-title">${consequence.title}</div>
+              <div class="consequence-body">${consequence.body}</div>
+            </div>
+          `;
+          banner.style.display = 'flex';
+        }
+
         this.showToast('✅ Order Workflow Completed — Inventory & Escrow Updated');
         if (typeof confetti !== 'undefined') confetti({ particleCount: 50, spread: 60 });
         this.renderDashboardView();
@@ -293,13 +358,42 @@ const App = {
     );
   },
 
-  /**
-   * Module 3: AI Advisor Engine
-   */
+  triggerSell: function(sku) {
+    const res = VyapaarEngine.sellInventoryItem(sku);
+    if (res) {
+      const qtyElem = document.getElementById(`qty-${sku}`);
+      if (qtyElem) qtyElem.innerText = res.qty + ' units';
+
+      const badgeElem = document.getElementById(`badge-${sku}`);
+      if (badgeElem) {
+        badgeElem.innerText = res.status;
+        badgeElem.className = `badge ${res.qty <= 15 ? 'badge-rose' : 'badge-emerald'}`;
+      }
+
+      const consequence = VyapaarEngine.getBusinessConsequence('stock_sell', { sku: sku, price: res.unit_price, warehouse: res.warehouse });
+      const banner = document.getElementById('consequence-banner');
+      if (banner) {
+        banner.innerHTML = `
+          <div class="consequence-icon">💸</div>
+          <div>
+            <div class="consequence-title">${consequence.title}</div>
+            <div class="consequence-body">${consequence.body}</div>
+          </div>
+        `;
+        banner.style.display = 'flex';
+      }
+
+      this.showToast(`Sold 1 unit of ${sku}. Remaining: ${res.qty}`);
+      if (res.reorder_triggered) {
+        this.showToast(`⚠️ Low Stock Alert triggered for ${sku}! Reorder PO dispatched.`, 'warning');
+      }
+      this.renderDashboardView();
+    }
+  },
+
   renderAiAdvisorView: function() {
     const storeSel = document.getElementById('ai-store-select');
     const storeId = storeSel ? storeSel.value : 'STR-2001';
-    
     const advice = VyapaarEngine.runAiAdvisor(storeId);
 
     const titleElem = document.getElementById('ai-evaluated-store');
@@ -324,9 +418,6 @@ const App = {
     }
   },
 
-  /**
-   * Module 4: Live Inventory Simulator
-   */
   renderInventoryView: function() {
     const tbody = document.getElementById('inventory-tbody');
     if (!tbody) return;
@@ -346,29 +437,6 @@ const App = {
     `).join('');
   },
 
-  triggerSell: function(sku) {
-    const res = VyapaarEngine.sellInventoryItem(sku);
-    if (res) {
-      const qtyElem = document.getElementById(`qty-${sku}`);
-      if (qtyElem) qtyElem.innerText = res.qty + ' units';
-
-      const badgeElem = document.getElementById(`badge-${sku}`);
-      if (badgeElem) {
-        badgeElem.innerText = res.status;
-        badgeElem.className = `badge ${res.qty <= 15 ? 'badge-rose' : 'badge-emerald'}`;
-      }
-
-      this.showToast(`Sold 1 unit of ${sku}. Remaining: ${res.qty}`);
-      if (res.reorder_triggered) {
-        this.showToast(`⚠️ Low Stock Alert triggered for ${sku}! Reorder PO dispatched.`, 'warning');
-      }
-      this.renderDashboardView();
-    }
-  },
-
-  /**
-   * Module 5: Vendor SLA Matcher
-   */
   renderVendorsView: function() {
     const catSel = document.getElementById('vendor-cat-filter');
     const category = catSel ? catSel.value : 'all';
@@ -387,15 +455,28 @@ const App = {
         <td style="font-weight:700; color:var(--accent-emerald);">${v.sla}%</td>
         <td><span class="badge badge-emerald" style="font-size:0.8rem; font-weight:700;">Score: ${v.match_score}</span></td>
         <td>
-          <button class="btn-secondary" style="padding:0.35rem 0.65rem; font-size:0.75rem;" onclick="App.showToast('PO Dispatched to ${v.name}')">Dispatch PO</button>
+          <button class="btn-secondary" style="padding:0.35rem 0.65rem; font-size:0.75rem;" onclick="App.dispatchVendorPo('${v.name}', ${v.rating}, ${v.sla})">Dispatch PO</button>
         </td>
       </tr>
     `).join('');
   },
 
-  /**
-   * Module 6: Store Health Solvency Panel
-   */
+  dispatchVendorPo: function(name, rating, sla) {
+    const consequence = VyapaarEngine.getBusinessConsequence('po_dispatched', { name: name, rating: rating, sla: sla });
+    const banner = document.getElementById('consequence-banner');
+    if (banner) {
+      banner.innerHTML = `
+        <div class="consequence-icon">🤝</div>
+        <div>
+          <div class="consequence-title">${consequence.title}</div>
+          <div class="consequence-body">${consequence.body}</div>
+        </div>
+      `;
+      banner.style.display = 'flex';
+    }
+    this.showToast(`PO Dispatched to ${name} with ${sla}% SLA guarantee`);
+  },
+
   renderStoreHealthView: function() {
     const storeSel = document.getElementById('health-store-select');
     const storeId = storeSel ? storeSel.value : 'STR-2001';
@@ -415,9 +496,6 @@ const App = {
     if (multElem) multElem.innerText = health.arr_multiple_x + 'x ARR Multiple';
   },
 
-  /**
-   * Module 7: Escrow View
-   */
   renderEscrowView: function() {
     const tbody = document.getElementById('escrow-tbody');
     if (!tbody) return;
@@ -439,14 +517,23 @@ const App = {
 
   releaseEscrow: function(txId) {
     VyapaarEngine.updateEscrowState(txId, 'Released to Vendor');
+    const consequence = VyapaarEngine.getBusinessConsequence('escrow_released', { tx_id: txId });
+    const banner = document.getElementById('consequence-banner');
+    if (banner) {
+      banner.innerHTML = `
+        <div class="consequence-icon">🔒</div>
+        <div>
+          <div class="consequence-title">${consequence.title}</div>
+          <div class="consequence-body">${consequence.body}</div>
+        </div>
+      `;
+      banner.style.display = 'flex';
+    }
     this.showToast(`💸 Escrow Vault Payout Released for ${txId}`);
     this.renderEscrowView();
     this.renderDashboardView();
   },
 
-  /**
-   * Module 8: Growth View
-   */
   renderGrowthView: function() {
     const container = document.getElementById('rfm-cards-container');
     if (!container) return;
@@ -462,9 +549,6 @@ const App = {
     `).join('');
   },
 
-  /**
-   * Recruiter Tour Guide Shortcuts
-   */
   runGuidedTour: function(scenario) {
     if (scenario === 'automation') {
       this.switchView('automation', document.getElementById('nav-automation'));

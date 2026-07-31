@@ -1,10 +1,35 @@
 /**
- * VyapaarSetu Live Business OS - Master Data Layer
+ * VyapaarSetu Live Business OS - Master Data & Evidence Layer
  * File: assets/js/data.js
- * Source Parity: Extracted and structured from data/*.csv
  */
 
 const VyapaarData = {
+  // GitHub Evidence Links Mapping
+  proofLinks: {
+    gmv_kpi: 'https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/analytics/sql_queries.sql#L12-L35',
+    escrow_kpi: 'https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/data/escrow_transactions.csv',
+    inventory_kpi: 'https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/data/inventory.csv',
+    automation_flow: 'https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/inventory_sync.py',
+    ai_advisor: 'https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/ai_advisor_flow.py',
+    vendor_matching: 'https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/vendor_matching.py',
+    store_health: 'https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/business_health_engine.py',
+    architecture: 'https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/docs/repository-audit.md'
+  },
+
+  // Exact 10 B2B Commerce Onboarding Options
+  b2bOnboardingGoals: [
+    { id: 'launch_d2c', title: '🚀 Launch a new D2C Brand', icon: '🛍️', desc: 'Configure storefront catalog, GSTIN KYC & initial inventory', mode: 'start', view: 'store-health' },
+    { id: 'automate_ops', title: '⚡ Automate Retail Operations', icon: '⚙️', desc: 'Trigger automated POs, Redis sync & logistics routing', mode: 'run', view: 'automation' },
+    { id: 'prepare_acq', title: '🏬 Prepare for Acquisition', icon: '🏛️', desc: 'Compute store solvency score & list on M&A marketplace', mode: 'sell', view: 'store-health' },
+    { id: 'scale_omni', title: '🌐 Scale to Omnichannel', icon: '📱', desc: 'Connect WhatsApp Commerce, Direct ERP API & B2B Portal', mode: 'grow', view: 'dashboard' },
+    { id: 'control_inv', title: '📦 Improve Inventory Control', icon: '📊', desc: 'Real-time stock level monitoring & low-stock auto-reorder', mode: 'run', view: 'inventory' },
+    { id: 'find_vendors', title: '🤝 Find Reliable Vendors', icon: 'Verified', desc: 'Rank suppliers by SLA compliance, lead time & ratings', mode: 'run', view: 'vendors' },
+    { id: 'reduce_logistics', title: '🚚 Reduce Logistics Failures', icon: '🛣️', desc: 'Assign optimal carrier routes & monitor SLA waybills', mode: 'run', view: 'logistics' },
+    { id: 'increase_profit', title: '📈 Increase Profitability', icon: '💰', desc: 'AI diagnostic audit of margin leaks & SKU pricing', mode: 'grow', view: 'ai-advisor' },
+    { id: 'track_health', title: '🩺 Track Business Health', icon: '🔍', desc: 'Monitor solvency index, credit underwriting & cash balance', mode: 'run', view: 'store-health' },
+    { id: 'sellable_store', title: '🏷️ Build a Sellable Store', icon: '🏆', desc: 'Optimize ARR multiples & ICICI Escrow transaction history', mode: 'sell', view: 'store-health' }
+  ],
+
   months: [
     { id: 'all', name: 'All Months (Full Year)' },
     { id: '2025-01', name: 'January 2025' },
@@ -97,7 +122,6 @@ const VyapaarData = {
   ]
 };
 
-// Helper filtering function
 VyapaarData.getFilteredOrders = function(filters) {
   return this.orders.filter(order => {
     if (filters.month && filters.month !== 'all' && order.month !== filters.month) return false;

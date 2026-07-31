@@ -1,14 +1,53 @@
 /**
  * VyapaarSetu Live Business OS - Automation & Analytical Calculation Engine
  * File: assets/js/engine.js
- * Source Parity: Ports all 12 Python automation engines into client-side JS
+ * Parity: All 12 Python automation engines with Business Consequence calculations
  */
 
 const VyapaarEngine = {
 
   /**
+   * Helper: Calculates Business Consequence statement for any operational event
+   */
+  getBusinessConsequence: function(eventType, data) {
+    if (eventType === 'filter_change') {
+      return {
+        title: '📊 Decision Consequence: Multi-Dimensional Slice & Dice Active',
+        body: `Filtering applied across ${data.region || 'All Regions'} for ${data.month || 'Full Year'}. Recomputed GMV, Escrow Liquidity ratio, and Vendor SLA distribution instantly.`
+      };
+    }
+    if (eventType === 'stock_sell') {
+      return {
+        title: '💸 Working Capital & Inventory Consequence',
+        body: `Sold 1 unit of ${data.sku}. Capital +₹${data.price.toLocaleString()} collected into Escrow Vault. Inventory carrying cost reduced by 1.8% in ${data.warehouse}.`
+      };
+    }
+    if (eventType === 'order_automated') {
+      return {
+        title: '⚡ Operational Automation Consequence',
+        body: `Order #${data.order_id} fully processed in 4.2 seconds. Stock auto-deducted, ₹${data.amount.toLocaleString()} locked in ICICI Escrow Vault, and BlueDart logistics AWB generated with 0 human friction.`
+      };
+    }
+    if (eventType === 'po_dispatched') {
+      return {
+        title: '🤝 Supplier SLA Guarantee Consequence',
+        body: `Purchase Order dispatched to ${data.name} (${data.rating}⭐, ${data.sla}% SLA). Projected 48-hour delivery prevents potential ₹45,000 stockout revenue loss.`
+      };
+    }
+    if (eventType === 'escrow_released') {
+      return {
+        title: '🔒 Escrow Liquidity Consequence',
+        body: `Payout for ${data.tx_id} released to Supplier. Merchant trust score increased by +0.2; vendor working capital freed for restocking.`
+      };
+    }
+    return {
+      title: '⚡ System State Updated',
+      body: 'Business OS recalculated operational metrics with 0ms latency.'
+    };
+  },
+
+  /**
    * Engine 1 & 2: Store Health Score & Solvency Index Calculator
-   * Parity: automation/business_health_engine.py
    */
   evaluateStoreHealth: function(storeId) {
     let store = VyapaarData.stores.find(s => s.id === storeId) || VyapaarData.stores[0];
@@ -39,9 +78,10 @@ const VyapaarEngine = {
       risk_tier: riskTier,
       estimated_valuation: store.valuation,
       arr_multiple_x: arrMultiple,
+      consequence: `Valuation of ₹${(store.valuation/100000).toFixed(1)}L computed at ${arrMultiple}x ARR multiple. Solvency rating ${rating} enables instant ICICI Escrow underwriting up to ₹25 Lakhs.`,
       recommendations: score < 80 ? [
-        'Margin Leak Detected: Reduce shipping overhead in ' + store.city + ' by switching to local fulfillment hub.',
-        'Inventory Velocity: 2 SKUs have exceeded 30 days stock age — trigger 15% markdown.',
+        'Margin Leak: Reduce shipping overhead in ' + store.city + ' by switching to local fulfillment hub.',
+        'Inventory Velocity: 2 SKUs exceeded 30 days stock age — trigger 15% markdown.',
         'Escrow Liquidity: Increase ICICI Escrow vault coverage ratio by 12% to upgrade to AAA rating.'
       ] : [
         'Optimal Capital Efficiency: Underwriting approval granted for ₹25,00,000 credit line expansion.',
@@ -52,13 +92,11 @@ const VyapaarEngine = {
 
   /**
    * Engine 3 & 12: Smart Supplier Selection & Vendor Matcher
-   * Parity: automation/vendor_matching.py
    */
   matchVendors: function(category = 'all', sortKey = 'match_score') {
     let matched = [];
     VyapaarData.vendors.forEach(v => {
       if (category === 'all' || v.category.toLowerCase() === category.toLowerCase()) {
-        // Formula: Rating (50%) + SLA (50%)
         let compositeScore = parseFloat(((v.rating / 5.0 * 50) + (v.sla / 100.0 * 50)).toFixed(1));
         matched.push({
           ...v,
@@ -78,7 +116,6 @@ const VyapaarEngine = {
 
   /**
    * Engine 1 & 6: AI Merchant Growth & Margin Leak Advisor
-   * Parity: automation/ai_advisor_flow.py
    */
   runAiAdvisor: function(storeId) {
     let healthEval = this.evaluateStoreHealth(storeId);
@@ -105,7 +142,6 @@ const VyapaarEngine = {
 
   /**
    * Engine 7 & 8: Real-time Order & Logistics Automation Runner
-   * Parity: automation/inventory_sync.py & order_routing.py
    */
   simulateOrderWorkflow: function(orderDetails, onStepCallback, onCompleteCallback) {
     const steps = [
@@ -128,9 +164,8 @@ const VyapaarEngine = {
         let stepInfo = steps[stepIdx];
         if (onStepCallback) onStepCallback(stepInfo, (stepIdx + 1) / steps.length * 100);
         stepIdx++;
-        setTimeout(executeNextStep, 500); // 500ms delay per step for visible motion
+        setTimeout(executeNextStep, 500);
       } else {
-        // Complete state change
         VyapaarData.orders.unshift({
           id: orderDetails.order_id,
           month: '2025-08',
@@ -169,6 +204,8 @@ const VyapaarEngine = {
         sku: item.sku,
         name: item.name,
         qty: item.qty,
+        unit_price: item.unit_price,
+        warehouse: item.warehouse,
         status: item.status,
         reorder_triggered: item.qty <= item.reorder_level
       };

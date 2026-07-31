@@ -79,8 +79,8 @@
       </nav>
 
       <div class="sidebar-footer">
-        <div class="recruiter-badge" onclick="App.showToast('Recruiter Vision Demo: 12 Active Engines, 0ms Latency')">
-          <span>🎯</span> Recruiter Vision Mode
+        <div class="recruiter-badge" onclick="App.openOnboardingModal()">
+          <span>🎯</span> Select Business Goal
         </div>
       </div>
     </aside>
@@ -95,6 +95,9 @@
             <p>Real-time GMV reconciliations, Escrow liquidity & automated inventory telemetry</p>
           </div>
           <div class="header-status">
+            <button class="btn-secondary" onclick="App.openOnboardingModal()">
+              🎯 Select Business Goal
+            </button>
             <div class="badge-live">
               <span class="pulse-dot"></span>
               <span>12 Engines Active</span>
@@ -145,6 +148,15 @@
       <!-- WORKSPACE VIEWS CONTAINER -->
       <div class="content-area">
 
+        <!-- DYNAMIC BUSINESS CONSEQUENCE BANNER -->
+        <div id="consequence-banner" class="consequence-banner" style="display:none;">
+          <div class="consequence-icon">⚡</div>
+          <div>
+            <div class="consequence-title">System Consequence</div>
+            <div class="consequence-body">Interactive operational state change.</div>
+          </div>
+        </div>
+
         <!-- VIEW 1: EXECUTIVE DASHBOARD (POWER BI STYLE) -->
         <div id="view-dashboard" class="view-panel active">
           <div class="kpi-grid">
@@ -152,24 +164,29 @@
               <div class="card-title">Gross GMV (Monthly) <span>📈</span></div>
               <div class="card-val" id="kpi-gmv">₹ 4,850,200</div>
               <div class="card-sub text-emerald">▲ +14.2% MoM Growth</div>
+              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/analytics/sql_queries.sql#L12-L35" target="_blank" class="proof-badge">📄 View SQL Proof</a>
             </div>
             <div class="card card-accent-emerald">
               <div class="card-title">ICICI Escrow Locked Vault <span>🔒</span></div>
               <div class="card-val" id="kpi-escrow">₹ 1,420,000</div>
               <div class="card-sub text-indigo">15 Active Transactions</div>
+              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/data/escrow_transactions.csv" target="_blank" class="proof-badge">📄 View Escrow CSV</a>
             </div>
             <div class="card card-accent-amber">
               <div class="card-title">Fulfillment SLA Rate <span>⏱️</span></div>
               <div class="card-val">98.4%</div>
               <div class="card-sub text-emerald">▲ Target 95.0% Exceeded</div>
+              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/order_routing.py" target="_blank" class="proof-badge">📄 View Routing Code</a>
             </div>
             <div class="card card-accent-rose">
               <div class="card-title">Stock Reorder Risk <span>⚠️</span></div>
               <div class="card-val" id="kpi-risk-skus">3 SKUs</div>
               <div class="card-sub text-rose">Low Stock Alerts Triggered</div>
+              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/data/inventory.csv" target="_blank" class="proof-badge">📄 View Inventory CSV</a>
             </div>
           </div>
 
+          <!-- LINE & DONUT CHARTS -->
           <div class="grid-70-30">
             <div class="chart-card">
               <div class="chart-header">
@@ -177,7 +194,7 @@
                   <div class="chart-title">Revenue & Net Profit Trajectory</div>
                   <div class="chart-subtitle">DirectQuery live telemetry across filtered channels</div>
                 </div>
-                <span class="badge badge-emerald">Live Telemetry</span>
+                <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/analytics/sql_queries.sql" target="_blank" class="proof-badge">📄 View SQL Queries</a>
               </div>
               <div class="chart-wrapper">
                 <canvas id="chart-revenue-line"></canvas>
@@ -196,11 +213,38 @@
             </div>
           </div>
 
+          <!-- BAR CHART & REGIONAL HEATMAP GRID -->
+          <div class="grid-60-40">
+            <div class="chart-card">
+              <div class="chart-header">
+                <div>
+                  <div class="chart-title">Storefront Revenue vs Solvency Performance Ranking</div>
+                  <div class="chart-subtitle">Comparing Monthly GMV against Solvency Score</div>
+                </div>
+                <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/business_health_engine.py" target="_blank" class="proof-badge">📄 View Solvency Engine</a>
+              </div>
+              <div class="chart-wrapper">
+                <canvas id="chart-store-bar"></canvas>
+              </div>
+            </div>
+            <div class="chart-card">
+              <div class="chart-header">
+                <div>
+                  <div class="chart-title">Regional Inventory Density Heatmap</div>
+                  <div class="chart-subtitle">Fulfillment hub density and stock status</div>
+                </div>
+              </div>
+              <div id="heatmap-container" class="heatmap-grid">
+                <!-- Dynamically rendered -->
+              </div>
+            </div>
+          </div>
+
           <!-- ORDERS RECONCILIATION TABLE -->
           <div class="table-card">
             <div class="table-header">
               <div class="table-title">Live Merchant Orders Stream</div>
-              <span class="badge badge-indigo">Auto-Reconciled</span>
+              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/data/orders.csv" target="_blank" class="proof-badge">📄 View Orders Dataset CSV</a>
             </div>
             <table>
               <thead>
@@ -229,6 +273,7 @@
               <div>
                 <h3 style="font-size:1.1rem; font-weight:700;" id="ai-evaluated-store">Vyapaar Electronics (Surat) — Health Score: 94/100</h3>
                 <p style="font-size:0.8rem; color:var(--text-muted);">AI Decision-Support System: Margin Leaks, Product Velocity & Capital Allocation</p>
+                <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/ai_advisor_flow.py" target="_blank" class="proof-badge">📄 View AI Advisor Code</a>
               </div>
             </div>
             <div style="margin-bottom: 1.25rem;">
@@ -252,6 +297,7 @@
               <div>
                 <h3 style="font-size:1.1rem; font-weight:700;">Visible Operational Workflow Engine</h3>
                 <p style="font-size:0.8rem; color:var(--text-muted);">Step-by-step order processing from Order Received to Escrow Lock & Logistics</p>
+                <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/inventory_sync.py" target="_blank" class="proof-badge">📄 View Automation Code</a>
               </div>
               <button id="btn-run-automation" class="btn-gradient" onclick="App.triggerOrderSimulation()">
                 ⚡ Trigger Order Simulation
@@ -282,7 +328,10 @@
         <div id="view-inventory" class="view-panel">
           <div class="table-card">
             <div class="table-header">
-              <div class="table-title">Real-Time Inventory Command & Reorder Sync</div>
+              <div>
+                <div class="table-title">Real-Time Inventory Command & Reorder Sync</div>
+                <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/data/inventory.csv" target="_blank" class="proof-badge">📄 View Inventory Dataset CSV</a>
+              </div>
               <span class="badge badge-emerald">Live Stock Counter</span>
             </div>
             <table>
@@ -308,7 +357,10 @@
         <div id="view-vendors" class="view-panel">
           <div class="table-card">
             <div class="table-header">
-              <div class="table-title">Verified Supplier Matching & SLA Matrix</div>
+              <div>
+                <div class="table-title">Verified Supplier Matching & SLA Matrix</div>
+                <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/vendor_matching.py" target="_blank" class="proof-badge">📄 View Vendor Matching Code</a>
+              </div>
               <div style="display:flex; align-items:center; gap:0.5rem;">
                 <span style="font-size:0.75rem; color:var(--text-muted);">Category:</span>
                 <select id="vendor-cat-filter" class="form-control" style="width:180px; padding:0.25rem 0.5rem;" onchange="App.renderVendorsView()">
@@ -343,7 +395,10 @@
         <div id="view-escrow" class="view-panel">
           <div class="table-card">
             <div class="table-header">
-              <div class="table-title">ICICI Escrow Trade Vault & Liquidity Reconciliations</div>
+              <div>
+                <div class="table-title">ICICI Escrow Trade Vault & Liquidity Reconciliations</div>
+                <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/escrow_workflow.py" target="_blank" class="proof-badge">📄 View Escrow Code</a>
+              </div>
               <span class="badge badge-emerald">100% Capital Protected</span>
             </div>
             <table>
@@ -389,6 +444,7 @@
               <div style="font-size:1.5rem; font-weight:800; color:var(--accent-emerald);" id="health-rating-val">AAA - Prime Merchant Storefront</div>
               <div style="font-size:1.8rem; font-weight:700; margin:0.5rem 0;" id="health-valuation-val">₹ 4,850,000</div>
               <div style="font-size:0.85rem; color:#a5b4fc;" id="health-multiple-val">2.4x ARR Multiple</div>
+              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/business_health_engine.py" target="_blank" class="proof-badge">📄 View Business Health Code</a>
               <button class="btn-gradient" style="margin-top:1.25rem;" onclick="App.showToast('Escrow M&A Acquisition Offer Submitted!')">Submit Escrow Acquisition Offer</button>
             </div>
             <div class="card health-gauge-box">
@@ -408,7 +464,10 @@
         <div id="view-logistics" class="view-panel">
           <div class="table-card">
             <div class="table-header">
-              <div class="table-title">Carrier Routing & Active Dispatch Control</div>
+              <div>
+                <div class="table-title">Carrier Routing & Active Dispatch Control</div>
+                <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/logistics_assignment.py" target="_blank" class="proof-badge">📄 View Logistics Routing Code</a>
+              </div>
               <span class="badge badge-cyan">BlueDart & Delhivery Integrated</span>
             </div>
             <table>
@@ -457,6 +516,22 @@
 
       </div>
     </main>
+  </div>
+
+  <!-- B2B COMMERCE ONBOARDING MODAL -->
+  <div id="modal-onboarding" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:700;">🎯 Select B2B Business Objective</h3>
+          <p style="font-size:0.8rem; color:var(--text-muted);">Choose your business objective to configure dashboard presets & AI recommendations</p>
+        </div>
+        <button class="modal-close" onclick="App.closeOnboardingModal()">✕</button>
+      </div>
+      <div id="onboarding-goals-grid" class="onboarding-grid">
+        <!-- Dynamically rendered -->
+      </div>
+    </div>
   </div>
 
   <!-- APPLICATION SCRIPTS -->
