@@ -165,10 +165,16 @@ const App = {
   renderActiveView: function() {
     const view = this.state.activeView;
     if (view === 'dashboard') this.renderDashboardView();
+    if (view === 'crm') this.renderCrmView();
+    if (view === 'billing') this.renderBillingView();
+    if (view === 'inventory') this.renderInventoryView();
+    if (view === 'finance') this.renderFinanceView();
+    if (view === 'analytics') this.renderAnalyticsView();
     if (view === 'ai-advisor') this.renderAiAdvisorView();
     if (view === 'automation') this.renderAutomationView();
-    if (view === 'inventory') this.renderInventoryView();
+    if (view === 'team') this.renderTeamView();
     if (view === 'vendors') this.renderVendorsView();
+    if (view === 'notifications') this.renderNotificationsView();
     if (view === 'escrow') this.renderEscrowView();
     if (view === 'growth') this.renderGrowthView();
     if (view === 'store-health') this.renderStoreHealthView();
@@ -549,6 +555,352 @@ const App = {
     `).join('');
   },
 
+  renderCrmView: function() {
+    const totalCust = document.getElementById('crm-total-cust');
+    if (totalCust) totalCust.innerText = VyapaarData.customers.length + ' Customers';
+
+    let totalUdhar = VyapaarData.customers.reduce((sum, c) => sum + c.pending_udhar, 0);
+    const udharElem = document.getElementById('crm-total-udhar');
+    if (udharElem) udharElem.innerText = '₹ ' + totalUdhar.toLocaleString();
+
+    const tbody = document.getElementById('crm-tbody');
+    if (!tbody) return;
+    tbody.innerHTML = VyapaarData.customers.map(c => `
+      <tr>
+        <td style="font-weight:700; color:var(--accent-indigo);">${c.id}</td>
+        <td><strong>${c.name}</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">${c.company}</span></td>
+        <td>${c.phone}</td>
+        <td>${c.city}</td>
+        <td><span class="badge badge-cyan">${c.category}</span></td>
+        <td style="font-weight:700;">₹ ${c.total_purchases.toLocaleString()}</td>
+        <td style="font-weight:700; color:${c.pending_udhar > 0 ? 'var(--accent-rose)' : 'var(--accent-emerald)'};">₹ ${c.pending_udhar.toLocaleString()}</td>
+        <td><span class="badge badge-indigo">${c.lead_stage}</span></td>
+        <td>
+          <button class="btn-secondary" style="font-size:0.72rem; padding:0.3rem 0.6rem;" onclick="App.sendWhatsAppReminder('${c.phone}', '${c.name}', ${c.pending_udhar})">💬 WhatsApp Reminder</button>
+        </td>
+      </tr>
+    `).join('');
+  },
+
+  renderBillingView: function() {
+    const custSelect = document.getElementById('inv-cust-select');
+    const skuSelect = document.getElementById('inv-sku-select');
+    if (custSelect) custSelect.innerHTML = VyapaarData.customers.map(c => `<option value="${c.id}">${c.name} (${c.company})</option>`).join('');
+    if (skuSelect) skuSelect.innerHTML = VyapaarData.inventory.map(i => `<option value="${i.sku}">${i.name} (₹ ${i.unit_price.toLocaleString()})</option>`).join('');
+
+    const totalRev = VyapaarData.invoices.reduce((sum, inv) => sum + inv.taxable_amount, 0);
+    const totalGst = VyapaarData.invoices.reduce((sum, inv) => sum + inv.cgst + inv.sgst, 0);
+
+    const totElem = document.getElementById('billing-total-val');
+    if (totElem) totElem.innerText = '₹ ' + totalRev.toLocaleString();
+
+    const gstElem = document.getElementById('billing-gst-val');
+    if (gstElem) gstElem.innerText = '₹ ' + totalGst.toLocaleString();
+
+    const tbody = document.getElementById('billing-tbody');
+    if (!tbody) return;
+    tbody.innerHTML = VyapaarData.invoices.map(inv => `
+      <tr>
+        <td style="font-weight:700; color:var(--accent-indigo);">${inv.id}</td>
+        <td>${inv.date}</td>
+        <td><strong>${inv.customer_name}</strong></td>
+        <td>₹ ${inv.taxable_amount.toLocaleString()}</td>
+        <td>₹ ${(inv.cgst + inv.sgst).toLocaleString()}</td>
+        <td style="font-weight:700; color:var(--accent-emerald);">₹ ${inv.total_amount.toLocaleString()}</td>
+        <td><span class="badge ${inv.status === 'Paid' ? 'badge-emerald' : 'badge-amber'}">${inv.status}</span></td>
+        <td>
+          <button class="btn-secondary" style="font-size:0.72rem; padding:0.3rem 0.6rem;" onclick="App.previewInvoice('${inv.id}')">📄 View Invoice PDF</button>
+        </td>
+      </tr>
+    `).join('');
+  },
+
+  renderFinanceView: function() {
+    let totalExp = VyapaarData.expenses.reduce((sum, e) => sum + e.amount, 0);
+    const expElem = document.getElementById('fin-exp-val');
+    if (expElem) expElem.innerText = '₹ ' + totalExp.toLocaleString();
+
+    let netCash = 615000 - totalExp;
+    const netElem = document.getElementById('fin-net-val');
+    if (netElem) netElem.innerText = '₹ ' + netCash.toLocaleString();
+
+    const tbody = document.getElementById('finance-tbody');
+    if (!tbody) return;
+    tbody.innerHTML = VyapaarData.expenses.map(e => `
+      <tr>
+        <td style="font-weight:700; color:var(--accent-indigo);">${e.id}</td>
+        <td>${e.date}</td>
+        <td><span class="badge badge-amber">${e.category}</span></td>
+        <td>${e.description}</td>
+        <td style="font-weight:700; color:var(--accent-rose);">₹ ${e.amount.toLocaleString()}</td>
+        <td><span class="badge badge-emerald">${e.status}</span></td>
+      </tr>
+    `).join('');
+  },
+
+  renderAnalyticsView: function() {
+    // Analytics view initialized
+  },
+
+  renderTeamView: function() {
+    const tbody = document.getElementById('team-tbody');
+    if (!tbody) return;
+    tbody.innerHTML = VyapaarData.team_members.map(t => `
+      <tr>
+        <td style="font-weight:700; color:var(--accent-indigo);">${t.id}</td>
+        <td><strong>${t.name}</strong></td>
+        <td>${t.role}</td>
+        <td>${t.email}</td>
+        <td>${t.phone}</td>
+        <td><span class="badge badge-indigo">${t.access_level}</span></td>
+        <td><span class="badge badge-emerald">${t.status}</span></td>
+      </tr>
+    `).join('');
+  },
+
+  renderNotificationsView: function() {
+    const container = document.getElementById('notifications-feed');
+    if (!container) return;
+    container.innerHTML = VyapaarData.notifications.map(n => `
+      <div class="alert-card ${n.type}">
+        <div>
+          <div style="font-weight:700; font-size:0.9rem;">${n.title}</div>
+          <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.25rem;">${n.message}</div>
+          <div style="font-size:0.7rem; color:var(--text-dim); margin-top:0.35rem;">${n.time} • Priority: ${n.priority}</div>
+        </div>
+        <button class="btn-secondary" style="font-size:0.75rem; padding:0.35rem 0.75rem;" onclick="App.switchView('${n.action_view}')">View Action</button>
+      </div>
+    `).join('');
+  },
+
+  // Modal Controllers & Actions
+  openAddCustomerModal: function() { this.openModal('modal-add-customer'); },
+  openAddExpenseModal: function() { this.openModal('modal-add-expense'); },
+  openAddTeamModal: function() { this.openModal('modal-add-team'); },
+
+  openModal: function(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.add('active');
+  },
+
+  closeModal: function(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.remove('active');
+  },
+
+  saveNewCustomer: function() {
+    const name = document.getElementById('add-cust-name').value;
+    const company = document.getElementById('add-cust-company').value;
+    const phone = document.getElementById('add-cust-phone').value;
+    const city = document.getElementById('add-cust-city').value;
+    const category = document.getElementById('add-cust-category').value;
+
+    if (!name || !company) {
+      this.showToast('Please enter customer name and company', 'warning');
+      return;
+    }
+
+    const newCust = {
+      id: 'CUST-' + (3000 + VyapaarData.customers.length + 1),
+      name: name,
+      company: company,
+      phone: phone || '+91 98000 00000',
+      city: city || 'Mumbai',
+      category: category,
+      total_purchases: 0,
+      pending_udhar: 0,
+      lead_stage: 'Active Customer',
+      last_contact: new Date().toISOString().split('T')[0]
+    };
+
+    VyapaarData.customers.unshift(newCust);
+    this.closeModal('modal-add-customer');
+    this.showToast(`👥 Customer ${name} added successfully!`);
+    this.renderCrmView();
+  },
+
+  saveNewExpense: function() {
+    const cat = document.getElementById('add-exp-cat').value;
+    const desc = document.getElementById('add-exp-desc').value;
+    const amt = parseFloat(document.getElementById('add-exp-amt').value);
+
+    if (!desc || isNaN(amt)) {
+      this.showToast('Please enter expense description and valid amount', 'warning');
+      return;
+    }
+
+    const newExp = {
+      id: 'EXP-' + (800 + VyapaarData.expenses.length + 1),
+      date: new Date().toISOString().split('T')[0],
+      category: cat,
+      description: desc,
+      amount: amt,
+      status: 'Paid'
+    };
+
+    VyapaarData.expenses.unshift(newExp);
+    this.closeModal('modal-add-expense');
+    this.showToast(`💸 Expense ₹${amt.toLocaleString()} logged successfully!`);
+    this.renderFinanceView();
+  },
+
+  saveNewTeamMember: function() {
+    const name = document.getElementById('add-team-name').value;
+    const role = document.getElementById('add-team-role').value;
+    const email = document.getElementById('add-team-email').value;
+    const phone = document.getElementById('add-team-phone').value;
+    const access = document.getElementById('add-team-access').value;
+
+    if (!name || !role) {
+      this.showToast('Please enter staff name and role', 'warning');
+      return;
+    }
+
+    const newStaff = {
+      id: 'EMP-' + (100 + VyapaarData.team_members.length + 1),
+      name: name,
+      role: role,
+      email: email || `${name.toLowerCase().replace(' ', '.')}@vyapaarsetu.in`,
+      phone: phone || '+91 98000 00000',
+      access_level: access,
+      status: 'Active'
+    };
+
+    VyapaarData.team_members.push(newStaff);
+    this.closeModal('modal-add-team');
+    this.showToast(`👨‍💼 Staff member ${name} added to RBAC directory!`);
+    this.renderTeamView();
+  },
+
+  generateNewInvoice: function() {
+    const custId = document.getElementById('inv-cust-select').value;
+    const skuCode = document.getElementById('inv-sku-select').value;
+    const qty = parseInt(document.getElementById('inv-qty-input').value) || 1;
+    const taxRate = parseFloat(document.getElementById('inv-tax-select').value) || 18;
+
+    const cust = VyapaarData.customers.find(c => c.id === custId) || VyapaarData.customers[0];
+    const sku = VyapaarData.inventory.find(i => i.sku === skuCode) || VyapaarData.inventory[0];
+
+    const taxable = sku.unit_price * qty;
+    const halfTax = (taxable * (taxRate / 2)) / 100;
+    const total = taxable + (halfTax * 2);
+
+    const newInv = {
+      id: 'INV-2025-00' + (VyapaarData.invoices.length + 1),
+      date: new Date().toISOString().split('T')[0],
+      customer_name: cust.company,
+      gstin: '27AAAAA' + Math.floor(1000 + Math.random() * 9000) + 'A1Z' + Math.floor(Math.random() * 9),
+      taxable_amount: taxable,
+      cgst: halfTax,
+      sgst: halfTax,
+      total_amount: total,
+      status: 'Paid',
+      payment_mode: 'UPI Auto-Collect'
+    };
+
+    VyapaarData.invoices.unshift(newInv);
+    this.showToast(`🧾 Tax Invoice ${newInv.id} Generated for ₹${total.toLocaleString()}`);
+    this.renderBillingView();
+    this.previewInvoice(newInv.id);
+  },
+
+  previewInvoice: function(invId) {
+    const inv = VyapaarData.invoices.find(i => i.id === invId) || VyapaarData.invoices[0];
+    const sheet = document.getElementById('invoice-sheet-content');
+    if (!sheet) return;
+
+    sheet.innerHTML = `
+      <div class="invoice-sheet-header">
+        <div>
+          <div class="invoice-brand">VyapaarSetu OS</div>
+          <div style="font-size:0.8rem; color:#6b7280;">GSTIN: 27AAACV9948F1Z9 • MSME Reg: UDYAM-MH-01-994821</div>
+          <div style="font-size:0.8rem; color:#6b7280;">Surat Wholesale Hub, Gujarat, India</div>
+        </div>
+        <div style="text-align:right;">
+          <h2 style="font-size:1.2rem; color:#0066ff;">TAX INVOICE</h2>
+          <div style="font-weight:700; font-size:0.9rem;">Invoice #: ${inv.id}</div>
+          <div style="font-size:0.8rem; color:#6b7280;">Date: ${inv.date}</div>
+        </div>
+      </div>
+      <div style="margin-bottom:1rem; font-size:0.85rem;">
+        <strong>Billed To:</strong> ${inv.customer_name}<br>
+        <strong>GSTIN:</strong> ${inv.gstin}<br>
+        <strong>Place of Supply:</strong> Gujarat (State Code: 24)
+      </div>
+      <table class="invoice-table">
+        <thead>
+          <tr>
+            <th>Item Description</th>
+            <th>HSN</th>
+            <th>Qty</th>
+            <th>Rate</th>
+            <th>Taxable Amt</th>
+            <th>CGST</th>
+            <th>SGST</th>
+            <th>Total (INR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Commercial Merchant Order Item</td>
+            <td>8471</td>
+            <td>1</td>
+            <td>₹ ${inv.taxable_amount.toLocaleString()}</td>
+            <td>₹ ${inv.taxable_amount.toLocaleString()}</td>
+            <td>₹ ${inv.cgst.toLocaleString()} (9%)</td>
+            <td>₹ ${inv.sgst.toLocaleString()} (9%)</td>
+            <td style="font-weight:700;">₹ ${inv.total_amount.toLocaleString()}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="invoice-totals">
+        <div class="upi-qr-box">
+          <div style="font-weight:700; font-size:0.75rem; color:#0066ff;">SCAN TO PAY UPI</div>
+          <div style="font-size:2.5rem; margin:0.3rem 0;">📱</div>
+          <div style="font-size:0.68rem; color:#6b7280;">vyapaarsetu@icici</div>
+        </div>
+        <div style="text-align:right; font-size:0.85rem;">
+          <div>Taxable Amount: ₹ ${inv.taxable_amount.toLocaleString()}</div>
+          <div>Total CGST (9%): ₹ ${inv.cgst.toLocaleString()}</div>
+          <div>Total SGST (9%): ₹ ${inv.sgst.toLocaleString()}</div>
+          <div style="font-size:1.1rem; font-weight:800; color:#0066ff; margin-top:0.5rem;">Grand Total: ₹ ${inv.total_amount.toLocaleString()}</div>
+        </div>
+      </div>
+    `;
+
+    this.openModal('modal-invoice-preview');
+  },
+
+  sendWhatsAppReminder: function(phone, name, amount) {
+    if (amount <= 0) {
+      this.showToast(`Account for ${name} has zero pending balance`, 'warning');
+      return;
+    }
+    this.showToast(`💬 WhatsApp payment link (₹${amount.toLocaleString()}) dispatched to ${phone}`);
+  },
+
+  clearAllNotifications: function() {
+    VyapaarData.notifications.forEach(n => n.type = 'normal');
+    this.showToast('🔔 All notifications marked as read');
+    this.renderNotificationsView();
+  },
+
+  exportBusinessReport: function() {
+    const csvContent = "data:text/csv;charset=utf-8," 
+      + "Report,VyapaarSetu Business OS Master Report\n"
+      + "GMV,4850200\n"
+      + "Total Invoices," + VyapaarData.invoices.length + "\n"
+      + "Total Customers," + VyapaarData.customers.length + "\n";
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "VyapaarSetu_Business_Report.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    this.showToast('📥 Business Financial Report CSV downloaded!');
+  },
+
   runGuidedTour: function(scenario) {
     if (scenario === 'automation') {
       this.switchView('automation', document.getElementById('nav-automation'));
@@ -589,3 +941,4 @@ const App = {
 document.addEventListener('DOMContentLoaded', () => {
   App.init();
 });
+

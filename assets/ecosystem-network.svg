@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <linearGradient id="coreGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="50%" stop-color="#00D4AA"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+
+    <linearGradient id="glassPlaque" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(15, 23, 42, 0.90)"/>
+      <stop offset="100%" stop-color="rgba(30, 41, 59, 0.75)"/>
+    </linearGradient>
+
+    <!-- Filters & Glow Effects -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <!-- Circuit Pattern -->
+    <pattern id="circuitPattern" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 10 10 H 90 V 90 H 10 Z" fill="none" stroke="rgba(56, 189, 248, 0.04)" stroke-width="1"/>
+      <circle cx="10" cy="10" r="2" fill="rgba(56, 189, 248, 0.08)"/>
+      <circle cx="90" cy="10" r="2" fill="rgba(56, 189, 248, 0.08)"/>
+      <circle cx="50" cy="50" r="3" fill="rgba(0, 212, 170, 0.08)"/>
+      <path d="M 50 10 V 50 H 90" fill="none" stroke="rgba(0, 212, 170, 0.05)" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. BACKGROUND CANVAS & CIRCUIT PATTERN -->
+  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+  <rect width="1200" height="700" fill="url(#circuitPattern)"/>
+
+  <!-- GRID LINES FOR ISOMETRIC DEPTH -->
+  <g stroke="rgba(255, 255, 255, 0.03)" stroke-width="1">
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="600" y1="0" x2="600" y2="700"/>
+    <path d="M 100 100 L 1100 650" stroke-dasharray="4,4"/>
+    <path d="M 1100 100 L 100 650" stroke-dasharray="4,4"/>
+  </g>
+
+  <!-- 2. TOP FLOATING GLASSMORPHIC KPI DATA PLAQUES ROW (4 PLAQUES AT TOP) -->
+
+  <!-- PLAQUE 1: GROSS GMV (TOP LEFT) -->
+  <g transform="translate(30, 25)" filter="url(#dropShadow)">
+    <rect width="265" height="95" rx="12" fill="url(#glassPlaque)" stroke="rgba(0, 102, 255, 0.45)" stroke-width="1.5"/>
+    <text x="16" y="24" font-family="'Outfit', sans-serif" font-size="10" font-weight="800" fill="#38bdf8" letter-spacing="0.5">📈 GROSS GMV</text>
+    <text x="16" y="52" font-family="'Inter', sans-serif" font-size="20" font-weight="900" fill="#ffffff">₹ 696,000</text>
+    <text x="16" y="74" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#10b981">▲ +14.2% MoM Growth</text>
+    <!-- Embedded Sparkline -->
+    <path d="M 165 72 L 180 66 L 195 70 L 210 55 L 225 58 L 245 42" fill="none" stroke="#00D4AA" stroke-width="2.5" filter="url(#neonGlow)"/>
+    <circle cx="245" cy="42" r="3.5" fill="#00D4AA"/>
+  </g>
+
+  <!-- PLAQUE 2: ICICI ESCROW LOCKED VAULT (TOP CENTER-LEFT) -->
+  <g transform="translate(325, 25)" filter="url(#dropShadow)">
+    <rect width="265" height="95" rx="12" fill="url(#glassPlaque)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.5"/>
+    <g transform="translate(16, 16)">
+      <circle cx="12" cy="12" r="12" fill="rgba(16, 185, 129, 0.2)"/>
+      <text x="12" y="16" text-anchor="middle" font-size="12">🔒</text>
+    </g>
+    <text x="46" y="28" font-family="'Outfit', sans-serif" font-size="10" font-weight="800" fill="#10b981" letter-spacing="0.5">ICICI ESCROW LOCKED VAULT</text>
+    <text x="16" y="56" font-family="'Inter', sans-serif" font-size="20" font-weight="900" fill="#ffffff">₹ 145,000</text>
+    <text x="16" y="76" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#38bdf8">100% Capital Protected • 15 Txs</text>
+  </g>
+
+  <!-- PLAQUE 3: STOCK REORDER RISK (TOP CENTER-RIGHT) -->
+  <g transform="translate(620, 25)" filter="url(#dropShadow)">
+    <rect width="255" height="95" rx="12" fill="url(#glassPlaque)" stroke="rgba(244, 63, 94, 0.45)" stroke-width="1.5"/>
+    <g transform="translate(16, 16)">
+      <circle cx="12" cy="12" r="12" fill="rgba(244, 63, 94, 0.2)"/>
+      <text x="12" y="16" text-anchor="middle" font-size="12">⚠️</text>
+    </g>
+    <text x="46" y="28" font-family="'Outfit', sans-serif" font-size="10" font-weight="800" fill="#f43f5e" letter-spacing="0.5">STOCK REORDER RISK</text>
+    <text x="16" y="56" font-family="'Inter', sans-serif" font-size="20" font-weight="900" fill="#ffffff">3 SKUs</text>
+    <text x="16" y="76" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#fb7185">Low Stock Threshold Triggered</text>
+  </g>
+
+  <!-- PLAQUE 4: FULFILLMENT SLA RATE (TOP RIGHT) -->
+  <g transform="translate(905, 25)" filter="url(#dropShadow)">
+    <rect width="265" height="95" rx="12" fill="url(#glassPlaque)" stroke="rgba(99, 102, 241, 0.45)" stroke-width="1.5"/>
+    <text x="16" y="24" font-family="'Outfit', sans-serif" font-size="10" font-weight="800" fill="#818cf8" letter-spacing="0.5">⏱️ FULFILLMENT SLA RATE</text>
+    <text x="16" y="54" font-family="'Inter', sans-serif" font-size="20" font-weight="900" fill="#ffffff">98.4%</text>
+    <text x="16" y="74" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#34d399">▲ Target 95.0% Exceeded</text>
+    <!-- Embedded Circular Progress Gauge -->
+    <g transform="translate(210, 22)">
+      <circle cx="22" cy="22" r="18" fill="none" stroke="#1e293b" stroke-width="4"/>
+      <circle cx="22" cy="22" r="18" fill="none" stroke="#6366f1" stroke-width="4" stroke-dasharray="113" stroke-dashoffset="10" filter="url(#neonGlow)"/>
+      <text x="22" y="26" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="900" fill="#ffffff">98%</text>
+    </g>
+  </g>
+
+  <!-- 3. GLOWING PARTICLE PIPELINES & CONDUITS -->
+  <!-- Sourcing to Core -->
+  <path d="M 240 420 Q 380 380 510 370" fill="none" stroke="url(#coreGlow)" stroke-width="5" filter="url(#neonGlow)"/>
+  <circle cx="340" cy="395" r="4" fill="#00D4AA" filter="url(#neonGlow)">
+    <animate attributeName="cx" values="240;510" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="420;370" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Warehouse to Core -->
+  <path d="M 820 280 Q 700 320 610 360" fill="none" stroke="#6366f1" stroke-width="5" filter="url(#neonGlow)"/>
+
+  <!-- Core to Retail -->
+  <path d="M 610 390 Q 750 430 920 460" fill="none" stroke="#10b981" stroke-width="5" filter="url(#neonGlow)"/>
+  <circle cx="760" cy="425" r="4" fill="#10b981" filter="url(#neonGlow)">
+    <animate attributeName="cx" values="610;920" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="390;460" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 4. CENTRAL ISOMETRIC COMMERCE ECOSYSTEM LANDSCAPE -->
+
+  <!-- A. SOURCING SECTOR (BOTTOM-LEFT CARGO CONTAINER VESSEL) -->
+  <g transform="translate(60, 360)" filter="url(#dropShadow)">
+    <path d="M 30 140 L 70 180 L 220 180 L 260 140 L 230 110 L 50 110 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M 70 180 L 220 180 L 210 200 L 80 200 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    
+    <!-- Stacked Containers -->
+    <rect x="70" y="85" width="40" height="25" fill="#0066FF" rx="2" stroke="#ffffff" stroke-width="0.8"/>
+    <rect x="115" y="85" width="40" height="25" fill="#ef4444" rx="2" stroke="#ffffff" stroke-width="0.8"/>
+    <rect x="160" y="85" width="40" height="25" fill="#10b981" rx="2" stroke="#ffffff" stroke-width="0.8"/>
+    <rect x="90" y="58" width="40" height="25" fill="#f59e0b" rx="2" stroke="#ffffff" stroke-width="0.8"/>
+    <rect x="135" y="58" width="40" height="25" fill="#6366f1" rx="2" stroke="#ffffff" stroke-width="0.8"/>
+
+    <!-- Ship Bridge Tower -->
+    <rect x="205" y="50" width="30" height="60" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="210" y="60" width="20" height="8" fill="#38bdf8"/>
+
+    <!-- Water Waves -->
+    <path d="M 20 195 Q 50 205 80 195 Q 110 185 140 195 Q 170 205 200 195 Q 230 185 260 195" fill="none" stroke="#0284c7" stroke-width="2.5" opacity="0.8"/>
+    <text x="145" y="225" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#38bdf8" letter-spacing="1">🚢 SOURCING SECTOR</text>
+  </g>
+
+  <!-- B. ECOSYSTEM CORE (CENTER FROSTED GLASS & METAL HUB) -->
+  <g transform="translate(460, 270)" filter="url(#dropShadow)">
+    <circle cx="100" cy="90" r="75" fill="none" stroke="rgba(0, 102, 255, 0.3)" stroke-width="4" stroke-dasharray="12 6"/>
+    <circle cx="100" cy="90" r="60" fill="none" stroke="rgba(0, 212, 170, 0.4)" stroke-width="3"/>
+    
+    <!-- Central Glass Core -->
+    <circle cx="100" cy="90" r="45" fill="url(#coreGlow)" opacity="0.9" filter="url(#neonGlow)"/>
+    <circle cx="100" cy="90" r="22" fill="#ffffff"/>
+    
+    <!-- 5-Node Logo Mark inside Core -->
+    <circle cx="100" cy="90" r="4" fill="#0066FF"/>
+    <line x1="100" y1="90" x2="100" y2="78" stroke="#0066FF" stroke-width="2"/>
+    <circle cx="100" cy="77" r="3" fill="#0066FF"/>
+    <line x1="100" y1="90" x2="111" y2="83" stroke="#0066FF" stroke-width="2"/>
+    <circle cx="112" cy="82" r="3" fill="#0066FF"/>
+    <line x1="100" y1="90" x2="107" y2="101" stroke="#0066FF" stroke-width="2"/>
+    <circle cx="108" cy="102" r="3" fill="#0066FF"/>
+    <line x1="100" y1="90" x2="93" y2="101" stroke="#0066FF" stroke-width="2"/>
+    <circle cx="92" cy="102" r="3" fill="#0066FF"/>
+    <line x1="100" y1="90" x2="89" y2="83" stroke="#0066FF" stroke-width="2"/>
+    <circle cx="88" cy="82" r="3" fill="#0066FF"/>
+
+    <text x="100" y="165" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="13" font-weight="900" fill="#00D4AA" letter-spacing="1">⚡ VYAPAARSETU CORE HUB</text>
+  </g>
+
+  <!-- C. WAREHOUSE & FACTORIES (MID-GROUND TOP-RIGHT) -->
+  <g transform="translate(800, 190)" filter="url(#dropShadow)">
+    <path d="M 40 90 L 140 40 L 240 90 L 140 140 Z" fill="#334155" stroke="#6366f1" stroke-width="2"/>
+    <path d="M 40 90 L 140 140 L 140 210 L 40 160 Z" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <path d="M 240 90 L 140 140 L 140 210 L 240 160 Z" fill="#0f172a" stroke="#6366f1" stroke-width="2"/>
+    
+    <!-- Loading Dock -->
+    <rect x="65" y="120" width="45" height="35" fill="#cbd5e1" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="65" y1="130" x2="110" y2="130" stroke="#64748b" stroke-width="1"/>
+    <line x1="65" y1="140" x2="110" y2="140" stroke="#64748b" stroke-width="1"/>
+    <text x="140" y="235" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#818cf8" letter-spacing="1">🏭 LOGISTICS &amp; WAREHOUSE HUB</text>
+  </g>
+
+  <!-- D. RETAIL SECTOR (BOTTOM-RIGHT FLAGSHIP STORE) -->
+  <g transform="translate(850, 420)" filter="url(#dropShadow)">
+    <path d="M 30 70 L 130 20 L 230 70 L 130 120 Z" fill="#0f766e" stroke="#10b981" stroke-width="2"/>
+    <path d="M 30 70 L 130 120 L 130 200 L 30 150 Z" fill="#115e59" stroke="#10b981" stroke-width="2"/>
+    <path d="M 230 70 L 130 120 L 130 200 L 230 150 Z" fill="#042f2e" stroke="#10b981" stroke-width="2"/>
+
+    <!-- Display Windows -->
+    <rect x="50" y="100" width="30" height="35" fill="#38bdf8" opacity="0.8" rx="2"/>
+    <rect x="150" y="100" width="30" height="35" fill="#38bdf8" opacity="0.8" rx="2"/>
+    <rect x="150" y="145" width="35" height="50" fill="#e2e8f0" rx="2"/>
+    <text x="130" y="225" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#10b981" letter-spacing="1">🏬 RETAIL SECTOR</text>
+  </g>
+
+  <!-- 5. LOWER-MIDDLE INTEGRATED STORY TEXT PLAQUE -->
+  <g transform="translate(260, 610)" filter="url(#dropShadow)">
+    <rect width="680" height="55" rx="10" fill="url(#glassPlaque)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+    <text x="340" y="24" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="0.3">
+      Unifying Sourcing to Retail: View our integrated commerce os connecting ocean freight,
+    </text>
+    <text x="340" y="42" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="0.3">
+      warehouses, and manage retail channels (storefronts) in real-time.
+    </text>
+  </g>
+</svg>

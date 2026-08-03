@@ -119,6 +119,47 @@ const VyapaarData = {
     { segment: 'Loyal Merchant Buyers', count: 280, avg_gmv_inr: 210000, retention_pct: 88.5, recommended_campaign: 'Quarterly Inventory Reorder Credit Lines' },
     { segment: 'At-Risk Merchant Stores', count: 85, avg_gmv_inr: 95000, retention_pct: 54.0, recommended_campaign: 'Automated 12% Markdown Clearance Bundles' },
     { segment: 'Lapsed Storefronts', count: 42, avg_gmv_inr: 40000, retention_pct: 22.1, recommended_campaign: 'Re-engagement Working Capital Loan Assist' }
+  ],
+
+  // 👥 CRM & UDHAR KHATA DATASET
+  customers: [
+    { id: 'CUST-3001', name: 'Ramesh Sharma', company: 'Sharma Kirana Store', phone: '+91 98201 44512', city: 'Mumbai', category: 'Wholesale', total_purchases: 485000, pending_udhar: 35000, lead_stage: 'Active Customer', last_contact: '2025-07-28' },
+    { id: 'CUST-3002', name: 'Vikram Mehta', company: 'Mehta Textiles', phone: '+91 98791 22304', city: 'Surat', category: 'Distributor', total_purchases: 1240000, pending_udhar: 120000, lead_stage: 'Active Customer', last_contact: '2025-07-27' },
+    { id: 'CUST-3003', name: 'Ananya Roy', company: 'Roy Electronics & Hardware', phone: '+91 94330 88192', city: 'Kolkata', category: 'Retail', total_purchases: 290000, pending_udhar: 0, lead_stage: 'Active Customer', last_contact: '2025-07-26' },
+    { id: 'CUST-3004', name: 'Sanjay Patel', company: 'Patel Trading Co.', phone: '+91 98250 11983', city: 'Ahmedabad', category: 'Wholesale', total_purchases: 620000, pending_udhar: 45000, lead_stage: 'Proposal Sent', last_contact: '2025-07-24' },
+    { id: 'CUST-3005', name: 'Priya Sundaram', company: 'South Coast Supermarket', phone: '+91 94441 55678', city: 'Chennai', category: 'Retail', total_purchases: 810000, pending_udhar: 18000, lead_stage: 'Active Customer', last_contact: '2025-07-22' }
+  ],
+
+  // 🧾 BILLING & GST INVOICES DATASET
+  invoices: [
+    { id: 'INV-2025-001', date: '2025-07-28', customer_name: 'Sharma Kirana Store', gstin: '27AAAAA0000A1Z5', taxable_amount: 120000, cgst: 10800, sgst: 10800, total_amount: 141600, status: 'Paid', payment_mode: 'UPI Auto-Collect' },
+    { id: 'INV-2025-002', date: '2025-07-26', customer_name: 'Mehta Textiles', gstin: '24BBBBB1111B2Z6', taxable_amount: 250000, cgst: 22500, sgst: 22500, total_amount: 295000, status: 'Overdue', payment_mode: 'ICICI Escrow' },
+    { id: 'INV-2025-003', date: '2025-07-24', customer_name: 'Roy Electronics & Hardware', gstin: '19CCCCC2222C3Z7', taxable_amount: 85000, cgst: 7650, sgst: 7650, total_amount: 100300, status: 'Paid', payment_mode: 'Bank NEFT' },
+    { id: 'INV-2025-004', date: '2025-07-20', customer_name: 'Patel Trading Co.', gstin: '24DDDDD3333D4Z8', taxable_amount: 160000, cgst: 14400, sgst: 14400, total_amount: 188800, status: 'Pending', payment_mode: 'Partially Paid (Udhar)' }
+  ],
+
+  // 💰 FINANCE EXPENSES DATASET
+  expenses: [
+    { id: 'EXP-801', date: '2025-07-28', category: 'Warehouse Rent', description: 'Surat Fulfillment Hub Monthly Rent', amount: 85000, status: 'Approved' },
+    { id: 'EXP-802', date: '2025-07-25', category: 'Logistics Freight', description: 'Delhi-Mumbai Express Highway Freight', amount: 42500, status: 'Paid' },
+    { id: 'EXP-803', date: '2025-07-22', category: 'Staff Payroll', description: 'July Operations Staff Advance', amount: 145000, status: 'Processed' },
+    { id: 'EXP-804', date: '2025-07-18', category: 'Raw Materials', description: 'Bulk Apparel Packaging Cotton Supplies', amount: 68000, status: 'Paid' }
+  ],
+
+  // 👨‍💼 TEAM & ACCESS CONTROL DATASET
+  team_members: [
+    { id: 'EMP-101', name: 'Kavish Nagpal', role: 'Owner & Managing Director', email: 'kavish@vyapaarsetu.in', phone: '+91 98100 99887', access_level: 'Super Admin', status: 'Active' },
+    { id: 'EMP-102', name: 'Rajesh Kumar', role: 'Head of Operations & Inventory', email: 'rajesh.k@vyapaarsetu.in', phone: '+91 98220 11443', access_level: 'Admin Manager', status: 'Active' },
+    { id: 'EMP-103', name: 'Sneha Kulkarni', role: 'Chief Accountant & GST Lead', email: 'sneha.cfo@vyapaarsetu.in', phone: '+91 98330 55112', access_level: 'Billing Manager', status: 'Active' },
+    { id: 'EMP-104', name: 'Amit Verma', role: 'Sales & Merchant Relations Lead', email: 'amit.v@vyapaarsetu.in', phone: '+91 98440 22771', access_level: 'Sales Executive', status: 'Active' }
+  ],
+
+  // 🔔 SMART NOTIFICATIONS DATASET
+  notifications: [
+    { id: 'NOTIF-01', type: 'warning', title: '⚠️ Critical Low Stock Alert', message: 'Herbal Skincare Kit (SKU-BEA-301) reached critical level (5 units remaining in WH-South-Hyd).', time: '10 mins ago', priority: 'Critical', action_view: 'inventory' },
+    { id: 'NOTIF-02', type: 'info', title: '💰 Overdue Payment Reminder', message: 'Invoice INV-2025-002 (Mehta Textiles - ₹2,95,000) is overdue by 2 days.', time: '1 hour ago', priority: 'High', action_view: 'crm' },
+    { id: 'NOTIF-03', type: 'success', title: '🔒 Escrow Vault Release', message: 'ICICI Escrow Vault released ₹2,80,000 for Order ORD-8902 to TechDistro India.', time: '3 hours ago', priority: 'Normal', action_view: 'escrow' },
+    { id: 'NOTIF-04', type: 'ai', title: '🧠 AI Margin Optimization', message: 'AI Advisor identified 4.2% margin expansion opportunity in Apparel bundle pricing.', time: '5 hours ago', priority: 'Normal', action_view: 'ai-advisor' }
   ]
 };
 
@@ -132,3 +173,4 @@ VyapaarData.getFilteredOrders = function(filters) {
     return true;
   });
 };
+

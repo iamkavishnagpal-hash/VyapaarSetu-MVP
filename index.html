@@ -23,10 +23,10 @@
     <!-- SIDEBAR NAVIGATION -->
     <aside>
       <div class="brand-container">
-        <div class="brand-logo">VS</div>
+        <img src="assets/logo.svg" alt="VyapaarSetu Hub Logo" class="brand-logo-img">
         <div class="brand-info">
           <h2>VyapaarSetu</h2>
-          <span>Business OS v2.0</span>
+          <span>AI Powered Commerce OS</span>
         </div>
       </div>
 
@@ -43,31 +43,46 @@
 
       <!-- MAIN NAVIGATION -->
       <nav>
-        <div class="nav-section-title">Core Operating Engines</div>
+        <div class="nav-section-title">Core Business Operating System</div>
         <ul>
           <li class="active" id="nav-dashboard" onclick="App.switchView('dashboard', this)">
             <a href="#"><span class="nav-icon">📊</span> Executive Dashboard</a>
           </li>
-          <li id="nav-ai-advisor" onclick="App.switchView('ai-advisor', this)">
-            <a href="#"><span class="nav-icon">🧠</span> AI Growth Advisor</a>
-          </li>
-          <li id="nav-automation" onclick="App.switchView('automation', this)">
-            <a href="#"><span class="nav-icon">⚡</span> Order Automation</a>
+          <li id="nav-crm" onclick="App.switchView('crm', this)">
+            <a href="#"><span class="nav-icon">👥</span> CRM & Udhar Khata</a>
           </li>
           <li id="nav-inventory" onclick="App.switchView('inventory', this)">
             <a href="#"><span class="nav-icon">📦</span> Live Inventory Sync</a>
           </li>
+          <li id="nav-billing" onclick="App.switchView('billing', this)">
+            <a href="#"><span class="nav-icon">🧾</span> Billing & GST Invoices</a>
+          </li>
+          <li id="nav-finance" onclick="App.switchView('finance', this)">
+            <a href="#"><span class="nav-icon">💰</span> Finance & Cash Flow</a>
+          </li>
+          <li id="nav-analytics" onclick="App.switchView('analytics', this)">
+            <a href="#"><span class="nav-icon">📈</span> Growth & Analytics</a>
+          </li>
+          <li id="nav-ai-advisor" onclick="App.switchView('ai-advisor', this)">
+            <a href="#"><span class="nav-icon">🧠</span> AI Growth Copilot</a>
+          </li>
+          <li id="nav-automation" onclick="App.switchView('automation', this)">
+            <a href="#"><span class="nav-icon">⚡</span> Order Automation</a>
+          </li>
+          <li id="nav-team" onclick="App.switchView('team', this)">
+            <a href="#"><span class="nav-icon">👨‍💼</span> Team & HR Access</a>
+          </li>
           <li id="nav-vendors" onclick="App.switchView('vendors', this)">
-            <a href="#"><span class="nav-icon">🤝</span> Vendor SLA Matcher</a>
+            <a href="#"><span class="nav-icon">🤝</span> B2B Vendor Marketplace</a>
+          </li>
+          <li id="nav-notifications" onclick="App.switchView('notifications', this)">
+            <a href="#"><span class="nav-icon">🔔</span> Smart Alerts Hub</a>
           </li>
           <li id="nav-escrow" onclick="App.switchView('escrow', this)">
             <a href="#"><span class="nav-icon">🔒</span> Escrow Vault Flow</a>
           </li>
-          <li id="nav-growth" onclick="App.switchView('growth', this)">
-            <a href="#"><span class="nav-icon">📈</span> Growth & Cohorts</a>
-          </li>
           <li id="nav-store-health" onclick="App.switchView('store-health', this)">
-            <a href="#"><span class="nav-icon">🏬</span> Store Health & M&A</a>
+            <a href="#"><span class="nav-icon">🏬</span> Store Solvency & M&A</a>
           </li>
           <li id="nav-logistics" onclick="App.switchView('logistics', this)">
             <a href="#"><span class="nav-icon">🚚</span> Carrier Logistics</a>
@@ -157,32 +172,54 @@
           </div>
         </div>
 
-        <!-- VIEW 1: EXECUTIVE DASHBOARD (POWER BI STYLE) -->
+        <!-- VIEW 1: EXECUTIVE DASHBOARD (TOP FLOATING METRICS & 3D ECOSYSTEM WORKSPACE) -->
         <div id="view-dashboard" class="view-panel active">
-          <div class="kpi-grid">
-            <div class="card card-accent-indigo">
-              <div class="card-title">Gross GMV (Monthly) <span>📈</span></div>
-              <div class="card-val" id="kpi-gmv">₹ 4,850,200</div>
-              <div class="card-sub text-emerald">▲ +14.2% MoM Growth</div>
-              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/analytics/sql_queries.sql#L12-L35" target="_blank" class="proof-badge">📄 View SQL Proof</a>
+
+          <!-- TOP FLOATING GLASSMORPHIC METRICS ROW -->
+          <div class="top-metrics-row" style="display:grid; grid-template-columns: repeat(4, 1fr); gap:1rem; margin-bottom:1.25rem;">
+            <!-- TOP LEFT: GROSS GMV -->
+            <div class="card card-accent-indigo" style="background:rgba(15, 23, 42, 0.85); backdrop-filter:blur(12px); border:1px solid rgba(0, 102, 255, 0.4); padding:1rem;">
+              <div class="card-title" style="font-size:0.75rem; color:#38bdf8; font-weight:800; text-transform:uppercase; letter-spacing:0.5px;">📈 GROSS GMV</div>
+              <div class="card-val" id="kpi-gmv" style="font-size:1.45rem; font-weight:900; color:white; margin:0.25rem 0;">₹ 696,000</div>
+              <div class="card-sub text-emerald" style="font-size:0.75rem; font-weight:700;">▲ +14.2% MoM Growth</div>
             </div>
-            <div class="card card-accent-emerald">
-              <div class="card-title">ICICI Escrow Locked Vault <span>🔒</span></div>
-              <div class="card-val" id="kpi-escrow">₹ 1,420,000</div>
-              <div class="card-sub text-indigo">15 Active Transactions</div>
-              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/data/escrow_transactions.csv" target="_blank" class="proof-badge">📄 View Escrow CSV</a>
+
+            <!-- TOP CENTER-LEFT: ICICI ESCROW LOCKED VAULT -->
+            <div class="card card-accent-emerald" style="background:rgba(15, 23, 42, 0.85); backdrop-filter:blur(12px); border:1px solid rgba(16, 185, 129, 0.4); padding:1rem;">
+              <div class="card-title" style="font-size:0.75rem; color:var(--accent-emerald); font-weight:800; text-transform:uppercase; letter-spacing:0.5px;">🔒 ICICI ESCROW LOCKED VAULT</div>
+              <div class="card-val" id="kpi-escrow" style="font-size:1.45rem; font-weight:900; color:white; margin:0.25rem 0;">₹ 145,000</div>
+              <div class="card-sub text-indigo" style="font-size:0.75rem; font-weight:700;">100% Capital Protected • 15 Txs</div>
             </div>
-            <div class="card card-accent-amber">
-              <div class="card-title">Fulfillment SLA Rate <span>⏱️</span></div>
-              <div class="card-val">98.4%</div>
-              <div class="card-sub text-emerald">▲ Target 95.0% Exceeded</div>
-              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/automation/order_routing.py" target="_blank" class="proof-badge">📄 View Routing Code</a>
+
+            <!-- TOP CENTER-RIGHT: STOCK REORDER RISK -->
+            <div class="card card-accent-rose" style="background:rgba(15, 23, 42, 0.85); backdrop-filter:blur(12px); border:1px solid rgba(244, 63, 94, 0.4); padding:1rem;">
+              <div class="card-title" style="font-size:0.75rem; color:var(--accent-rose); font-weight:800; text-transform:uppercase; letter-spacing:0.5px;">⚠️ STOCK REORDER RISK</div>
+              <div class="card-val" id="kpi-risk-skus" style="font-size:1.45rem; font-weight:900; color:white; margin:0.25rem 0;">3 SKUs</div>
+              <div class="card-sub text-rose" style="font-size:0.75rem; font-weight:700;">Low Stock Alert Triggered</div>
             </div>
-            <div class="card card-accent-rose">
-              <div class="card-title">Stock Reorder Risk <span>⚠️</span></div>
-              <div class="card-val" id="kpi-risk-skus">3 SKUs</div>
-              <div class="card-sub text-rose">Low Stock Alerts Triggered</div>
-              <a href="https://github.com/iamkavishnagpal-hash/VyapaarSetu-MVP/blob/main/data/inventory.csv" target="_blank" class="proof-badge">📄 View Inventory CSV</a>
+
+            <!-- TOP RIGHT: FULFILLMENT SLA RATE -->
+            <div class="card card-accent-amber" style="background:rgba(15, 23, 42, 0.85); backdrop-filter:blur(12px); border:1px solid rgba(99, 102, 241, 0.4); padding:1rem;">
+              <div class="card-title" style="font-size:0.75rem; color:#818cf8; font-weight:800; text-transform:uppercase; letter-spacing:0.5px;">⏱️ FULFILLMENT SLA RATE</div>
+              <div class="card-val" style="font-size:1.45rem; font-weight:900; color:white; margin:0.25rem 0;">98.4%</div>
+              <div class="card-sub text-emerald" style="font-size:0.75rem; font-weight:700;">▲ Target 95.0% Exceeded</div>
+            </div>
+          </div>
+
+          <!-- CENTRAL 3D ISOMETRIC COMMERCE ECOSYSTEM CANVAS -->
+          <div class="card card-accent-indigo" style="margin-bottom:1.5rem; padding:1.25rem; background: linear-gradient(135deg, rgba(0, 102, 255, 0.08), rgba(17, 24, 39, 0.95)); border:1px solid rgba(0, 102, 255, 0.25);">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.85rem;">
+              <div style="display:flex; align-items:center; gap:0.85rem;">
+                <img src="assets/logo.svg" alt="VyapaarSetu Hub Logo" style="width:40px; height:40px; border-radius:10px; box-shadow:0 0 15px rgba(0, 102, 255, 0.5);">
+                <div>
+                  <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:white;">VyapaarSetu Central 3D Commerce Ecosystem</h3>
+                  <p style="font-size:0.78rem; color:var(--text-muted);">Real-time telemetry connecting Sourcing (Ocean Freight), Core Hub, Warehouses, and Retail Storefronts</p>
+                </div>
+              </div>
+              <span class="badge badge-emerald">🌐 Live Telemetry Active</span>
+            </div>
+            <div style="background:rgba(6, 9, 17, 0.85); border:1px solid var(--border-glass); border-radius:12px; padding:0.5rem; text-align:center;">
+              <img src="assets/ecosystem-network.svg" alt="VyapaarSetu Central 3D Isometric Commerce Ecosystem" style="width:100%; max-height:480px; object-fit:contain; border-radius:8px;">
             </div>
           </div>
 
@@ -262,6 +299,219 @@
                 <!-- Dynamically rendered -->
               </tbody>
             </table>
+          </div>
+        </div>
+
+        <!-- VIEW 2: CRM & UDHAR KHATA ENGINE -->
+        <div id="view-crm" class="view-panel">
+          <div class="kpi-grid">
+            <div class="card card-accent-indigo">
+              <div class="card-title">Total Active Customers <span>👥</span></div>
+              <div class="card-val" id="crm-total-cust">5 Customers</div>
+              <div class="card-sub text-emerald">Wholesale, Retail & Distributors</div>
+            </div>
+            <div class="card card-accent-rose">
+              <div class="card-title">Total Udhar Pending <span>💰</span></div>
+              <div class="card-val" id="crm-total-udhar">₹ 2,18,000</div>
+              <div class="card-sub text-rose">Overdue Collection Reminders Sent</div>
+            </div>
+            <div class="card card-accent-emerald">
+              <div class="card-title">Collected This Month <span>✅</span></div>
+              <div class="card-val">₹ 4,85,000</div>
+              <div class="card-sub text-emerald">100% UPI & Bank Reconciled</div>
+            </div>
+            <div class="card card-accent-amber">
+              <div class="card-title">Lead Conversion Rate <span>⚡</span></div>
+              <div class="card-val">76.4%</div>
+              <div class="card-sub text-indigo">Pipeline Velocity Active</div>
+            </div>
+          </div>
+
+          <!-- CRM TABLE & KANBAN GRID -->
+          <div class="table-card">
+            <div class="table-header">
+              <div>
+                <div class="table-title">Customer Udhar Khata Ledger & Contact Directory</div>
+                <div class="table-subtitle">Track customer balances, payment history & trigger WhatsApp reminders</div>
+              </div>
+              <button class="btn-gradient" onclick="App.openAddCustomerModal()">+ Add New Customer</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer ID</th>
+                  <th>Name & Business</th>
+                  <th>Phone Number</th>
+                  <th>City</th>
+                  <th>Category</th>
+                  <th>Total Purchased</th>
+                  <th>Pending Udhar</th>
+                  <th>Status</th>
+                  <th>Interactive Action</th>
+                </tr>
+              </thead>
+              <tbody id="crm-tbody">
+                <!-- Dynamically rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- VIEW 3: BILLING & GST INVOICES ENGINE -->
+        <div id="view-billing" class="view-panel">
+          <div class="grid-60-40" style="margin-bottom:1.5rem;">
+            <!-- INVOICE GENERATOR FORM -->
+            <div class="card card-accent-indigo">
+              <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:1rem;">🧾 Quick GST Tax Invoice Generator</h3>
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap:0.75rem;">
+                <div class="form-group">
+                  <label>Select Customer:</label>
+                  <select id="inv-cust-select" class="form-control"></select>
+                </div>
+                <div class="form-group">
+                  <label>Invoice Date:</label>
+                  <input type="date" id="inv-date-input" class="form-control" value="2026-08-03">
+                </div>
+              </div>
+              <div style="display:grid; grid-template-columns: 2fr 1fr 1fr; gap:0.75rem;">
+                <div class="form-group">
+                  <label>Select Item / SKU:</label>
+                  <select id="inv-sku-select" class="form-control"></select>
+                </div>
+                <div class="form-group">
+                  <label>Quantity:</label>
+                  <input type="number" id="inv-qty-input" class="form-control" value="1" min="1">
+                </div>
+                <div class="form-group">
+                  <label>Tax Rate:</label>
+                  <select id="inv-tax-select" class="form-control">
+                    <option value="18">18% GST (9%+9%)</option>
+                    <option value="12">12% GST (6%+6%)</option>
+                    <option value="5">5% GST (2.5%+2.5%)</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn-gradient" style="width:100%; justify-content:center;" onclick="App.generateNewInvoice()">
+                ⚡ Generate GST Tax Invoice
+              </button>
+            </div>
+
+            <!-- BILLING SUMMARY CARD -->
+            <div class="card card-accent-emerald">
+              <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:1rem;">💰 Monthly Billing Telemetry</h3>
+              <div style="margin-bottom:0.75rem;">
+                <div style="font-size:0.75rem; color:var(--text-muted);">Total Taxable Revenue:</div>
+                <div style="font-size:1.5rem; font-weight:800; color:white;" id="billing-total-val">₹ 6,15,000</div>
+              </div>
+              <div style="margin-bottom:0.75rem;">
+                <div style="font-size:0.75rem; color:var(--text-muted);">Total CGST + SGST Collected:</div>
+                <div style="font-size:1.2rem; font-weight:700; color:var(--accent-emerald);" id="billing-gst-val">₹ 1,10,700</div>
+              </div>
+              <span class="badge badge-emerald">GSTIN Verified & Compliant</span>
+            </div>
+          </div>
+
+          <!-- INVOICES HISTORY TABLE -->
+          <div class="table-card">
+            <div class="table-header">
+              <div class="table-title">Recent Tax Invoices & Payment Status</div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Invoice ID</th>
+                  <th>Date</th>
+                  <th>Customer Name</th>
+                  <th>Taxable Amt</th>
+                  <th>GST Amt</th>
+                  <th>Total (INR)</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="billing-tbody">
+                <!-- Dynamically rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- VIEW 4: FINANCE & CASH FLOW ENGINE -->
+        <div id="view-finance" class="view-panel">
+          <div class="kpi-grid">
+            <div class="card card-accent-emerald">
+              <div class="card-title">Monthly Income <span>💵</span></div>
+              <div class="card-val">₹ 6,15,000</div>
+              <div class="card-sub text-emerald">▲ +12% vs Expenses</div>
+            </div>
+            <div class="card card-accent-rose">
+              <div class="card-title">Operating Expenses <span>💸</span></div>
+              <div class="card-val" id="fin-exp-val">₹ 3,40,500</div>
+              <div class="card-sub text-rose">Rent, Payroll & Freight</div>
+            </div>
+            <div class="card card-accent-indigo">
+              <div class="card-title">Net Cash Flow <span>📈</span></div>
+              <div class="card-val" id="fin-net-val">₹ 2,74,500</div>
+              <div class="card-sub text-emerald">Positive Working Capital</div>
+            </div>
+            <div class="card card-accent-amber">
+              <div class="card-title">Cash Runway <span>⏳</span></div>
+              <div class="card-val">14.2 Months</div>
+              <div class="card-sub text-indigo">Healthy Reserve Status</div>
+            </div>
+          </div>
+
+          <!-- EXPENSE LOG TABLE -->
+          <div class="table-card">
+            <div class="table-header">
+              <div class="table-title">Business Expenses & Outflow Ledger</div>
+              <button class="btn-secondary" onclick="App.openAddExpenseModal()">+ Log New Expense</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Expense ID</th>
+                  <th>Date</th>
+                  <th>Category</th>
+                  <th>Description</th>
+                  <th>Amount (INR)</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="finance-tbody">
+                <!-- Dynamically rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- VIEW 5: GROWTH & BUSINESS ANALYTICS -->
+        <div id="view-analytics" class="view-panel">
+          <div class="kpi-grid">
+            <div class="card card-accent-indigo">
+              <div class="card-title">Average Order Value (AOV) <span>🎯</span></div>
+              <div class="card-val">₹ 1,45,000</div>
+              <div class="card-sub text-emerald">Wholesale Bulk Focus</div>
+            </div>
+            <div class="card card-accent-emerald">
+              <div class="card-title">Customer Retention <span>🔄</span></div>
+              <div class="card-val">88.5%</div>
+              <div class="card-sub text-emerald">High Repeat Order Rate</div>
+            </div>
+            <div class="card card-accent-amber">
+              <div class="card-title">Gross Profit Margin <span>📊</span></div>
+              <div class="card-val">24.6%</div>
+              <div class="card-sub text-indigo">Optimized Pricing</div>
+            </div>
+          </div>
+          <div class="card card-accent-indigo" style="margin-top:1.5rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h3 style="font-size:1.1rem; font-weight:700;">📄 Business Performance Export Center</h3>
+                <p style="font-size:0.8rem; color:var(--text-muted);">Generate comprehensive PDF & CSV audit reports for accountants, investors, and bank loans.</p>
+              </div>
+              <button class="btn-gradient" onclick="App.exportBusinessReport()">📥 Download Full Report (CSV)</button>
+            </div>
           </div>
         </div>
 
@@ -503,7 +753,52 @@
           </div>
         </div>
 
-        <!-- VIEW 10: SETTINGS -->
+        <!-- VIEW 10: TEAM & HR ACCESS CONTROL -->
+        <div id="view-team" class="view-panel">
+          <div class="table-card">
+            <div class="table-header">
+              <div>
+                <div class="table-title">Staff Roster & Access Control (RBAC)</div>
+                <div class="table-subtitle">Manage employee permissions, roles, and activity logs</div>
+              </div>
+              <button class="btn-gradient" onclick="App.openAddTeamModal()">+ Add Staff Member</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Employee ID</th>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Access Level</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="team-tbody">
+                <!-- Dynamically rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- VIEW 11: SMART ALERTS & NOTIFICATION HUB -->
+        <div id="view-notifications" class="view-panel">
+          <div class="table-card">
+            <div class="table-header">
+              <div>
+                <div class="table-title">🔔 Smart Alerts & Real-Time Notification Center</div>
+                <div class="table-subtitle">Unified feed for stock warnings, payment dues, and AI recommendations</div>
+              </div>
+              <button class="btn-secondary" onclick="App.clearAllNotifications()">Mark All as Read</button>
+            </div>
+            <div id="notifications-feed" class="alert-feed">
+              <!-- Dynamically rendered -->
+            </div>
+          </div>
+        </div>
+
+        <!-- VIEW 12: SETTINGS -->
         <div id="view-settings" class="view-panel">
           <div class="card card-accent-indigo">
             <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:0.75rem;">Platform Security & Webhooks API Setup</h3>
@@ -516,6 +811,30 @@
 
       </div>
     </main>
+  </div>
+
+  <!-- MOBILE BOTTOM NAVIGATION BAR -->
+  <div class="mobile-bottom-bar">
+    <button class="mobile-nav-item active" onclick="App.switchView('dashboard', this)">
+      <span class="mobile-icon">📊</span>
+      <span>Dashboard</span>
+    </button>
+    <button class="mobile-nav-item" onclick="App.switchView('crm', this)">
+      <span class="mobile-icon">👥</span>
+      <span>CRM</span>
+    </button>
+    <button class="mobile-nav-item" onclick="App.switchView('inventory', this)">
+      <span class="mobile-icon">📦</span>
+      <span>Stock</span>
+    </button>
+    <button class="mobile-nav-item" onclick="App.switchView('billing', this)">
+      <span class="mobile-icon">🧾</span>
+      <span>Billing</span>
+    </button>
+    <button class="mobile-nav-item" onclick="App.switchView('notifications', this)">
+      <span class="mobile-icon">🔔</span>
+      <span>Alerts</span>
+    </button>
   </div>
 
   <!-- B2B COMMERCE ONBOARDING MODAL -->
@@ -534,9 +853,93 @@
     </div>
   </div>
 
+  <!-- ADD CUSTOMER MODAL -->
+  <div id="modal-add-customer" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 style="font-size:1.1rem; font-weight:700;">👥 Add New Customer / Lead</h3>
+        <button class="modal-close" onclick="App.closeModal('modal-add-customer')">✕</button>
+      </div>
+      <div class="form-group"><label>Customer Name:</label><input type="text" id="add-cust-name" class="form-control" placeholder="e.g. Rajesh Gupta"></div>
+      <div class="form-group"><label>Company / Store Name:</label><input type="text" id="add-cust-company" class="form-control" placeholder="e.g. Gupta Enterprises"></div>
+      <div class="form-group"><label>Phone Number:</label><input type="text" id="add-cust-phone" class="form-control" placeholder="+91 98000 11223"></div>
+      <div class="form-group"><label>City:</label><input type="text" id="add-cust-city" class="form-control" placeholder="e.g. Mumbai"></div>
+      <div class="form-group"><label>Category:</label>
+        <select id="add-cust-category" class="form-control">
+          <option value="Wholesale">Wholesale</option>
+          <option value="Retail">Retail</option>
+          <option value="Distributor">Distributor</option>
+        </select>
+      </div>
+      <button class="btn-gradient" style="width:100%; justify-content:center;" onclick="App.saveNewCustomer()">Save Customer Record</button>
+    </div>
+  </div>
+
+  <!-- ADD EXPENSE MODAL -->
+  <div id="modal-add-expense" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 style="font-size:1.1rem; font-weight:700;">💸 Log Business Expense</h3>
+        <button class="modal-close" onclick="App.closeModal('modal-add-expense')">✕</button>
+      </div>
+      <div class="form-group"><label>Expense Category:</label>
+        <select id="add-exp-cat" class="form-control">
+          <option value="Warehouse Rent">Warehouse Rent</option>
+          <option value="Logistics Freight">Logistics Freight</option>
+          <option value="Staff Payroll">Staff Payroll</option>
+          <option value="Raw Materials">Raw Materials</option>
+          <option value="Utilities">Utilities</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Description:</label><input type="text" id="add-exp-desc" class="form-control" placeholder="Description of expense"></div>
+      <div class="form-group"><label>Amount (INR):</label><input type="number" id="add-exp-amt" class="form-control" placeholder="e.g. 25000"></div>
+      <button class="btn-gradient" style="width:100%; justify-content:center;" onclick="App.saveNewExpense()">Save Expense Record</button>
+    </div>
+  </div>
+
+  <!-- ADD TEAM MODAL -->
+  <div id="modal-add-team" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 style="font-size:1.1rem; font-weight:700;">👨‍💼 Add Staff Member</h3>
+        <button class="modal-close" onclick="App.closeModal('modal-add-team')">✕</button>
+      </div>
+      <div class="form-group"><label>Staff Name:</label><input type="text" id="add-team-name" class="form-control" placeholder="e.g. Rahul Sharma"></div>
+      <div class="form-group"><label>Role Title:</label><input type="text" id="add-team-role" class="form-control" placeholder="e.g. Billing Operator"></div>
+      <div class="form-group"><label>Email:</label><input type="email" id="add-team-email" class="form-control" placeholder="rahul@vyapaarsetu.in"></div>
+      <div class="form-group"><label>Phone:</label><input type="text" id="add-team-phone" class="form-control" placeholder="+91 98111 22334"></div>
+      <div class="form-group"><label>Access Level:</label>
+        <select id="add-team-access" class="form-control">
+          <option value="Admin Manager">Admin Manager</option>
+          <option value="Billing Manager">Billing Manager</option>
+          <option value="Sales Executive">Sales Executive</option>
+          <option value="Warehouse Lead">Warehouse Lead</option>
+        </select>
+      </div>
+      <button class="btn-gradient" style="width:100%; justify-content:center;" onclick="App.saveNewTeamMember()">Add Team Member</button>
+    </div>
+  </div>
+
+  <!-- GST INVOICE PREVIEW MODAL -->
+  <div id="modal-invoice-preview" class="modal-overlay">
+    <div class="modal-card" style="max-width:680px; padding:1.25rem;">
+      <div class="modal-header">
+        <h3 style="font-size:1.1rem; font-weight:700;">📄 GST Tax Invoice Preview</h3>
+        <div style="display:flex; gap:0.5rem; align-items:center;">
+          <button class="btn-gradient" onclick="window.print()">🖨️ Print / Save PDF</button>
+          <button class="modal-close" onclick="App.closeModal('modal-invoice-preview')">✕</button>
+        </div>
+      </div>
+      <div id="invoice-sheet-content" class="invoice-sheet">
+        <!-- Dynamically rendered -->
+      </div>
+    </div>
+  </div>
+
   <!-- APPLICATION SCRIPTS -->
   <script src="assets/js/data.js"></script>
   <script src="assets/js/engine.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
+
